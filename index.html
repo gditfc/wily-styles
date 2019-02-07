@@ -2,744 +2,174 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Transcend Styles</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
-                <link rel="stylesheet" type="text/css" href="transcend.css" />
-              <!--
-                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/colors.css" />
+    <!--
+    <link rel="stylesheet" type="text/css" href="transcend.css" />
+    -->
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/backgrounds.css" />
                     <link rel="stylesheet" type="text/css" href="../transcend-css/styles/buttons.css" />
-                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/forms.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/colors.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/codesnippet.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/effects.css" />
                     <link rel="stylesheet" type="text/css" href="../transcend-css/styles/footer.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/forms.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/help.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/layout.css" />
                     <link rel="stylesheet" type="text/css" href="../transcend-css/styles/montserrat.css" />
-                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/navbar.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/navigation.css" />
                     <link rel="stylesheet" type="text/css" href="../transcend-css/styles/styles.css" />
                     <link rel="stylesheet" type="text/css" href="../transcend-css/styles/theme.css" />
-    -->
-
-
-
-
-
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" />
-    <style>
-        .style_title{
-            text-align:center;
-            padding-top:90px;
-            font-size:18pt;
-            font-weight:300;
-            text-transform: uppercase;
-        }
-        .style_sub_title{
-            text-align:center;
-            padding-top:45px;
-            font-size:14pt;
-            font-weight:300;
-            text-transform: capitalize;
-        }
-
-
-        button.accordion {
-            color: #FFF; /* HEADERS */
-            cursor: pointer;
-            font-family: monospace;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 14px;
-            font-weight:bold;
-            padding-left:15px;
-            margin:0;
-
-        }
-
-        button.accordion.active, button.accordion:hover {
-        background-color: #3b6f82;
-        }
-        button.accordion:after {
-            content: '\02795'; /* Unicode character for "plus" sign (+) */
-            font-size: 11px;
-            color: rgba(255, 255, 255, 0.7);
-            float: right;
-            margin-right: 1px;
-        }
-
-        button.accordion.active:after {
-            content: "\2796"; /* Unicode character for "minus" sign (-) */
-            color: rgba(255, 255, 255, 0.9);
-        }
-        .headerBlue {
-            background-color:#346273; /* TRAFFIC EVENTS HEADER */
-            height:30px;
-        }
-
-
-        div.panel {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-        .panelGrey{
-            background-color:#585858;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .howto_box{
-            flex:1;
-            padding:10px;
-            background-color: #BBBBBB;
-            margin:15px;
-            font-family: monospace;
-            font-size:10pt;
-            min-width: 220px;
-        }
-        .howto_header{
-            background-color:#585858;
-            padding:5px;
-            color:yellowgreen;
-        }
-        .code_box{
-            flex:2;
-            padding:15px;
-            display: inline-block;
-            min-width: 220px;
-        }
-        .codesnippet{
-            font-family: monospace;
-            padding:10px;
-            border:dashed green 1px;
-            color: greenyellow;
-            background-color:rgba(0,0,0,0.0);
-            min-height:175px;
-            resize: none;
-            overflow-y:auto;
-        }
-        .codesnippet:focus{
-            border:dashed green 1px;
-            outline-color: transparent;
-            outline-style: none;
-            box-shadow: none;
-        }
-        /* SWATCH CONTAINER CODE */
-        .swatch_container{
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .swatch{
-            margin:15px;
-        }
-        .swatch_box{
-            display:flex;
-            width:88px;
-            height:50px;
-            border: 3px solid #CCC;
-            color:#FFF;
-            justify-content: center;
-            align-items: center;
-            font-size:9pt;
-            font-weight:500;
-            text-transform: uppercase;
-        }
-        .swatch_title{
-            padding-top:5px;
-            text-align: center;
-            color:#585858;
-            font-size:10pt;
-        }
-    </style>
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/wac.css" />
+                    <link rel="stylesheet" type="text/css" href="../transcend-css/styles/z_atmedia.css" />
 </head>
 <body>
-<div class="site">
-    <nav class="navBar">
-        <div class="wrapper">
-            <a href="#">
-                <div class="logo">TRANSCEND STYLE GUIDE</div>
-            </a>
-            <input type="checkbox" id="menu-toggle"/>
-            <label for="menu-toggle" class="label-toggle"><i class="fa fa-align-justify fa-2x"></i></label>
-            <ul>
-                <li>
-                    <a href="#buttons"><div class="nav_btn">Buttons</div></a>
-                </li>
-                <li>
-                    <a href="#forms"><div class="nav_btn">Forms</div></a>
-                </li>
-                <li>
-                    <a href="#headers"><div class="nav_btn">Inline Design Elements</div></a>
-                </li>
-
-                <li>
-                    <a href="#details"><div class="nav_btn">Details/DATA</div></a>
-                </li>
-                <li>
-                    <a href="#layouts"><div class="nav_btn">Graphic Layouts</div></a>
-                </li>
-                <li>
-                    <a href="#menus"><div class="nav_btn">Menus</div></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <main class="site-content">
-
-        <div class="page_container border_grey big_shadow">
-            <!-- PAGE HEADER -->
-            <div class="header_container t_blue primary_color">
-                <div class="header_title">CSS Resource Page CSS Resource Page CSS Resource Page CSS Resource Page</div>
-                <button class="btn md t_megaman">OK</button>
-            </div>
-            <div class="header_subtitle">
-                <div class="subtitle">An organic repository for CSS driven styles built specifically for the transcend vision</div>
-                <button class="btn sm t_cancel">Cancel</button>
-
-            </div>
-            <!-- END PAGE HEADER -->
-
-            <div id="colors" class="style_title">COLOR SWATCHES</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="style_sub_title">Primary Colors</div>
-                    <div class="swatch_container">
-                        <div class="swatch">
-                            <div class="swatch_box t_blue">#628396</div>
-                            <div class="swatch_title">t_blue</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_red">#985660</div>
-                            <div class="swatch_title">t_red</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_yellow">#B7B933</div>
-                            <div class="swatch_title">t_yellow</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_green">#468459</div>
-                            <div class="swatch_title">t_green</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_purple">#894870</div>
-                            <div class="swatch_title">t_purple</div>
-                        </div>
-                    </div>
 
 
+<div>
 
-                    <div class="style_sub_title">Secondary / Button Colors</div>
-                    <div class="swatch_container">
-                        <div class="swatch">
-                            <div class="swatch_box t_bluesteel">#466373</div>
-                            <div class="swatch_title">t_bluesteel</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_megaman">#05ABE0</div>
-                            <div class="swatch_title">t_megaman</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_go">#4bb642</div>
-                            <div class="swatch_title">t_go</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_grey">#AAAAAA</div>
-                            <div class="swatch_title">t_grey</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_cancel">#888888</div>
-                            <div class="swatch_title">t_cancel</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_stop">#05ABE0</div>
-                            <div class="swatch_title">t_stop</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_progress">#9e9c7a</div>
-                            <div class="swatch_title">t_progress</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_info">#7e5966</div>
-                            <div class="swatch_title">t_info</div>
-                        </div>
-                        <div class="swatch">
-                            <div class="swatch_box t_warning">#988656</div>
-                            <div class="swatch_title">t_warning</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="buttons" class="style_title">BUTTONS</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div style="text-align:center;margin-top:15px;">
-                        <button class="btn sm t_megaman">ok</button>
-                        <button class="btn sm t_go">go</button>
-                        <button class="btn sm t_cancel">cancel</button>
-                        <button class="btn sm t_stop">alert</button>
-                        <button class="btn sm t_progress">inprogress</button>
-                        <button class="btn sm t_info">information</button>
-                        <button class="btn sm t_warning">warning</button>
-                    </div>
-                    <div style="text-align:center;margin-top:15px;">
-                        <button class="btn md t_megaman">ok</button>
-                        <button class="btn md t_go">go</button>
-                        <button class="btn md t_cancel">cancel</button>
-                        <button class="btn md t_stop">alert</button>
-                        <button class="btn md t_progress">inprogress</button>
-                        <button class="btn md t_info">information</button>
-                        <button class="btn md t_warning">warning</button>
-                    </div>
-                    <div style="text-align:center;margin-top:15px;">
-                        <button class="btn lg t_megaman">ok</button>
-                        <button class="btn lg t_go">go</button>
-                        <button class="btn lg t_cancel">cancel</button>
-                        <button class="btn lg t_stop">alert</button>
-                        <button class="btn lg t_progress">inprogress</button>
-                        <button class="btn lg t_info">information</button>
-                        <button class="btn lg t_warning">warning</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        set the button with "btn"<br>
-                        set the size with "sm/md/lg"<br>
-                        set the color with "ok t_go
-                    </div>
-                    <div class="code_box">
-                <textarea class="codesnippet" id="codesnippet_1">
-                <button class="btn md ok">ok</button>
+    <!-- CODE DISPLAY WINDOW -->
+    <div class="row_block" style="position: fixed;">
+        <button class="accordion">TRANSCEND STYLE GUIDE</button>
+        <div class="panel shadow">
+            <div class="code_box">
+                <textarea class="codesnippet">
+      /* DOCUMENT INFORMATION
+    ################################################
+                    TRANSCEND STYLE GUIDE
+    ################################################
+        - Type: CSS Flexbox
+        - Version:  3.0.0
+        - Division: GDIT - MMIS Modernization Team
+        - Author:   Terry Sinay
+    */
                 </textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_1')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-            <!-- CODE DISPLAY WINDOW -->
-
-
-
-
-<!-- QUARTER SIZE APP STYLE BLOCKS -->
-
-            <div class="style_sub_title">quarter-size application style buttons</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="flex_wrap_left">
-                        <div class="fourths">
-                            <div class="app_btn t_megaman"><i class="fa fa-camera-retro fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                        <div class="fourths">
-                            <div class="app_btn t_megaman"><i class="fa fa-bug fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                        <div class="fourths">
-                            <div class="app_btn t_megaman"><i class="fa fa-bullhorn fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                        <div class="fourths">
-                            <div class="app_btn t_megaman"><i class="fa fa-bus fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        This will display a 4-button layout that scales accordingly.
-                        To change the color, simply replace the "ok" with the color code of choice.
-                    </div>
-                    <div class="code_box">
-                <textarea class="codesnippet" id="codesnippet_2">
-<div class="flex_wrap_left">
-    <!-- repeat -->
-    <div class="fourths">
-        <div class="app_btn ok"><i class="fa fa-camera-retro fa-4x"></i></div>
-        <div class="app_text">Change Me</div>
-    </div>
-    <!-- end repeat -->
-</div>
-                </textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_2')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-            <!-- CODE DISPLAY WINDOW -->
-
-
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="flex_wrap_left">
-                        <div class="fourths shadow">
-                            <div class="app_btn t_purple">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-car fa-4x"></i></div>
-                                    <div class="app_text2">support text support text support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fourths shadow">
-                            <div class="app_btn t_purple">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-calendar-plus fa-4x"></i></div>
-                                    <div class="app_text2">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fourths shadow">
-                            <div class="app_btn t_purple">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-capsules fa-4x"></i></div>
-                                    <div class="app_text2">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fourths shadow">
-                            <div class="app_btn t_purple">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-chart-area fa-4x"></i></div>
-                                    <div class="app_text2">support text support text support text</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET - fourths</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        set the button with "btn"<br>
-                        set the size with "sm/md/lg"<br>
-                        set the color with "ok t_go
-                    </div>
-                    <div class="code_box">
-                <textarea class="codesnippet" id="codesnippet_3">
-<div class="flex_wrap_left">
-    <!--repeat -->
-    <div class="fourths">
-        <div class="app_btn t_go">
-            <div class="block">
-                <div class="flex_wrap_center"><i class="fa fa-camera-retro fa-4x"></i></div>
-                <div class="app_text2">Change Me</div>
+                <!--
+                <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_1')">COPY TO CLIPBOARD</button>
+                -->
             </div>
         </div>
     </div>
-    <!--end repeat -->
-</div>
-                </textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_3')">COPY TO CLIPBOARD</button>
+    <!-- CODE DISPLAY WINDOW -->
+
+    <div style="display:flex;justify-content: center;padding-top:30px;">
+
+        <div style="width:100%;margin:0 15px;" class="big_shadow">
+            <div class="row wrap">
+                <div class="col col_size_1 min250">
+                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
+                </div>
+                <div class="col col_size_1 min250">
+                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
+                </div>
+                <div class="col col_size_1 min250">
+                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
+                </div>
+            </div>
+            <div class="row wrap">
+                <div class="col col_size_1 min250">
+                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
+                </div>
+                <div class="col col_size_1 min250">
+                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col col_size_1 wrap">
+                        <div class="swatch t_blue">
+                            <div class="swatch_title">t_blue<br/>#628396</div>
+                        </div>
+                        <div class="swatch t_red">
+                            <div class="swatch_title">t_red<br/>#985660</div>
+                        </div>
+                        <div class="swatch t_yellow">
+                            <div class="swatch_title">t_yellow<br/>#B7B933</div>
+                        </div>
+                        <div class="swatch t_green">
+                            <div class="swatch_title">t_green<br/>#468459</div>
+                        </div>
+                        <div class="swatch t_purple">
+                            <div class="swatch_title">t_purple<br/>#894870</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col_size_1 wrap">
+                        <div class="swatch t_bluesteel">
+                            <div class="swatch_title">t_bluesteel<br/>#466373</div>
+                        </div>
+                        <div class="swatch t_megaman">
+                            <div class="swatch_title">t_megaman<br/>#05ABE0</div>
+                        </div>
+                        <div class="swatch t_go">
+                            <div class="swatch_title">t_go<br/>#4bb642</div>
+                        </div>
+                        <div class="swatch t_grey">
+                            <div class="swatch_title">t_grey<br/>#AAAAAA</div>
+                        </div>
+                        <div class="swatch t_cancel">
+                            <div class="swatch_title">t_cancel<br/>#888888</div>
+                        </div>
+                        <div class="swatch t_stop">
+                            <div class="swatch_title">t_stop<br/>#05ABE0</div>
+                        </div>
+                        <div class="swatch t_progress">
+                            <div class="swatch_title">t_progress<br/>#9e9c7a</div>
+                        </div>
+                        <div class="swatch t_info">
+                            <div class="swatch_title">t_info<br/>#7e5966</div>
+                        </div>
+                        <div class="swatch t_warning">
+                            <div class="swatch_title">t_warning<br/>#988656</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="content_container">
+                <div class="row wrap">
+                    <div class="col col_size_1 center_center">
+                        <button class="btn sm t_megaman">OK</button>
+                        <button class="btn sm t_go">GO</button>
+                    </div>
+                    <div class="col col_size_1 center_center">
+                        <button class="btn md t_megaman">OK</button>
+                        <button class="btn md t_go">GO</button>
+                    </div>
+                    <div class="col col_size_1 center_center">
+                        <button class="btn lg t_megaman">OK</button>
+                        <button class="btn lg t_go">GO</button>
+                    </div>
+                </div>
+                <div class="row wrap">
+                    <div class="col col_size_1 center_center">
+                        <button class="btn_pulse xsm t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse sm t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse md t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse lg t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse md t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse sm t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse xsm t_megaman"><i class="fa fa-rocket fa-fw"></i></button>
+                    </div>
+                </div>
+                <div class="row wrap">
+                    <div class="col col_size_1 center_center">
+                        <button class="btn_pulse xsm t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse sm t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse md t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse lg t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse md t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse sm t_red"><i class="fa fa-rocket fa-fw"></i></button>
+                        <button class="btn_pulse xsm t_red"><i class="fa fa-rocket fa-fw"></i></button>
                     </div>
                 </div>
             </div>
 
 
+            <div class="row">
 
-
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="flex_wrap_left">
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-certificate fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-chess-bishop fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-child fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-cogs fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-clipboard-list fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-clock fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-code fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="eighths shadow">
-                            <div class="app_btn t_go">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-closed-captioning fa-3x"></i></div>
-                                    <div class="app_text3">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET - eighths</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        set the button with "btn"<br>
-                        set the size with "sm/md/lg"<br>
-                        set the color with "ok t_go
-                    </div>
-                    <div class="code_box">
-                <textarea class="codesnippet" id="codesnippet_31">
-<div class="flex_wrap_left">
-    <!--repeat -->
-    <div class="eighths">
-        <div class="app_btn t_go">
-            <div class="block">
-                <div class="flex_wrap_center"><i class="fa fa-camera-retro fa-4x"></i></div>
-                <div class="app_text3">Change Me</div>
-            </div>
-        </div>
-    </div>
-    <!--end repeat -->
-</div>
-                </textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_31')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-
-
-
-<!-- HALF SIZE APP STYLE BLOCKS -->
-            <div class="style_sub_title">half-size application style buttons</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="flex_wrap_left">
-                        <div class="halfsize">
-                            <div class="app_btn t_yellow"><i class="fa fa-coffee fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                        <div class="halfsize">
-                            <div class="app_btn t_yellow"><i class="fa fa-comment-dots fa-4x"></i></div>
-                            <div class="app_text">support text</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET   - Half-size App Style Button with External Text</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        set the button with "btn"<br>
-                        set the size with "sm/md/lg"<br>
-                        set the color with "ok t_go
-                    </div>
-                    <div class="code_box">
-<textarea class="codesnippet" id="codesnippet_3">
-<div class="flex_wrap_left">
-    <!--repeat -->
-    <div class="halfsize">
-        <div class="app_btn inprogress"><i class="fa fa-camera-retro fa-4x"></i></div>
-        <div class="app_text">support text</div>
-    </div>
-    <!--end repeat -->
-</div>
-</textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_3')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-            <!-- CODE DISPLAY WINDOW -->
-
-
-
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="flex_wrap_left">
-                    <div class="halfsize shadow">
-                        <div class="app_btn t_bluesteel">
-                            <div class="block">
-                                <div class="flex_wrap_center"><i class="fa fa-couch fa-4x"></i></div>
-                                <div class="app_text2">support text</div>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="halfsize shadow">
-                            <div class="app_btn t_bluesteel">
-                                <div class="block">
-                                    <div class="flex_wrap_center"><i class="fa fa-compass fa-4x"></i></div>
-                                    <div class="app_text2">support text</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET  - Half-size App Style Button with Contained Text</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-CHANGE ME
-                    </div>
-                    <div class="code_box">
-                <textarea class="codesnippet" id="codesnippet_4">
-                <button class="btn md ok">ok</button>
-                </textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_4')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-            <!-- CODE DISPLAY WINDOW -->
-
-
-
-<!-- INPUT FIELDS -->
-            <div id="forms" class="style_title">INPUTS AND FORM FIELDS</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                        <div class="form_group">
-                            <label>First Name</label>
-                            <input type="text" placeholder="First Name" class="input-control" />
-                            <label class="right-inline">Last Name</label>
-                            <input type="text" placeholder="Last Name" class="input-control" />
-                        </div>
-
-                        <div class="form_group">
-                            <label>Company</label>
-                            <input type="text" placeholder="Company" class="input-control" />
-                        </div>
-
-                        <div class="form_group">
-                            <label>Address</label>
-                            <textarea class="input-control" type="text" placeholder="Address"></textarea>
-                        </div>
-
-                        <div class="form_group">
-                            <label>City,State,Zip</label>
-                            <input class="input-control" placeholder="City" style="flex: 7" />
-                            <select class="input-control" style="flex:3" />
-                             <option value="au">New York</option>
-                             <option value="ca">Massachusetts</option>
-                             <option value="usa">Alabama</option>
-                            </select>
-                            <input class="input-control" placeholder="Zip Code" style="flex:1" />
-                        </div>
-                        <div class="form_group" style="margin-left:3px;">
-                            <label>&nbsp;</label>
-                            <button class="btn md ok">Save</button>
-                            <button class="btn md cancel">Cancel</button>
-                        </div>
-                </div>
-            </div>
-
-
-
-            <!-- CODE DISPLAY WINDOW -->
-            <div class="content_container">
-                <button class="accordion headerBlue">CODE SNIPPET - Form layouts using flex values</button>
-                <div class="panel panelGrey">
-                    <div class="howto_box">
-                        <div class="howto_header">How to use:</div><br>
-                        Use "form_group" class as a row. Each input can have a style="flex:size;" to adjust accordingly.
-                    </div>
-                    <div class="code_box">
-<textarea class="codesnippet" id="codesnippet_5">
-<div class="form_group">
-    <label>First Name</label>
-    <input type="text" placeholder="First Name" class="input-control" />
-    <label class="right-inline">Last Name</label>
-    <input type="text" placeholder="Last Name" class="input-control" />
-</div>
-</textarea>
-                        <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_5')">COPY TO CLIPBOARD</button>
-                    </div>
-                </div>
-            </div>
-            <!-- CODE DISPLAY WINDOW -->
-
-
-
-            <div class="style_sub_title">Expandable input fields</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div style="text-align: center">
-                        <input type="text" placeholder="small_rounded" class="small_rounded expdinput">
-                    </div>
-                    <div style="text-align: center">
-                        <input type="text" placeholder="medium_rounded" class="medium_rounded expdinput">
-                    </div>
-                    <div style="text-align: center">
-                        <input type="text" placeholder="large_rounded" class="large_rounded expdinput">
-                    </div>
-                </div>
-            </div>
-
-<!-- HEADERS / SUBS -->
-            <div id="headers" class="style_title">inline design elements</div>
-            <div class="style_sub_title">Various headers</div>
-            <div class="content_container">
-                <div class="t_purple primary_color">
-                    <div class="inline_header">
+                    <div class="t_purple space_between col_size_1">
                         <div class="title_box">
                             <div class="bar_1"></div>
                             <div class="bar_2"></div>
@@ -749,312 +179,23 @@ CHANGE ME
                         </div>
                         <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
                     </div>
-                </div>
-                <div class="t_megaman primary_color">
-                    <div class="inline_header">
-                        <div class="title_box">
-                            <div class="bar_1"></div>
-                            <div class="bar_2"></div>
-                            <div class="bar_3"></div>
-                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                            <div class="inline_title">Inline Header</div>
-                        </div>
-                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                    </div>
-                </div>
-                <div class="t_green primary_color">
-                    <div class="inline_header">
-                        <div class="title_box">
-                            <div class="bar_1"></div>
-                            <div class="bar_2"></div>
-                            <div class="bar_3"></div>
-                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                            <div class="inline_title">Inline Header</div>
-                        </div>
-                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                    </div>
-                </div>
-                <div class="t_red primary_color">
-                    <div class="inline_header">
-                        <div class="title_box">
-                            <div class="bar_1"></div>
-                            <div class="bar_2"></div>
-                            <div class="bar_3"></div>
-                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                            <div class="inline_title">Inline Header</div>
-                        </div>
-                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="details" class="style_title">Detailed information / DATA layouts</div>
-            <div class="style_sub_title">Responsive DATA rows</div>
-            <div class="content_container">
-                <div class="dashed_container">
-
-
-                    <div class="flex_row">
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div><button class="btn md t_megaman">GO</button></div>
-                    </div>
-                    <div class="flex_row">
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div class="child">X</div>
-                        <div><button class="btn md t_megaman">GO</button></div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-            <!-- VARIOUS LAYOUTS -->
-
-            <div id="layouts" class="style_title">GRAPHICAL (VISUALLY ENHANCED) LAYOUTS</div>
-            <div class="style_sub_title">Full cover photo with centered element/button</div>
-            <div class="content_container">
-                <div class="dashed_container">
-                    <div class="content background_image_1">
-                        <div class="center_me_block"  style="height:250px;">
-                            <div class="content_block">
-                            <button class="btn lg t_megaman">TEST</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="style_sub_title">Full cover photo with two column layout</div>
-                <div class="content_container">
-                    <div class="dashed_container">
-
-                        <div class="content background_image_2">
-                            <div class="container_block">
-                                <div class="transparent_bg t_blue center_me_block" style="flex:2;">
-                                    <i class="fa fa-boxes" style="font-size:5em;color:#FFF;"></i>
-                                </div>
-                                <div class="transparent_lt" style="flex:6;">
-                                    <div class="content_block" style="flex:1">
-                                        <h3>You got a real attitude problem, McFly.</h3>
-                                        <p>
-                                        Nightwing anti-venom. Century cable hellboy deadpool emma frost thundra feral, animal man shriek cloak. Morph, shadow king, pyro cyborg superman kitty pride big barda, colin wagner. Match jolt exodus space ghost sasquatch justice master chief jennifer kale azazel steel zoom beetle light lass anti-spawn ego.
-                                        </p>
-                                        <p>
-                                        Apollonius of Perga extraplanetary. Tingling of the spine. Orion's sword, rich in heavy atoms cosmic ocean astonishment encyclopaedia galactica tesseract two ghostly white figures in coveralls and helmets are soflty dancing, rich in heavy atoms the only home we've ever known how far away.
-                                        </p>
-                                    </div>
-                                    <div class="flex_wrap_right">
-                                        <button class="btn lg t_megaman">OK</button>
-                                        <button class="btn lg t_cancel">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                    <div id="menus" class="style_title">MENU SYSTEMS</div>
-                    <div class="content_container">
-                        <div class="t_purple primary_color">
-                            <div class="inline_header">
-                                <div class="title_box">
-                                    <div class="bar_1"></div>
-                                    <div class="bar_2"></div>
-                                    <div class="bar_3"></div>
-                                    <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                                    <div class="inline_title">Inline Header</div>
-                                </div>
-                                <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                            </div>
-                            <div class="sticky_container">
-                                <div class="sticky_nav_box">
-                                    <div class="sticky_sidenav">
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Preferences</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">System Integrity</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Voltron Megaman</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Preferences</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">System Integrity</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Voltron Megaman</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Preferences</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">System Integrity</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Voltron Megaman</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Preferences</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">System Integrity</div>
-                                        </div>
-                                        <div class="sticky_btn">
-                                            <div class="sticky_icon"><i class="fa fa-bug fa-fw"></i></div>
-                                            <div class="sticky_title">Voltron Megaman</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sticky_content">
-                                    <div class="sticky_header">Prototype Rockstar</div>
-                                        <div class="sticky_text">
-                                        <p>
-                                        Churn rate non-disclosure agreement buyer focus ecosystem iPad. Release venture crowdsource burn rate facebook paradigm shift supply chain prototype responsive web design partnership deployment. Innovator crowdsource holy grail advisor. Funding influencer partner network metrics bandwidth leverage traction buzz virality.
-                                        </p>
-                                        <p>
-                                        Twitter stock equity vesting period learning curve launch party pitch innovator series A financing churn rate handshake. Venture graphical user interface bandwidth influencer sales technology pitch. Marketing iPad angel investor. Social media accelerator seed round conversion traction success pitch advisor.
-                                        </p>
-                                        </div>
-                                    <div class="sticky_header">Ultra Nickaramus</div>
-                                    <div style="padding:10px;">
-                                        <p>
-                                            Churn rate non-disclosure agreement buyer focus ecosystem iPad. Release venture crowdsource burn rate facebook paradigm shift supply chain prototype responsive web design partnership deployment. Innovator crowdsource holy grail advisor. Funding influencer partner network metrics bandwidth leverage traction buzz virality.
-                                        </p>
-                                        <p>
-                                            Twitter stock equity vesting period learning curve launch party pitch innovator series A financing churn rate handshake. Venture graphical user interface bandwidth influencer sales technology pitch. Marketing iPad angel investor. Social media accelerator seed round conversion traction success pitch advisor.
-                                        </p>
-                                    </div>
-                                    <div class="sticky_header">Heretic Pizza Party</div>
-                                    <div style="padding:10px;">
-                                        <p>
-                                            Churn rate non-disclosure agreement buyer focus ecosystem iPad. Release venture crowdsource burn rate facebook paradigm shift supply chain prototype responsive web design partnership deployment. Innovator crowdsource holy grail advisor. Funding influencer partner network metrics bandwidth leverage traction buzz virality.
-                                        </p>
-                                        <p>
-                                            Twitter stock equity vesting period learning curve launch party pitch innovator series A financing churn rate handshake. Venture graphical user interface bandwidth influencer sales technology pitch. Marketing iPad angel investor. Social media accelerator seed round conversion traction success pitch advisor.
-                                        </p>
-                                    </div>
-                                    <div class="sticky_header">Rocketship that Moon Bro</div>
-                                    <div style="padding:10px;">
-                                        <p>
-                                            Churn rate non-disclosure agreement buyer focus ecosystem iPad. Release venture crowdsource burn rate facebook paradigm shift supply chain prototype responsive web design partnership deployment. Innovator crowdsource holy grail advisor. Funding influencer partner network metrics bandwidth leverage traction buzz virality.
-                                        </p>
-                                        <p>
-                                            Twitter stock equity vesting period learning curve launch party pitch innovator series A financing churn rate handshake. Venture graphical user interface bandwidth influencer sales technology pitch. Marketing iPad angel investor. Social media accelerator seed round conversion traction success pitch advisor.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="style_sub_title">menus</div>
-                    <div class="content_container">
-                        <div class="dashed_container">
-
-                            <div style="display: flex;flex-wrap: wrap;">
-                                <div class="sidenav t_megaman">
-                                    <div class="inline_header">
-                                        <div class="title_box">
-                                            <div class="bar_1"></div>
-                                            <div class="bar_2"></div>
-                                            <div class="bar_3"></div>
-                                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                                            <div class="inline_title">Inline Header</div>
-                                        </div>
-                                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                                    </div>
-                                    <div class="menu_btn sm">link</div>
-                                    <div class="menu_btn sm">big link</div>
-                                    <div class="menu_btn sm">mega link</div>
-                                    <div class="menu_btn sm">superbig megamega link</div>
-                                </div>
-                                <div class="sidenav t_red">
-                                    <div class="inline_header">
-                                        <div class="title_box">
-                                            <div class="bar_1"></div>
-                                            <div class="bar_2"></div>
-                                            <div class="bar_3"></div>
-                                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                                            <div class="inline_title">Inline Header</div>
-                                        </div>
-                                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                                    </div>
-                                    <div class="menu_btn md">link</div>
-                                    <div class="menu_btn md">big link</div>
-                                    <div class="menu_btn md">mega link</div>
-                                    <div class="menu_btn md">superbig megamega link</div>
-                                </div>
-                                <div class="sidenav t_green">
-                                    <div class="inline_header">
-                                        <div class="title_box">
-                                            <div class="bar_1"></div>
-                                            <div class="bar_2"></div>
-                                            <div class="bar_3"></div>
-                                            <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                                            <div class="inline_title">Inline Header</div>
-                                        </div>
-                                        <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
-                                    </div>
-                                    <div class="menu_btn lg">link</div>
-                                    <div class="menu_btn lg">big link</div>
-                                    <div class="menu_btn lg">mega link</div>
-                                    <div class="menu_btn lg">superbig megamega link</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="style_sub_title">basic layouts</div>
-                    <div class="content_container">
-                        <div class="dashed_container">
-                            <div class="content_block">d</div>
-                            <div class="content_block">d</div>
-                        </div>
-                    </div>
-
-
-
 
             </div>
-
-
-    </main>
-
-    <footer class="footer">
-        <div style="display: flex;align-items: center;justify-content: center;color:#FFF;padding-top:15px;">
-            <img src="assets/logos/csra_logo_foot.png" alt="CSRA Transcend">
-            <strong>&nbsp;<script type="text/javascript">var year = new Date();
-            document.write(year.getFullYear());</script>
-            </strong>
         </div>
-    </footer>
+    </div>
+    <div style="display: flex;height:50px;align-items: center;justify-content: center;color:#FFF;background-color: #BBBBBB;">
+        <img src="assets/logos/csra_logo_foot.png" alt="CSRA Transcend">
+        <strong>&nbsp;<script type="text/javascript">var year = new Date();
+        document.write(year.getFullYear());</script>
+        </strong>
+    </div>
 </div>
+
+
+
+
+
+
 
 <script>
     var acc = document.getElementsByClassName("accordion");

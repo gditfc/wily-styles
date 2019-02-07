@@ -1,19 +1,19 @@
+/* DOCUMENT INFORMATION
+################################################
+                TRANSCEND BUTTONS
+################################################
+    - Type: CSS Flexbox
+	- Version:  3.0.0
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 footer {
     width: 100%;
-    transition:all 1.0s ease;
 }
-.footer_logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-}
+
 .footer_year{
-    padding:0 5px;
-    border-right:1px solid #EFEFEF;
-    margin-right:5px;
-    font-size:16pt;
+    font-size:13pt;
 }
 
 .footer_gradient{
@@ -21,4 +21,24 @@ footer {
     background: -webkit-linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 100%);
     background: linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.33) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#54000000',GradientType=1 );
+}
+.gdit_footer_logo {
+    width: 100px;
+    height: 15px;
+    background-image: url(assets/logos/gdit_logo_scale.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center left;
+    margin:0 5px 0;
+    user-select: none;
+}
+.transcend_footer_logo {
+    width: 100px;
+    height: 15px;
+    background-image: url(assets/logos/transcend_logo_horiz.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center left;
+    margin:0 5px 0;
+    user-select: none;
 }

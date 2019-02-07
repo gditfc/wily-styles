@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 728px) {
+    .hide_element{
+        display:none;
+    }
+    .header_subtitle{
+        padding:3px 5px 3px 5px;
+        font-size:9pt;
+    }
+    .header .title{
+        font-size:11pt;
+    }
+}

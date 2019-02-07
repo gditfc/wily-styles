@@ -1,21 +1,26 @@
-/* NAVBAR BOTTOM MARGIN */
-.nav_margin{
-    margin-bottom:75px; /* SHOULD BE APROX. 20px GREATER THAN LOGO + 5px(margin) HEIGHT */
-}
+/* DOCUMENT INFORMATION
+################################################
+                TRANSCEND BUTTONS
+################################################
+    - Type: CSS Flexbox
+	- Version:  3.0.0
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 /* NAVBAR STYLES */
-.nav_bar {
+nav{
     position: fixed;
     width: 100%;
     margin: 0;
     top: 0;
     z-index: 999;
-    transition:all 0.3s ease;
-
+    height:30px;
 }
 .nav_wrap{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    align-items: center;
 }
 .nav_gradient{
     background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.33) 100%);
@@ -25,28 +30,14 @@
 }
 
 .logo {
-    display: flex;
-    width: 260px;
-    height: 50px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
-    background-image: url(/assets/logos/transcendsk_logo.png);
+    width: 150px;
+    height: 30px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
+    background-image: url(assets/logos/transcend_logo_horiz.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center left;
-    transition:all 0.3s ease;
-    margin:5px;
+    margin:0 5px 0;
     user-select: none;
-}
-@media (max-width: 768px) {
-    .logo{
-        background-size: 80%;
-        height: 40px;
-    }
-    .nav_margin{
-        margin-bottom:60px; /* SHOULD BE APROX. 20px GREATER THAN LOGO HEIGHT */
-    }
-    .color_bar{
-        display:none;
-    }
 }
 
 .nav_btn {
@@ -55,7 +46,7 @@
     color: rgba(255, 255, 255, 0.8);
     display: inline-block;
     white-space: nowrap;
-    font-size:12pt;
+    font-size:9pt;
 }
 .nav_btn:hover {
     color: rgba(255, 255, 255, 1.0);
@@ -65,18 +56,19 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav_btn {
         display: none;
     }
     .mobile_btn {
-       margin-right:10px;
-        font-size:8pt;
+        display:block;
+        margin-right:10px;
+        font-size:11pt;
         cursor: pointer;
-        display: block;
         float: right;
-        //margin-right: 15px;
         color: rgba(255, 255, 255, 0.8);
+        outline: none;
+        user-select: none;
     }
     .mobile_btn:hover {
         color: rgba(255, 255, 255, 1.0);
@@ -90,4 +82,30 @@
     -moz-box-shadow: 0px 1px 12px 3px rgba(0,0,0,0.5);
     box-shadow: 0px 1px 12px 3px rgba(0,0,0,0.5);
 }
+
+
+/* MAIN NAVBAR MENU*/
+.main_logo_bg {
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url("/../assets/logos/transcend_tri.svg");
+    background-size: 60%;
+}
+.gdit_bg {
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: 10% 98%;
+    background-image: url("/../assets/logos/gdit_logo_scale.svg");
+    background-size: 66%;
+}
+
+
+
+
+
+
+
+
+
 

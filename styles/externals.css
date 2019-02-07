@@ -1,0 +1,33 @@
+/* DIALOGS */
+.ui-dialog.ui-widget .ui-dialog-content {
+    height:100%;
+}
+
+
+
+/**************SLIDEOUTS*/
+
+.ui-widget {
+    font-family: Montserrat, sans-serif;
+}
+
+.ui-sidebar-close {
+    display: none;
+}
+
+.ui-sidebar {
+    padding: 0;
+}
+.ui-widget-content {
+    border:0;
+
+}
+/**************END SLIDEOUTS*/
+
+
+/**** PIE CHART RESPONSIVE FIX FOR DATA DISPLAY */
+
+
+.amcharts-legend-div {
+    background-color: rgba(255,255,255,.3);
+}

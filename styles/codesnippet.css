@@ -1,0 +1,98 @@
+/* DOCUMENT INFORMATION
+################################################
+                TRANSCEND BUTTONS
+################################################
+    - Type: CSS Flexbox
+	- Version:  3.0.0
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
+
+button.accordion {
+    color: #FFF;
+    cursor: pointer;
+    font-family: monospace;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight:bold;
+    margin:0;
+    background-color:#346273;
+    height:30px;
+
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #3b6f82;
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    float: right;
+    margin-right: 1px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: rgba(255, 255, 255, 0.9);
+}
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:#444;
+}
+
+.code_box{
+    flex:1;
+    padding:5px;
+}
+.codesnippet{
+    font-family: monospace;
+    padding:10px;
+    border:dashed green 1px;
+    color: greenyellow;
+    background-color:rgba(0,0,0,0.0);
+    min-height:175px;
+    resize: none;
+    overflow-y:auto;
+    width:100%;
+    white-space: nowrap;
+}
+.codesnippet:focus{
+    border:dashed green 1px;
+    outline-color: transparent;
+    outline-style: none;
+    box-shadow: none;
+}
+
+.swatch_container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.swatch{
+    margin:15px;
+    display:flex;
+    flex:1;
+    min-width:88px;
+    height:50px;
+    border: 3px solid #CCC;
+    justify-content: center;
+    align-items: center;
+}
+.swatch_title{
+    padding-top:5px;
+    text-align: center;
+    color:#FFF;
+    font-size:9pt;
+    text-transform: uppercase;
+    font-weight:500;
+}
+
+
+
+
