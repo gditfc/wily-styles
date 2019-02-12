@@ -84,7 +84,7 @@ nav{
 }
 
 
-/* MAIN NAVBAR MENU*/
+/* MAIN MENU*/
 .main_logo_bg {
     height:100%;
     background-repeat: no-repeat;
@@ -100,12 +100,99 @@ nav{
     background-size: 66%;
 }
 
+/* MAIN MENU ACCORDION */
+
+.menu_slideout {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, .45) 0, transparent 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, .45), transparent);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .45) 0, transparent);
+
+    border: 0;
+    min-width: 320px;
+    transition: all .3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu_slideout {
+        width: 100%
+    }
+}
 
 
 
+.menu_header {
+    display:flex;
+    min-height: 40px;
+    border-bottom: 3px solid rgba(50, 50, 50, .4);
+}
+
+.menu_title {
+    font-size: 14pt;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.menu_btn, .menu_title {
+    align-items: center;
+    display: flex;
+}
+
+.menu_btn {
+    background-color: rgba(50, 50, 50, .3);
+    border-bottom: 1px solid rgba(50, 50, 50, .3);
+    cursor: pointer;
+    font-size: 11pt;
+    min-height: 35px;
+    padding-left: 5px;
+    transition: all .3s ease;
+    user-select: none;
+    outline: none;
+    font-weight:500;
+
+}
+
+.menu_btn:hover {
+    padding-left: 8px;
+}
+
+.menu_btn:focus, .menu_btn:hover, .submenu_btn {
+    background-color: rgba(50, 50, 50, .4);
+}
+
+.submenu_btn {
+    background-color: rgba(50, 50, 50, .4);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 10pt;
+    min-height: 25px;
+    padding-left: 20px;
+    transition: all .3s ease;
+    user-select: none
+}
+
+.submenu_btn:hover {
+    background-color: rgba(50, 50, 50, .5);
+    padding-left: 25px
+}
+
+.menu_link {
+    padding-left: 5px
+}
+
+.menu_icon, .menu_link {
+    transition: all .3s ease
+}
+
+.menu_icon {
+    font-size: 12pt
+}
 
 
-
-
+.menu_accordion {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease
+}
 
 
