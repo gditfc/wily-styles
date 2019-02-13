@@ -95,7 +95,10 @@
     display:flex;
     justify-content: space-between;
 }
-
+.space_around{
+    display:flex;
+    justify-content: space-around;
+}
 /* SIZING BASED ON FLEX VALUES */
 
 .col_size_1{
@@ -109,7 +112,9 @@
 .min250{
     min-width: 250px;
 }
-
+.min280{
+    min-width: 280px;
+}
 
 
 .header{

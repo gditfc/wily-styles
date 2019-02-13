@@ -1,1 +1,15 @@
 /* HELP */
+
+.timeout_container {
+    height:110px;
+    text-align:center;
+}
+
+.timeout_countdown {
+    font-size: 24pt;
+    margin-bottom: 5px;
+}
+
+.timeout_ok_btn {
+    margin: 0 auto;
+}

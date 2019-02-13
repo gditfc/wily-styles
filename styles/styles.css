@@ -23,7 +23,7 @@ body {
 }
 .page-container {
     display:block;
-    border-radius:10px;
+    border-radius:5px;
     min-height:500px;
     min-width:280px;
     margin: 0 5px 5px;
