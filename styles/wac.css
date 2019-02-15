@@ -152,7 +152,10 @@
     min-height: 40px;
     font-size: 14pt;
 }
-
+.wac_help_subheader{
+    font-size:9pt;
+    padding:3px 15px;
+}
 .wac_icon_select_icon {
     display: flex;
     justify-content: center;

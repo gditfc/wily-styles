@@ -12,9 +12,12 @@
 
 .row{
     display:flex;
-    margin:5px;
-    border:1px solid rgba(0,0,0,0.1);
+}
+.row.rounded{
+    margin:4px;
+    padding:2px;
     border-radius:3px;
+    border:1px solid rgba(0,0,0,0.1);
     background-color: rgba(0,0,0,0.05);
 }
 .row_block{
@@ -25,20 +28,52 @@
 /* COLUMNS */
 .col{
     display:flex;
-    padding:5px;
-    margin:5px;
-    border:1px solid rgba(0,0,0,0.1);
-    border-radius:3px;
-    background-color: rgba(0,0,0,0.05);
+
 }
-.col_content{
-    width:100%;
-    height:250px;
-    padding:5px;
-    margin:0;
-    border:1px solid #CCC;
+
+/* SIZING BASED ON FLEX VALUES */
+.col.size_1{
+    flex:1;
+}
+.col.size_2{
+    flex:2;
+}
+.col.size_3{
+    flex:3;
+}
+.col.size_4{
+    flex:4;
+}
+.col.size_5{
+    flex:5;
+}
+.line_item{
+    background-color:#FFF;
+    border-bottom:1px solid #CCC;
+    cursor: pointer;
+    outline: none;
+    margin:1px;
+    padding:3px;
+}
+.line_item:hover{
+    background-color:#EFEFEF;
+    border-bottom:1px solid #CCC;
+}
+.cell{
+    display:flex;
+    flex:1;
+    font-size:10pt;
+    white-space: nowrap;
+    padding: 0 5px;
+    border:1px solid aliceblue;
+
+}
+.col.rounded{
+    margin:2px;
+    padding:4px;
     border-radius:3px;
-    background-color: rgba(255,255,255,0.8);
+    border:1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.85);
 }
 
 /* SCROLLING */
@@ -63,24 +98,25 @@
 }
 
 /* FLEX ALIGNMENTS */
-.center{
+.top_center{
     display:flex;
     justify-content: center;
 }
-.left{
+.top_left{
     display:flex;
     justify-content: flex-start;
 }
-.right{
+.top_right{
     display:flex;
     justify-content: flex-end;
 }
+
 .center_center{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100%;
 }
+
 .center_left{
     display:flex;
     justify-content: flex-start;
@@ -99,23 +135,34 @@
     display:flex;
     justify-content: space-around;
 }
-/* SIZING BASED ON FLEX VALUES */
-
-.col_size_1{
-    flex:1;
+.v_center{
+    display:flex;
+    align-items: center;
 }
-.col_size_2{
-    flex:2;
+.h_center{
+    display:flex;
+    justify-content: center;
 }
 
 /* MIN VALUE */
-.min250{
+.min_w250{
     min-width: 250px;
 }
-.min280{
+.min_w280{
     min-width: 280px;
 }
-
+.min_h50{
+    min-height: 50px;
+}
+.min_h100{
+    min-height: 100px;
+}
+.min_h150{
+    min-height: 150px;
+}
+.min_h250{
+    min-height: 250px;
+}
 
 .header{
     display:flex;

@@ -21,8 +21,8 @@ body {
     margin:40px auto 5px;
     width:100%;
 }
-.page-container {
-    display:block;
+.page_container {
+    display:flex;
     border-radius:5px;
     min-height:500px;
     min-width:280px;
