@@ -78,14 +78,14 @@ nav{
     height:100%;
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-image: url("/../assets/logos/transcend_tri.svg");
+    background-image: url("assets/logos/transcend_tri.svg");
     background-size: 60%;
 }
 .gdit_bg {
     height:100%;
     background-repeat: no-repeat;
     background-position: 10% 98%;
-    background-image: url("/../assets/logos/gdit_logo_scale.svg");
+    background-image: url("assets/logos/gdit_logo_scale.svg");
     background-size: 66%;
 }
 
@@ -95,9 +95,8 @@ nav{
     background: -moz-linear-gradient(top, rgba(0, 0, 0, .45) 0, transparent 100%);
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, .45), transparent);
     background: linear-gradient(180deg, rgba(0, 0, 0, .45) 0, transparent);
-
     border: 0;
-    min-width: 320px;
+    min-width: 300px;
     transition: all .3s ease;
 }
 
@@ -108,7 +107,11 @@ nav{
 }
 
 
-
+.menu_group{
+    margin:0;
+    border-radius:5px;
+    overflow: hidden;
+}
 .menu_header {
     display:flex;
     min-height: 40px;

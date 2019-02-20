@@ -140,9 +140,8 @@
     margin: 0 3px;
     border-radius: 20px;
 }
-
-/* HELP */
-.wac_help_header {
+/* DIALOG */
+.wac_dialog_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,12 +149,34 @@
     padding: 5px;
     border-left: 5px solid rgba(255, 255, 255, 0.3);
     min-height: 40px;
+}
+.wac_dialog_header_title{
     font-size: 14pt;
+    font-weight:500;
 }
-.wac_help_subheader{
+.wac_dialog_container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+.wac_dialog_content {
+    flex: 1 1 auto;
+}
+/* HELP */
+.wac_help_description{
     font-size:9pt;
-    padding:3px 15px;
+    padding:3px 5px;
 }
+.wac_help_text{
+    padding:10px;
+}
+.wac_help_notavail{
+    font-size:16pt;
+}
+
+
+
+
 .wac_icon_select_icon {
     display: flex;
     justify-content: center;
@@ -182,19 +203,12 @@
     padding: 0;
     height: 100%;
 }
-.wac_dialog_container {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-.wac_dialog_content {
-    flex: 1 1 auto;
-}
+
 .wac_photo_id_round {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    background-image: url(/../assets/images/noavatar.png);
+    background-image: url(assets/images/noavatar.png);
     background-size: 105%;
     background-position: center center;
     background-repeat: no-repeat;
