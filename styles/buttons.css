@@ -30,6 +30,7 @@ button:focus {
     font-weight:300;
     cursor:pointer;
     opacity:1;
+    font-family: Montserrat, sans-serif;
 }
 
 /****** BUTTON ATTRIBUTES */
@@ -110,6 +111,7 @@ button:focus {
     border-radius:50%;
     color:#FFF;
     --hover: #FFF;
+    font-family: Montserrat, sans-serif;
 }
 .btn_pulse.xsm{
     margin:1px;
@@ -119,8 +121,8 @@ button:focus {
 }
 .btn_pulse.sm{
     margin:2px;
-    height:30px;
-    width:30px;
+    height:28px;
+    width:28px;
     font-size:10pt;
 }
 .btn_pulse.md{

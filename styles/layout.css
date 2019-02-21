@@ -9,7 +9,11 @@
 */
 
 
-
+.row_group{
+    display:block;
+    width:100%;
+    height:100%;
+}
 .row{
     display:flex;
 }
@@ -17,17 +21,24 @@
     margin:4px;
     padding:2px;
     border-radius:3px;
-    border:1px solid rgba(0,0,0,0.1);
-    background-color: rgba(0,0,0,0.05);
 }
-.row_group{
-    display:block;
-    width:100%;
-    height:100%;
+.row.color{
+    border:1px solid #DEDEDE;
+    background-color: #EFEFEF;
 }
+
 /* COLUMNS */
 .col{
     display:flex;
+}
+.col.rounded{
+    margin:2px;
+    padding:4px;
+    border-radius:3px;
+}
+.col.color{
+    border:1px solid #DEDEDE;
+    background-color: #FFFFFF;
 }
 
 /* SIZING BASED ON FLEX VALUES */
@@ -67,13 +78,7 @@
     border:1px solid aliceblue;
 
 }
-.col.rounded{
-    margin:2px;
-    padding:4px;
-    border-radius:3px;
-    border:1px solid rgba(0,0,0,0.1);
-    background-color: rgba(255,255,255,0.85);
-}
+
 
 /* SCROLLING */
 

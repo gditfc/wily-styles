@@ -1,23 +1,22 @@
 
 /************ SCROLLBAR STYLES */
-
 ::-webkit-scrollbar
 {
-    width: 13px;  /* for vertical scrollbars */
-    height: 13px; /* for horizontal scrollbars */
+    width: 8px;  /* for vertical scrollbars */
+    height: 8px; /* for horizontal scrollbars */
 }
 ::-webkit-scrollbar-track
 {
     background: rgba(0, 0, 0, 0.3);
-
 }
 ::-webkit-scrollbar-thumb
 {
-    border: rgba(255, 255, 255, 0.3) solid 1px;
-    background: rgba(255, 255, 255, 0.3);
+    border-radius:3px;
+    border: rgba(255, 255, 255, 0.1) solid 1px;
+    background-color:rgba(0, 0, 0, 0.4)
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background-color:rgba(0, 0, 0, 0.5)
 }
 /************ END SCROLLBAR STYLES */
 
@@ -25,12 +24,8 @@
 
 /* SHADOWS  */
 .shadow{
-    -webkit-box-shadow: 0 6px 14px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 6px 14px -6px rgba(0,0,0,0.75);
     box-shadow: 0 6px 14px -6px rgba(0,0,0,0.75);
 }
 .page_shadow {
-    -webkit-box-shadow: 0 10px 26px -11px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 10px 26px -11px rgba(0, 0, 0, 0.75);
     box-shadow: 0 10px 26px -11px rgba(0, 0, 0, 0.75);
 }
