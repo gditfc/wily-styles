@@ -1,1 +1,28 @@
 /* FORMS */
+
+.fullwidth_input{
+    box-sizing:border-box;
+    width:100%;
+    padding:5px 15px;
+    font-family: Montserrat, sans-serif;
+    border-radius:3px;
+    border:1px solid rgba(50,50,50,0.2);
+    font-size:11pt;
+}
+.fullwidth_textarea{
+    box-sizing:border-box;
+    width:100%;
+    resize:none;
+    padding:5px 15px;
+    font-family: Montserrat, sans-serif;
+    border-radius:3px;
+    border:1px solid rgba(50,50,50,0.2);
+    min-height:50px;
+    font-size:11pt;
+}
+.form_label{
+    font-size:10pt;
+    font-weight:500;
+    padding:2px 0;
+    text-transform: uppercase;
+}

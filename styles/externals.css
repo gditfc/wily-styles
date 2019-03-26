@@ -65,14 +65,12 @@
     box-sizing: border-box;
 }
 
-
 .ui-inputtext {
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    font-size: 11pt;
+    font-family: Montserrat,sans-serif;
+    font-size: 10pt;
     flex: 1;
     color: #585858;
     margin: 0;
-    padding: 2px 12px;
+    padding: 2px 5px;
 }

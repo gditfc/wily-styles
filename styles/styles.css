@@ -24,13 +24,14 @@ body {
 .page_container {
     display:flex;
     border-radius:5px;
-    min-height:500px;
+    min-height:450px;
     min-width:280px;
     margin: 10px 5px 5px;
     overflow: hidden;
+    padding:5px;
 }
 .page_container.gradient{
-    background: linear-gradient(170deg, rgba(255,255,255,0.2) 0%,rgba(128,128,128,0) 50%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%,rgba(128,128,128,0) 50%,rgba(0,0,0,0.1) 100%);
 }
 /************ END HTML BODY SETUP */
 
