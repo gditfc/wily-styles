@@ -9,9 +9,17 @@
 */
 
 
+/* SIMPLE 100% */
+.height100{
+    height:100%;
+}
+.width100{
+    width:100%;
+}
+
+/* ROWS */
 .row_block{
     display:block;
-    width:100%;
 }
 .row{
     display:flex;
@@ -20,11 +28,9 @@
 .row.rounded{
     margin:4px;
     padding:2px;
-    border-radius:3px;
 }
 .row.column{
     flex-direction: column;
-    width:100%;
 }
 
 /* COLUMNS */
@@ -34,11 +40,12 @@
 .col.rounded{
     margin:2px;
     padding:4px;
-    border-radius:3px;
+}
+.col.column{
+    flex-direction: column;
 }
 
-
-/* SIZING BASED ON FLEX VALUES */
+/* COLUMN SIZING BASED ON FLEX VALUES */
 .col.size_1{
     flex:1;
 }
@@ -70,11 +77,14 @@
     flex:10;
 }
 /* BORDERS */
-.border_3{
+.brad_3{
     border-radius:3px;
 }
-.border_5{
+.brad_5{
     border-radius:5px;
+}
+.brad_10{
+    border-radius:10px;
 }
 
 /* MARGINS AND PADDING */
@@ -87,6 +97,24 @@
 .mar_10{
     margin:10px;
 }
+.mar_bot5{
+    margin-bottom: 5px;
+}
+.mar_bot10{
+    margin-bottom: 10px;
+}
+.mar_bot15{
+     margin-bottom: 15px;
+ }
+.mar_top5{
+    margin-top: 5px;
+}
+.mar_top10{
+    margin-top: 10px;
+}
+.mar_top15{
+    margin-top: 15px;
+}
 .pad_3{
     padding:3px;
 }
@@ -96,7 +124,20 @@
 .pad_10{
     padding:10px;
 }
+.pad_15{
+    padding:15px;
+}
 
+/* BASIC TEXT ALIGNMENTS */
+.text_center{
+    text-align: center;
+}
+.text_left{
+    text-align: left;
+}
+.text_right{
+    text-align: right;
+}
 /* SCROLLING */
 
 .scroll_y{
@@ -140,7 +181,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .center_left{
     display:flex;
     justify-content: flex-start;
@@ -172,13 +212,27 @@
     justify-content: center;
 }
 
-/* MIN VALUE */
+/* MIN WIDTH VALUES */
+.min_w50{
+    min-width: 50px;
+}
+.min_w100{
+    min-width: 100px;
+}
+.min_w150{
+    min-width: 150px;
+}
+.min_w200{
+    min-width: 200px;
+}
 .min_w250{
     min-width: 250px;
 }
 .min_w280{
     min-width: 280px;
 }
+
+/* MIN HEIGHT VALUES */
 .min_h50{
     min-height: 50px;
 }
@@ -200,6 +254,8 @@
 .min_h400{
     min-height: 400px;
 }
+
+/* OPACITY BASED BARS FOR TOP LEFT HEADERS */
 .bar_1{
     background-color:rgba(255,255,255,0.1);
     width:5px;
@@ -213,36 +269,91 @@
     width:5px;
 }
 
-
-/************** END HEADER TO END ALL HEADERS */
-
-.inline_header{
+/* RESPONSIVE HEADERS */
+.header{
     display:flex;
     align-items: center;
-    min-height:40px;
-    border-bottom:3px solid rgba(50,50,50,0.4);
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding:2px 20px;
+    outline:none;
+    box-sizing: border-box;
+    user-select: none;
+    transition:all 0.3s ease-in-out;
 }
-.title_box{
-    display: inline-flex;
-    flex-wrap: wrap;
-    min-height:40px;
+.header.xlg{
+    font-size:28pt;
+    min-height:45px;
 }
-.inline_title{
-    display: flex;
-    color:#FFF;
-    font-weight: 400;
-    font-size: 16pt;
-    align-items: center;
+.header.xlg.round{
+    border-radius: 45px;
 }
-.inline_icon{
-    display: flex;
-    padding: 0 10px;
-    align-items: center;
-    color:#FFF;
+.header.lg{
+    font-size:22pt;
+    min-height:35px;
+}
+.header.lg.round{
+    border-radius: 35px;
+}
+.header.md{
+    font-size:16pt;
+    min-height:25px;
+}
+.header.md.round{
+    border-radius: 25px;
+}
+.header.sm{
+    font-size:12pt;
+    min-height:21px;
+}
+.header.sm.round{
+    border-radius: 21px;
+}
+.header.xsm{
+    font-size:10pt;
+    min-height:17px;
+}
+.header.xsm.round{
+    border-radius: 17px;
+}
+.header.lighter{
+    font-weight:100;
+}
+.header.light{
+    font-weight:200;
+}
+.header.bold{
+    font-weight:500;
+}
+.header.bolder{
+    font-weight:700;
+}
+@media (max-width: 768px) {
+    .header{
+        padding:2px 10px;
+    }
+    .header.xlg{
+        font-size:16pt;
+        min-height:30px;
+    }
+    .header.lg{
+        font-size:14pt;
+        min-height:25px;
+    }
+    .header.md{
+        font-size:12pt;
+        min-height:20px;
+    }
+    .header.sm{
+        font-size:11pt;
+        min-height:20px;
+    }
+    .header.xsm{
+        font-size:10pt;
+    }
 }
 
-/*** HEADER FOOTER COLOR BAR */
+/*** HEADER AND FOOTER COLOR BAR */
 .color_bar{
     display:flex;
     justify-content:flex-end;

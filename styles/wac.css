@@ -137,12 +137,9 @@
 /* DIALOG */
 .wac_dialog_header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 5px;
+    padding: 3px 10px;
     border-left: 5px solid rgba(255, 255, 255, 0.3);
-    min-height: 40px;
+    min-height: 35px;
 }
 .wac_dialog_header_title{
     font-size: 14pt;
@@ -158,11 +155,14 @@
 }
 /* HELP */
 .wac_help_description{
-    font-size:9pt;
-    padding:3px 5px;
+    font-size:11pt;
+    padding:3px 15px;
+    width:100%;
+    font-weight:500;
 }
 .wac_help_text{
-    padding:10px;
+    font-size:11pt;
+    padding:10px 15px;
 }
 .wac_help_notavail{
     font-size:16pt;
