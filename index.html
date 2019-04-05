@@ -236,7 +236,13 @@
                 var style = document.createElement('style');
 
                 if (themes.length > 0) {
-                    var theme = themes[0];
+                    var theme = null;
+                    for (var i = 0; i < themes.length; i++) {
+                        if (themes[i].isDefault === 'Y') {
+                            theme = themes[i];
+                        }
+                    }
+
                     for (var j = 0; j < Object.keys(theme).length; j++) {
                         var prop = Object.keys(theme)[j];
                         if (prop.toLowerCase().includes('bg') || prop.toLowerCase().includes('color')) {
@@ -246,20 +252,17 @@
                             prop = prop.split(/(?=[A-Z])/).join('_').toLowerCase();
                             style.appendChild(document.createTextNode('.' + prop + '{background-color: ' + color + ';' + (prop.toLowerCase().includes('bg') ? 'color: #FFF;' : '') + '}'));
                         }
-
-                        style.appendChild(document.createTextNode('.overlay{' + theme.overlayStyle + '}'));
-                        style.appendChild(document.createTextNode('.overlay_alt1{' + theme.overlayStyleAlt1 + '}'));
-                        style.appendChild(document.createTextNode('.overlay_alt2{' + theme.overlayStyleAlt2 + '}'));
                     }
+
+                    style.appendChild(document.createTextNode('.overlay{' + theme.overlayStyle + '}'));
+                    style.appendChild(document.createTextNode('.overlay_alt1{' + theme.overlayStyleAlt1 + '}'));
+                    style.appendChild(document.createTextNode('.overlay_alt2{' + theme.overlayStyleAlt2 + '}'));
 
                     var head = document.head || document.getElementsByTagName('head')[0];
                     head.appendChild(style);
                 }
             });
 
-        </script>
-
-        <script>
             function clickCopy(elementId) {
                 var copyText = document.getElementById(elementId);
                 copyText.select();
