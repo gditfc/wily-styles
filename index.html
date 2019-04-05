@@ -244,9 +244,12 @@
                             // console.log(prop, color);
 
                             prop = prop.split(/(?=[A-Z])/).join('_').toLowerCase();
-                            style.appendChild(document.createTextNode('.' + prop + '{background-color: ' + color + '}'));
                             style.appendChild(document.createTextNode('.' + prop + '{background-color: ' + color + ';' + (prop.toLowerCase().includes('bg') ? 'color: #FFF;' : '') + '}'));
                         }
+
+                        style.appendChild(document.createTextNode('.overlay{' + theme.overlayStyle + '}'));
+                        style.appendChild(document.createTextNode('.overlay_alt1{' + theme.overlayStyleAlt1 + '}'));
+                        style.appendChild(document.createTextNode('.overlay_alt2{' + theme.overlayStyleAlt2 + '}'));
                     }
 
                     var head = document.head || document.getElementsByTagName('head')[0];
