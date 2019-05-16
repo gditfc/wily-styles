@@ -168,6 +168,7 @@ button:focus {
 }
 .app_btn:hover .app_btn_middle{
     opacity: 1;
+    visibility:visible;
     transform: scale(1.0,1.0);
 }
 .app_btn_middle {
@@ -175,6 +176,7 @@ button:focus {
     transition: 0.2s ease-in-out;
     opacity: 0;
     position: absolute;
+    visibility:hidden;
 }
 .app_btn_middle_text {
     transform: translateY(-2px);
