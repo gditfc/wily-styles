@@ -1,251 +1,494 @@
 <html xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Transcend Styles</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
-            integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
-            crossorigin="anonymous"></script>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Transcend Styles</title>
+        <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+                integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+                crossorigin="anonymous"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--
-    <link rel="stylesheet" type="text/css" href="transcend.css" />
-    -->
-    <link rel="stylesheet" type="text/css" href="styles/backgrounds.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/buttons.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/colors.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/codesnippet.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/effects.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/forms.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/help.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/layout.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/montserrat.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/navigation.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/theme.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/wac.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/z_atmedia.css"/>
-</head>
-<body>
+        <!--
+        <link rel="stylesheet" type="text/css" href="transcend.css" />
+        -->
+        <link rel="stylesheet" type="text/css" href="styles/backgrounds.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/buttons.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/colors.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/codesnippet.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/effects.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/forms.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/help.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/layout.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/montserrat.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/navigation.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/theme.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/wac.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/z_atmedia.css"/>
+    </head>
 
+    <body class="body_color">
 
-<div>
-
-    <!-- CODE DISPLAY WINDOW -->
-    <div class="row_block" style="position: fixed;">
-        <button class="accordion">TRANSCEND STYLE GUIDE</button>
-        <div class="panel shadow">
-            <div class="code_box">
-                <textarea class="codesnippet">
-      /* DOCUMENT INFORMATION
-    ################################################
-                    TRANSCEND STYLE GUIDE
-    ################################################
-        - Type: CSS Flexbox
-        - Version:  3.0.0
-        - Division: GDIT - MMIS Modernization Team
-        - Author:   Terry Sinay
-    */
-                </textarea>
-                <!--
-                <button class="btn sm t_go" style="float:right;margin:10px;" onclick="clickCopy('codesnippet_1')">COPY TO CLIPBOARD</button>
-                -->
-            </div>
+        <!-- page header/title -->
+        <div class="h_center mar_10" id="header" value="header" onclick="clickCopy(header)">
+            <div class="header bg_red round xlg">Transcend Style Guide</div>
         </div>
-    </div>
-    <!-- CODE DISPLAY WINDOW -->
 
-    <div style="display:flex;justify-content: center;padding-top:30px;">
+        <!-- SECTION 1 - Colors -->
+        <div class="mar_10 brad_5 page_shadow page_container_color" style="border: 1px solid lightgray;">
 
-        <div style="width:100%;margin:0 15px;" class="big_shadow">
-            <div class="row wrap">
-                <div class="col col_size_1 min250">
-                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
-                </div>
-                <div class="col col_size_1 min250">
-                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
-                </div>
-                <div class="col col_size_1 min250">
-                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
-                </div>
-            </div>
-            <div class="row wrap">
-                <div class="col col_size_1 min250">
-                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
-                </div>
-                <div class="col col_size_1 min250">
-                    <div class="col_content center_center"><i class="fa fa-rocket fa-4x" style="color:#CCC;"></i></div>
-                </div>
-            </div>
+            <!-- main colors container-->
+            <div class="overlay_alt1 brad_5 mar_10 pad_10">
 
-            <div class="row">
-                <div class="col col_size_1 wrap">
-                    <div class="swatch t_blue">
-                        <div class="swatch_title">t_blue<br/>#628396</div>
-                    </div>
-                    <div class="swatch t_red">
-                        <div class="swatch_title">t_red<br/>#985660</div>
-                    </div>
-                    <div class="swatch t_yellow">
-                        <div class="swatch_title">t_yellow<br/>#B7B933</div>
-                    </div>
-                    <div class="swatch t_green">
-                        <div class="swatch_title">t_green<br/>#468459</div>
-                    </div>
-                    <div class="swatch t_purple">
-                        <div class="swatch_title">t_purple<br/>#894870</div>
-                    </div>
+                <!-- header -->
+                <div class="h_center mar_bot10">
+                    <div class="header md bg_blue round">Colors - Main</div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col col_size_1 wrap">
-                    <div class="swatch t_bluesteel">
-                        <div class="swatch_title">t_bluesteel<br/>#466373</div>
-                    </div>
-                    <div class="swatch t_megaman">
-                        <div class="swatch_title">t_megaman<br/>#05ABE0</div>
-                    </div>
-                    <div class="swatch t_go">
-                        <div class="swatch_title">t_go<br/>#4bb642</div>
-                    </div>
-                    <div class="swatch t_grey">
-                        <div class="swatch_title">t_grey<br/>#AAAAAA</div>
-                    </div>
-                    <div class="swatch t_cancel">
-                        <div class="swatch_title">t_cancel<br/>#888888</div>
-                    </div>
-                    <div class="swatch t_stop">
-                        <div class="swatch_title">t_stop<br/>#05ABE0</div>
-                    </div>
-                    <div class="swatch t_progress">
-                        <div class="swatch_title">t_progress<br/>#9e9c7a</div>
-                    </div>
-                    <div class="swatch t_info">
-                        <div class="swatch_title">t_info<br/>#7e5966</div>
-                    </div>
-                    <div class="swatch t_warning">
-                        <div class="swatch_title">t_warning<br/>#988656</div>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="content_container">
+                <!-- colors -->
                 <div class="row wrap">
-                    <div class="col col_size_1 center_center">
-                        <button class="btn sm t_megaman">OK</button>
-                        <button class="btn sm t_go">GO</button>
-                    </div>
-                    <div class="col col_size_1 center_center">
-                        <button class="btn md t_megaman">OK</button>
-                        <button class="btn md t_go">GO</button>
-                    </div>
-                    <div class="col col_size_1 center_center">
-                        <button class="btn lg t_megaman">OK</button>
-                        <button class="btn lg t_go">GO</button>
-                    </div>
-                </div>
-                <div class="row wrap">
-                    <div class="col col_size_1 center_center">
-                        <button class="btn_pulse xsm bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse sm bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse md bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse lg bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse md bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse sm bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse xsm bg_blue"><i class="fa fa-rocket fa-fw"></i></button>
-                    </div>
-                </div>
-                <div class="row wrap">
-                    <div class="col col_size_1 center_center">
-                        <button class="btn_pulse xsm bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse sm bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse md bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse lg bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse md bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse sm bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                        <button class="btn_pulse xsm bg_red"><i class="fa fa-rocket fa-fw"></i></button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-
-                <div class="t_purple space_between col_size_1">
-                    <div class="title_box">
-                        <div class="bar_1"></div>
-                        <div class="bar_2"></div>
-                        <div class="bar_3"></div>
-                        <div class="inline_icon"><i class="fa fa-camera-retro fa-lg"></i></div>
-                        <div class="inline_title">Inline Header</div>
-                    </div>
-                    <div class="inline_icon"><i class="fa fa-question-circle fa-lg"></i></div>
+                    <div class="col mar_5 size_1 brad_5 bg_red min_w100 min_h50 center_center">bg_red</div>
+                    <div class="col mar_5 size_1 brad_5 bg_orange min_w100 min_h50 center_center">bg_orange</div>
+                    <div class="col mar_5 size_1 brad_5 bg_yellow min_w100 min_h50 center_center">bg_yellow</div>
+                    <div class="col mar_5 size_1 brad_5 bg_green min_w100 min_h50 center_center">bg_green</div>
+                    <div class="col mar_5 size_1 brad_5 bg_blue min_w100 min_h50 center_center">bg_blue</div>
+                    <div class="col mar_5 size_1 brad_5 bg_purple min_w100 min_h50 center_center">bg_purple</div>
+                    <div class="col mar_5 size_1 brad_5 bg_brown min_w100 min_h50 center_center">bg_brown</div>
+                    <div class="col mar_5 size_1 brad_5 bg_grey min_w100 min_h50 center_center">bg_grey</div>
                 </div>
 
             </div>
+            <!-- END main colors -->
+
+            <!-- alt colors container-->
+            <div class="overlay_alt1 brad_5 mar_10 pad_10">
+
+                <!-- header -->
+                <div class="h_center mar_bot10">
+                    <div class="header md bg_blue round">Colors - Alternate</div>
+                </div>
+
+                <!-- colors -->
+                <div class="row wrap">
+                    <div class="col mar_5 size_1 brad_5 bg_red_alt min_w150 min_h50 center_center">bg_red_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_orange_alt min_w150 min_h50 center_center">bg_orange_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_yellow_alt min_w150 min_h50 center_center">bg_yellow_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_green_alt min_w150 min_h50 center_center">bg_green_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_blue_alt min_w150 min_h50 center_center">bg_blue_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_purple_alt min_w150 min_h50 center_center">bg_purple_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_brown_alt min_w150 min_h50 center_center">bg_brown_alt</div>
+                    <div class="col mar_5 size_1 brad_5 bg_grey_alt min_w150 min_h50 center_center">bg_grey_alt</div>
+                </div>
+
+            </div>
+            <!-- END alt colors -->
+
+            <!-- structural colors container-->
+            <div class="overlay_alt1 brad_5 mar_10 pad_10">
+
+                <!-- header -->
+                <div class="h_center mar_bot10">
+                    <div class="header md bg_blue round">Colors - Structural</div>
+                </div>
+
+                <!-- colors -->
+                <div class="row wrap">
+                    <div class="col mar_5 size_1 brad_5 nav_color min_w150 min_h50 center_center">nav_color</div>
+                    <div class="col mar_5 size_1 brad_5 footer_color min_w150 min_h50 center_center">footer_color</div>
+                    <div class="col mar_5 size_1 brad_5 body_color min_w150 min_h50 center_center">body_color</div>
+                    <div class="col mar_5 size_1 brad_5 menu_color min_w150 min_h50 center_center">menu_color</div>
+                    <div class="col mar_5 size_1 brad_5 page_container_color min_w200 min_h50 center_center">page_container_color</div>
+                    <div class="col mar_5 size_1 brad_5 push_container_color min_w200 min_h50 center_center">push_container_color</div>
+                </div>
+
+            </div>
+            <!-- END structural colors -->
+
+            <!-- overlay colors container-->
+            <div class="overlay_alt1 brad_5 mar_10 pad_10">
+
+                <!-- header -->
+                <div class="h_center mar_bot10">
+                    <div class="header md bg_blue round">Colors - Overlay</div>
+                </div>
+
+                <!-- colors -->
+                <div class="row wrap">
+                    <div class="col mar_5 size_1 brad_5 overlay min_w150 min_h50 center_center">overlay</div>
+                    <div class="col mar_5 size_1 brad_5 overlay_alt1 min_w150 min_h50 center_center">overlay_alt1</div>
+                    <div class="col mar_5 size_1 brad_5 overlay_alt2 min_w150 min_h50 center_center">overlay_alt2</div>
+                    <div class="col mar_5 size_1 brad_5 dialog_header_color min_w150 min_h50 center_center">dialog_header_color</div>
+                    <div class="col mar_5 size_1 brad_5 dialog_body_color min_w150 min_h50 center_center">dialog_body_color</div>
+                </div>
+
+            </div>
+            <!-- END overlay colors -->
+
         </div>
-    </div>
-    <div style="display: flex;height:50px;align-items: center;justify-content: center;color:#FFF;background-color: #BBBBBB;">
-        <img src="assets/logos/csra_logo_foot.png" alt="CSRA Transcend">
-        <strong>&nbsp;<script type="text/javascript">var year = new Date();
-        document.write(year.getFullYear());</script>
-        </strong>
-    </div>
-</div>
+        <!-- END SECTION 1 -->
 
+        <!-- SECTION 2 - headers -->
+        <div class="mar_10 mar_top15 brad_5 page_shadow page_container_color" style="border: 1px solid lightgray;">
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+            <!-- header -->
+            <div class="h_center mar_bot10 mar_top15">
+                <div class="header lg bg_green round">Headers</div>
+            </div>
+            <div class="h_center text_center mar_bot10 pad_3">
+                Headers automatically scale down below the 768px breakpoint
+            </div>
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        }
-    }
+            <!-- columns container -->
+            <div class="row wrap mar_5">
 
-    $.ajax({
-        url: 'http://ndimola-2:8080/appmgmt/api/public/products/app_management/themes',
-        method: 'GET'
-    }).done(function(result) {
-        var themes = result.data;
-        var style = document.createElement('style');
+                <!-- header sizes -->
+                <div class="col size_1 min_w250 h_center overlay mar_5 pad_5 brad_5">
+                    <div class="overlay_alt1 pad_10 brad_5 width100">
+                        <div class="header md bg_green round mar_bot10">Headers - Sizes</div>
+                        <div class="header xsm">Header - Extra Small</div>
+                        <div class="header sm">Header - Small</div>
+                        <div class="header md">Header - Medium</div>
+                        <div class="header lg">Header - Large</div>
+                        <div class="header xlg">Header - Extra Large</div>
+                    </div>
+                </div>
 
-        if (themes.length > 0) {
-            var theme = themes[0];
-            for (var j = 0; j < Object.keys(theme).length; j++) {
-                var prop = Object.keys(theme)[j];
-                if (prop.toLowerCase().includes('bg') || prop.toLowerCase().includes('color')) {
-                    var color = theme[prop].startsWith('#') ? theme[prop] : '#' + theme[prop];
-                    // console.log(prop, color);
+                <!-- header weights -->
+                <div class="col size_1 min_w250 h_center overlay mar_5 pad_5 brad_5">
+                    <div class="overlay_alt1 pad_10 brad_5 width100">
+                        <div class="header md bg_green round mar_bot10">Headers - Weights</div>
+                        <div class="header lighter">Header - Lighter</div>
+                        <div class="header light">Header - Light</div>
+                        <div class="header">Header - Normal</div>
+                        <div class="header bold">Header - Bold</div>
+                        <div class="header bolder">Header - Bolder</div>
+                    </div>
+                </div>
 
-                    prop = prop.split(/(?=[A-Z])/).join('_').toLowerCase();
-                    style.appendChild(document.createTextNode('.' + prop + '{background-color: ' + color + '}'));
+                <!-- header backgrounds -->
+                <div class="col size_1 min_w250 h_center overlay mar_5 pad_5 brad_5">
+                    <div class="overlay_alt1 pad_10 brad_5 width100">
+                        <div class="header md bg_green round mar_bot10">Headers - Backgrounds</div>
+                        <div class="header sm mar_5 bg_yellow">Placing a background behind a header</div>
+                        <div class="header sm mar_5 bg_yellow round">Rounding the edges of a header background</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END SECTION 2 -->
+
+        <!-- SECTION 3 - buttons -->
+        <div class="mar_10 mar_top15 brad_5 page_shadow page_container_color" style="border: 1px solid lightgray;">
+
+            <!-- header -->
+            <div class="h_center mar_bot10 mar_top15">
+                <div class="header lg bg_purple round">Buttons</div>
+            </div>
+
+            <!-- columns container -->
+            <div class="row wrap mar_5">
+
+                <!-- buttons - regular -->
+                <div class="col size_1 min_w250 h_center overlay mar_5 pad_5 brad_5">
+                    <div class="overlay_alt1 pad_10 width100">
+                        <div class="header md bg_purple round mar_bot10">Buttons - Regular</div>
+
+                        <button class="btn sm bg_blue">Small Button</button>
+                        <button class="btn md bg_blue">Medium Button</button>
+                        <button class="btn lg bg_blue">Large Button</button>
+
+                        <button class="btn md grow bg_blue">Grow Button</button>
+                        <button class="btn md underline bg_blue">Underline Button</button>
+                        <a class="fun_lnk">Fun Button</a>
+                    </div>
+                </div>
+
+                <!-- buttons - app -->
+                <div class="col size_1 min_w250 h_center overlay mar_5 pad_5 brad_5">
+                    <div class="overlay_alt1 pad_10 width100">
+                        <div class="header md bg_purple round mar_bot10">Buttons - App</div>
+                        <div class="app_btn">App Button</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SECTION 4 - layout -->
+        <div class="mar_10 mar_top15 brad_5 page_shadow page_container_color" style="border: 1px solid lightgray;">
+
+            <!-- header -->
+            <div class="h_center mar_bot10 mar_top15">
+                <div class="header lg bg_grey round">Layout</div>
+            </div>
+
+            <!-- container - sizes -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Column Sizes</div>
+                    </div>
+
+                    <!-- column sizes -->
+                    <div class="row wrap">
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_h100 center_center">size_1</div>
+                        <div class="col size_2 mar_5 brad_5 bg_grey min_h100 center_center">size_2</div>
+                        <div class="col size_3 mar_5 brad_5 bg_grey min_h100 center_center">size_3</div>
+                        <div class="col size_4 mar_5 brad_5 bg_grey min_h100 center_center">size_4</div>
+                        <div class="col size_5 mar_5 brad_5 bg_grey min_h100 center_center">size_5</div>
+                        <div class="col size_6 mar_5 brad_5 bg_grey min_h100 center_center">size_6</div>
+                        <div class="col size_7 mar_5 brad_5 bg_grey min_h100 center_center">size_7</div>
+                        <div class="col size_8 mar_5 brad_5 bg_grey min_h100 center_center">size_8</div>
+                        <div class="col size_9 mar_5 brad_5 bg_grey min_h100 center_center">size_9</div>
+                        <div class="col size_10 mar_5 brad_5 bg_grey min_h100 center_center">size_10</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container - min widths -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Minimum Widths</div>
+                    </div>
+
+                    <!-- column sizes -->
+                    <div class="row wrap">
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w50 min_h100 center_center">min_w50</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 center_center">min_w100</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w150 min_h100 center_center">min_w150</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w200 min_h100 center_center">min_w200</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w250 min_h100 center_center">min_w250</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w280 min_h100 center_center">min_w280</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container - min heights -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Minimum Heights</div>
+                    </div>
+
+                    <!-- column sizes -->
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h50 center_center">min_h50</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h100 center_center">min_h100</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h150 center_center">min_h150</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h250 center_center">min_h250</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h300 center_center">min_h300</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h350 center_center">min_h350</div>
+                    <div class="mar_5 brad_5 bg_grey min_w100 min_h400 center_center">min_h400</div>
+
+                </div>
+            </div>
+
+            <!-- container - margins -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Margins and Padding</div>
+                    </div>
+
+                    <div class="row wrap">
+
+                        <!-- regular margins -->
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_3">mar_3</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_5">mar_5</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_10">mar_10</div>
+                            </div>
+                        </div>
+
+                        <!-- bottom margins -->
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_bot5">mar_bot5</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_bot10">mar_bot10</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_bot15">mar_bot15</div>
+                            </div>
+                        </div>
+
+                        <!-- top margins -->
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_top5">mar_top5</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_top10">mar_top10</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey mar_top15">mar_top15</div>
+                            </div>
+                        </div>
+
+                        <!-- padding -->
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey pad_3">pad_3</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey pad_5">pad_5</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey pad_10">pad_10</div>
+                            </div>
+                        </div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 center_center">
+                            <div class="overlay_alt1">
+                                <div class="bg_grey pad_15">pad_15</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Alignment</div>
+                    </div>
+
+                    <!-- alignments -->
+                    <div class="row wrap">
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 top_center">top_center</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 top_left">top_left</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 top_right">top_right</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 center_center">center_center</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 center_left">center_left</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 center_right">center_right</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 v_center">v_center</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 h_center">h_center</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container -->
+            <div class="overlay brad_5 pad_5 mar_10">
+                <div class="overlay_alt1 brad_5 pad_10">
+
+                    <!-- header -->
+                    <div class="h_center mar_bot10">
+                        <div class="header md bg_grey round">Border Radius's</div>
+                    </div>
+
+                    <!-- radius's -->
+                    <div class="row wrap">
+                        <div class="col size_1 mar_5 brad_3 bg_grey min_w100 min_h10 center_center">brad_3</div>
+                        <div class="col size_1 mar_5 brad_5 bg_grey min_w100 min_h100 center_center">brad_5</div>
+                        <div class="col size_1 mar_5 brad_10 bg_grey min_w100 min_h100 center_center">brad_10</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
                 }
             }
 
-            var head = document.head || document.getElementsByTagName('head')[0];
-            head.appendChild(style);
-        }
-    });
+            $.ajax({
+                url: 'http://ndimola-2:8080/appmgmt/api/public/products/app_management/themes',
+                method: 'GET'
+            }).done(function(result) {
+                var themes = result.data;
+                var style = document.createElement('style');
 
-</script>
+                if (themes.length > 0) {
+                    var theme = null;
+                    for (var i = 0; i < themes.length; i++) {
+                        if (themes[i].isDefault === 'Y') {
+                            theme = themes[i];
+                        }
+                    }
 
-<script>
-    function clickCopy(elementId) {
-        var copyText = document.getElementById(elementId);
-        copyText.select();
-        document.execCommand("Copy");
-    }
-</script>
+                    for (var j = 0; j < Object.keys(theme).length; j++) {
+                        var prop = Object.keys(theme)[j];
+                        if (prop.toLowerCase().includes('bg') || prop.toLowerCase().includes('color')) {
+                            var color = theme[prop].startsWith('#') ? theme[prop] : '#' + theme[prop];
+                            // console.log(prop, color);
 
-</body>
+                            prop = prop.split(/(?=[A-Z])/).join('_').toLowerCase();
+                            style.appendChild(document.createTextNode('.' + prop + '{background-color: ' + color + ';' + (prop.toLowerCase().includes('bg') ? 'color: #FFF;' : '') + '}'));
+                        }
+                    }
+
+                    style.appendChild(document.createTextNode('.overlay{' + theme.overlayStyle + '}'));
+                    style.appendChild(document.createTextNode('.overlay_alt1{' + theme.overlayStyleAlt1 + '}'));
+                    style.appendChild(document.createTextNode('.overlay_alt2{' + theme.overlayStyleAlt2 + '}'));
+
+                    var head = document.head || document.getElementsByTagName('head')[0];
+                    head.appendChild(style);
+                }
+            });
+
+            function clickCopy(elementId) {
+                var copyText = document.getElementById(elementId);
+                copyText.select();
+                document.execCommand("Copy");
+                alert("Copied the text: " + copyText.value);
+            }
+        </script>
+
+    </body>
+
 </html>
