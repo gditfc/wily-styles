@@ -24,19 +24,21 @@ button:focus {
     justify-content: center;
     align-items: center;
     border:0;
-    border-radius: 3px;
     transition:all 0.2s ease-in-out;
-    color:rgba(255,255,255,0.8);
     cursor:pointer;
     font-family: Montserrat, sans-serif;
-    font-weight:400;
     outline: none;
 }
 
 .btn.grow{
 }
 .btn.grow:hover{
-    transform: scale(1.1,1.1);
+    transform: scale(1.02,1.02);
+}
+.btn.big_grow{
+}
+.btn.big_grow:hover{
+    transform: scale(1.4,1.4);
 }
 .btn.icon{
     width:22px;
@@ -60,27 +62,49 @@ button:focus {
 }
 /****** BUTTON ATTRIBUTES */
 /* Button Sizes */
-
-.btn.sm{
-    padding: 1px 5px;
+.btn.xsm{
+    border-radius: 3px;
+    padding: 1px 3px;
     font-size:7pt;
-    min-width:80px;
     margin:3px;
     min-height:15px;
+    font-weight:400;
+}
+.btn.sm{
+    border-radius: 3px;
+    padding: 1px 3px;
+    font-size:8pt;
+    min-width:80px;
+    margin:3px;
+    min-height:17px;
+    font-weight:400;
 }
 .btn.md{
-    padding: 1px 5px;
+    border-radius: 3px;
+    padding: 2px 5px;
     font-size:9pt;
     min-width:100px;
     margin:3px;
     min-height:20px;
+    font-weight:400;
 }
 .btn.lg{
-    padding: 0 3px;
+    border-radius: 3px;
+    padding: 2px 5px;
     font-size:11pt;
     min-width:100px;
     margin:3px;
     min-height:30px;
+    font-weight:500;
+}
+.btn.xlg{
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size:13pt;
+    min-width:100px;
+    margin:3px;
+    min-height:40px;
+    font-weight:500;
 }
 /* End Button Sizes */
 
@@ -136,7 +160,7 @@ button:focus {
 }
 .app_btn:hover{
     transform:translateY(-5px);
-    box-shadow: 0 12px 20px -4px rgba(0,0,0,0.4);
+    box-shadow: 0 12px 10px -5px rgba(0,0,0,0.4);
 }
 
 .app_btn:hover .app_btn_icon{
@@ -247,7 +271,7 @@ button:focus {
     align-items: center;
     justify-content: center;
     flex:1;
-    border-radius:5px;
+    border-radius:3px;
     margin:5px;
     cursor: pointer;
     outline:none;

@@ -56,20 +56,19 @@ nav{
     width: 35px;
     height: 35px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     background-position: center center;
-    margin:0 5px 0;
+    margin:0;
 }
 .nav_title_box{
     margin-top:-2px;
     margin-left:5px;
 }
 .nav_title{
-    text-transform: uppercase;
-    font-weight:600;
+    text-transform: capitalize;
+    font-weight:300;
     font-size:15pt;
     white-space: nowrap;
-
 }
 .nav_subtitle{
     font-size:9pt;
@@ -234,7 +233,105 @@ nav{
     transition: all .3s ease
 }
 
-/* SLIDEOUT PUSH MENU */
+/* PUSH MENU */
+.push_menu{
+    margin-top:-30px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction: column;
+}
+.push_menu_header{
+    display:flex;
+    padding-left:10px;
+    height:40px;
+    align-items:center;
+}
+.push_menu_btn{
+    display:flex;
+    cursor: pointer;
+    align-items:center;
+    min-height:30px;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:5px;
+    outline:none;
+    margin-bottom:1px;
+    box-sizing: border-box;
+}
+.push_menu_btn .icon{
+    transition:all 0.4s ease-in-out;
+    padding-right:5px;
+    font-size:12pt;
+    opacity:0.5;
+}
+.push_menu_btn .item{
+    transition:all 0.4s ease-in-out;
+    font-size:10pt;
+}
+.push_menu_btn .go{
+    transition:all 0.4s ease-in-out;
+    opacity:0;
+    padding-right:10px;
+    font-size:7pt;
+}
+.push_menu_btn:hover .go {
+    opacity: 1;
+    padding-right:0;
+}
+.push_menu_btn:hover .icon {
+    opacity:1;
+}
+
+/* OVERLAY MENU */
+.overlay_menu{
+
+}
+.overlay_menu_btn{
+    display:flex;
+    cursor: pointer;
+    align-items:center;
+    min-height:30px;
+    justify-content: space-between;
+    padding-left:15px;
+    padding-right:10px;
+    outline:none;
+    margin-bottom:1px;
+    box-sizing: border-box;
+}
+.overlay_menu_btn .icon{
+    transition:all 0.4s ease-in-out;
+    padding-right:5px;
+    font-size:12pt;
+    opacity:0.5;
+}
+.overlay_menu_btn .item{
+    transition:all 0.4s ease-in-out;
+    font-size:10pt;
+    padding-left:5px;
+}
+.overlay_menu_btn .go{
+    transition:all 0.4s ease-in-out;
+    opacity:0;
+    padding-right:10px;
+    font-size:7pt;
+}
+.overlay_menu_btn:hover .go {
+    opacity: 1;
+    padding-right:0;
+}
+.overlay_menu_btn:hover .icon {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* OLD SLIDEOUT PUSH MENU */
 .slideout_menu_margin{
     margin-top:-30px;
     margin-bottom:30px;
@@ -243,10 +340,9 @@ nav{
     display:flex;
     align-items:center;
     padding:0 5px;
-    font-size:14pt;
+    font-size:13pt;
     font-weight:400;
     min-height:40px;
-    color:unset;
 }
 .slideout_menu_btn{
     cursor: pointer;

@@ -31,20 +31,22 @@
     align-items: center;
     justify-content: center;
     font-size:8pt;
-    margin:5px;
+    margin:3px;
     text-transform: uppercase;
     font-weight:500;
     user-select: none;
+    text-align: center;
+    border-radius:3px;
 }
-.t_swatch.big{
-    height:50px;
+.t_swatch.small {
+    height: 35px;
     width:65px;
 }
 .t_swatch.medium{
-    height:25px;
+    height:35px;
     width:120px;
 }
-.t_swatch.small{
-    height:25px;
+.t_swatch.big {
+    height: 55px;
     width:65px;
 }

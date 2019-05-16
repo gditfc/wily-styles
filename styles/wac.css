@@ -152,6 +152,7 @@
 }
 .wac_dialog_content {
     flex: 1 1 auto;
+    box-sizing: border-box;
 }
 /* HELP */
 .wac_help_description{
