@@ -253,7 +253,7 @@ nav{
     min-height:30px;
     justify-content: space-between;
     padding-left:10px;
-    padding-right:5px;
+    padding-right:10px;
     outline:none;
     margin-bottom:1px;
     box-sizing: border-box;
@@ -271,12 +271,14 @@ nav{
 .push_menu_btn .go{
     transition:all 0.4s ease-in-out;
     opacity:0;
-    padding-right:10px;
+    padding-right:unset;
     font-size:7pt;
+    margin-right:5px;
 }
 .push_menu_btn:hover .go {
     opacity: 1;
     padding-right:0;
+    margin-right:-5px;
 }
 .push_menu_btn:hover .icon {
     opacity:1;
@@ -299,6 +301,9 @@ nav{
     box-sizing: border-box;
 }
 .overlay_menu_btn .icon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     transition:all 0.4s ease-in-out;
     padding-right:5px;
     font-size:12pt;
@@ -312,12 +317,13 @@ nav{
 .overlay_menu_btn .go{
     transition:all 0.4s ease-in-out;
     opacity:0;
-    padding-right:10px;
+    padding-right:unset;
     font-size:7pt;
 }
 .overlay_menu_btn:hover .go {
     opacity: 1;
     padding-right:0;
+    margin-right:-5px;
 }
 .overlay_menu_btn:hover .icon {
     opacity: 1;
