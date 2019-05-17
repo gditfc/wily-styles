@@ -7,7 +7,21 @@
 	- Division: GDIT - MMIS Modernization Team
 	- Author:   Terry Sinay
 */
+a { color:inherit; text-decoration: none;}
 
+/* BUTTON FIX */
+button.clear {
+    background:none;
+    border:none;
+    padding:0;
+}
+/* NAVBAR ACCESSIBILITY */
+.menu_access{
+    text-decoration: none;
+}
+.menu_access:focus{
+    background-color:rgba(255,255,255,0.2);
+}
 
 /* SIMPLE 100% */
 .height100{

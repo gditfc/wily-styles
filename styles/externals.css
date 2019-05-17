@@ -228,17 +228,15 @@
     background-color: #ffffff;
 }
 .ui-inputswitch.ui-inputswitch-focus .ui-inputswitch-slider {
-    -moz-box-shadow: 0px 0px 5px #c0c0c0;
-    -webkit-box-shadow: 0px 0px 5px #c0c0c0;
-    box-shadow: 0px 0px 5px #c0c0c0;
+    box-shadow: 0 0 2px deepskyblue;
 }
 .ui-inputswitch:not(.ui-state-disabled):hover .ui-inputswitch-slider {
     background-color: #b7b7b7;
 }
 .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
-    background-color: #186ba0;
+    background-color: #30728c;
 }
 .ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover .ui-inputswitch-slider {
-    background-color: #114d74;
+    background-color: #2b6278;
 }
 /** END INPUT SWITCH */
