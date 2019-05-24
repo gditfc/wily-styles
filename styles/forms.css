@@ -131,7 +131,7 @@
 .form_label{
     font-size:10pt;
     font-weight:500;
-    padding:2px 0;
+    padding:0;
 }
 .form_label.sm{
     font-size:9pt;
