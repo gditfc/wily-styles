@@ -29,3 +29,10 @@
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
 }
+
+/* STATUS GRADIENT */
+.stat_grad {
+    background: rgb(83,209,41);
+    background: linear-gradient(to right,  rgba(83,209,41,1) 0%,rgba(239,239,45,1) 70%,rgba(201,125,38,1) 90%,rgba(237,0,0,1) 100%);
+}
+

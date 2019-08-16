@@ -6,7 +6,7 @@
         display:none;
     }
     .mobile_only{
-        display:block;
+        display:inherit;
     }
     .header_subtitle{
         padding:3px 5px 3px 5px;

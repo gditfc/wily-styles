@@ -37,7 +37,9 @@ button.clear {
     font-family: Montserrat, sans-serif;
     outline: none;
 }
-
+.btn.bwrap {
+    white-space: normal;
+}
 .btn.grow{
 }
 .btn.grow:hover{
@@ -294,4 +296,82 @@ button.clear {
     font-weight:500;
 }
 
+/* CONFIG DASHBOARD BUTTONS */
+.btn_config {
+    height:75px;
+    padding:0;
+    white-space:normal;
+    max-width:360px;
+    min-width:250px;
+}
+.btn_config_icon {
+    width:75px;
+    height:75px;
+    font-size:26pt;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.btn_config_subicon {
+    font-size:18px;
+    position:absolute;
+    margin-left:18px;
+    margin-top:18px;
+    opacity:0;
+    transition: opacity 0.2s ease;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+}
+.btn_config:hover .btn_config_subicon {
+    opacity:1;
+}
+/* WILY MENU BUTTON */
+.wily_menu_btn{
+    display:flex;
+    flex:1;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+.wily_go_box{
+    width:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wily_menu_btn .icon{
+    transition:all 0.2s ease-in-out;
+    opacity:0.4;
+    font-size:8pt;
+}
+.wily_menu_btn:hover .icon{
+    opacity:1;
+}
+.wily_menu_btn .go{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.2s ease-in-out;
+    opacity:0;
+    font-size:8pt;
+    padding-left:1px;
+}
+.wily_menu_btn:hover .go{
+    opacity:1;
+    padding-left:8px;
+}
+/* PRIORITY BUTTON */
+.prior_btn {
+    width:8px;
+    border-radius:3px;
+    transition:all 0.2s ease-in-out;
+    padding:0;
+}
+.prior_btn:hover, .prior_btn:focus {width:20px;}
+.prior_btn_icon {transition:all 0.2s ease-in-out; opacity:0;}
+.prior_btn:hover>.prior_btn_icon,
+.prior_btn:focus>.prior_btn_icon {opacity:1;}
 
