@@ -228,6 +228,7 @@ nav{
 
 
 .menu_accordion {
+    visibility:hidden;
     max-height: 0;
     overflow: hidden;
     transition: all .3s ease

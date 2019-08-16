@@ -251,6 +251,9 @@ button.clear {
 /* COMPLEX TEXT ELEMENTS */
 .text{
 }
+.text.multiline {
+    line-height:150%;
+}
 .text.lighter{
     font-weight:100;
 }
@@ -297,7 +300,12 @@ button.clear {
     text-transform: uppercase;
 }
 
-
+/* TEXT OVERFLOW CLASS */
+.text_nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 /* SCROLLING */
 .scroll_y{

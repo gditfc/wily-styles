@@ -9,6 +9,26 @@
     display:none;
 }
 
+/* FIX FOR DATE PICKER */
+.ui-datepicker * {
+    background-color:white;
+    color:#222;
+}
+
+/* TOOLTIP OVERFLOW */
+.ui-tooltip { overflow:hidden; }
+
+/* MULTI SELECT THEMING FIXES */
+.ui-multiselect-panel,
+.ui-multiselect,
+.ui-widget-header
+{background-color:white; color:#222;}
+.ui-multiselect-item:hover
+{background-color:dodgerblue; color:white;}
+.ui-multiselect .ui-multiselect-label {
+    padding:1px;
+}
+
 /* TOOLTIP */
 .ui-tooltip .ui-tooltip-text{
     background-color:#EFEFEF;

@@ -1,6 +1,9 @@
 /* FORM BUILDER STYLES */
 
-
+/* DISABLED STATES FOR INPUTS */
+input:disabled, textarea:disabled, select:disabled {
+    filter:brightness(0.95);
+}
 
 .row_options{
     margin:3px;
