@@ -1,69 +1,90 @@
+/*
+File: EXTERNALS.CSS
+Overrides for external components.
+
+Authors: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+ */
+
 /* DIALOGS */
-.ui-dialog.ui-widget .ui-dialog-content {
-    height:100%;
+.ui-dialog.ui-widget .ui-dialog-content  {
+    height: 100%;
     padding: 0;
 }
 
-/** hide title bar, which is necessary for aria-label to work **/
 .ui-dialog-titlebar {
-    display:none;
+    display: none;
 }
 
-/* FIX FOR DATE PICKER */
-.ui-datepicker * {
-    background-color:white;
-    color:#222;
-}
-
-/* TOOLTIP OVERFLOW */
-.ui-tooltip { overflow:hidden; }
-
-/* MULTI SELECT THEMING FIXES */
+/* MULTI SELECT PRIMENG */
 .ui-multiselect-panel,
 .ui-multiselect,
-.ui-widget-header
-{background-color:white; color:#222;}
-.ui-multiselect-item:hover
-{background-color:dodgerblue; color:white;}
+.ui-widget-header {
+    background-color: white;
+    color: #222;
+}
+
+.ui-multiselect-item:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.ui-multiselect:not(.ui-state-disabled):hover {
+    background-color: inherit;
+}
+
 .ui-multiselect .ui-multiselect-label {
-    padding:1px;
+    padding: 1px;
 }
 
 /* TOOLTIP */
-.ui-tooltip .ui-tooltip-text{
-    background-color:#EFEFEF;
-    color:#222;
+.ui-tooltip .ui-tooltip-text {
+    background-color: #EFEFEF;
+    color: #222;
     text-align: center;
-    border-radius:3px;
-    font-size:10pt;
-    padding:5px;
-}
-.ui-tooltip-top  .ui-tooltip-arrow{
-    border-top-color:#EFEFEF;
-}
-.ui-tooltip-bottom  .ui-tooltip-arrow{
-    border-bottom-color:#EFEFEF;
-}
-.ui-tooltip-right .ui-tooltip-arrow {
-    border-right-color:#EFEFEF;
-}
-.ui-tooltip-left .ui-tooltip-arrow {
-    border-left-color:#EFEFEF;
+    border-radius: 3px;
+    font-size: 10pt;
+    padding: 5px;
+    overflow: hidden;
 }
 
-/* DatePicker */
+.ui-tooltip-top .ui-tooltip-arrow {
+    border-top-color: #EFEFEF;
+}
+
+.ui-tooltip-bottom .ui-tooltip-arrow {
+    border-bottom-color: #EFEFEF;
+}
+
+.ui-tooltip-right .ui-tooltip-arrow {
+    border-right-color: #EFEFEF;
+}
+
+.ui-tooltip-left .ui-tooltip-arrow {
+    border-left-color: #EFEFEF;
+}
+
+/* DATE PICKER */
+.ui-datepicker * {
+    background-color: white;
+    color: #222;
+}
+
 .ui-widget-overlay {
     background-color: #666666;
     opacity: 0.5;
     filter: Alpha(Opacity=50);
 }
-.ui-inputtext:focus{
-    outline:none;
+
+.ui-inputtext:focus {
+    outline: none;
     box-shadow: unset;
 }
+
 .ui-datepicker.ui-widget {
     padding: 0;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-header {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -72,34 +93,43 @@
     border-left: 0 none;
     border-right: 0 none;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-header a:hover {
     border-width: 1px;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar {
     margin: 0;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
     background-color: #f6f8fa;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar td {
     border-bottom: 1px solid rgba(213, 213, 213, 0.5);
     cursor: pointer;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-highlight {
     background-color: #d6d6d6;
     color: #212121;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-active {
     background-color: #186ba0;
     color: #ffffff;
 }
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar tr:last-child td {
     border-bottom: 0 none;
 }
+
 .ui-datepicker.ui-widget .ui-monthpicker a.ui-state-active {
     background-color: #186ba0;
     color: #ffffff;
 }
+
 .ui-datepicker.ui-widget .ui-timepicker {
     border-bottom: 0 none;
     border-left: 0 none;
@@ -108,52 +138,65 @@
     -webkit-border-radius: 0;
     border-radius: 0;
 }
+
 .ui-datepicker.ui-widget.ui-datepicker-timeonly .ui-timepicker {
     border-top: 0 none;
 }
+
 .ui-datepicker .ui-datepicker-header a {
     color: #1b1d1f;
 }
+
 .ui-datepicker .ui-datepicker-header a:hover {
     border-color: #c0c0c0;
     background-color: #eeeeee;
     color: #212121;
 }
+
 .ui-datepicker .ui-datepicker-header a:hover a {
     color: #212121;
 }
+
 .ui-datepicker .ui-datepicker-calendar td:not(.ui-state-disabled) a:hover {
     border-color: #c0c0c0;
     background-color: #eeeeee;
     color: #212121;
 }
+
 .ui-datepicker .ui-datepicker-calendar td:not(.ui-state-disabled) a:hover a {
     color: #212121;
 }
+
 .ui-datepicker .ui-monthpicker .ui-monthpicker-month:hover {
     border-color: #c0c0c0;
     background-color: #eeeeee;
     color: #212121;
 }
+
 .ui-datepicker .ui-monthpicker .ui-monthpicker-month:hover a {
     color: #212121;
 }
+
 .ui-datepicker .ui-datepicker-group {
     background-color: #FFF;
 }
+
 .ui-datepicker-other-month {
     opacity: .5;
 }
+
 .ui-datepicker-year {
-    border-radius:0;
+    border-radius: 0;
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     outline: none;
-    transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
+
 .ui-datepicker-month {
     margin-right: 5px;
 }
+
 .ui-button {
     user-select: none;
     border: 0;
@@ -162,13 +205,12 @@
     color: #FFF;
     background-color: #004ca5;
     cursor: pointer;
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     outline: none;
 }
 
-/**************SLIDEOUTS */
-
+/* SLIDEOUTS */
 .ui-widget {
     font-family: Montserrat, sans-serif;
 }
@@ -180,25 +222,22 @@
 .ui-sidebar {
     padding: 0;
 }
+
 .ui-widget-content {
-    border:0;
-
+    border: 0;
 }
-/************** END SLIDEOUTS */
-
 
 /**** PIE CHART RESPONSIVE FIX FOR DATA DISPLAY */
-
-
 .amcharts-legend-div {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
 }
+
 /* CHARTS TEXT FIX */
 text {
-    fill:inherit;
+    fill: inherit;
 }
-/* DUNNO */
 
+/* DUNNO */
 .ui-tabview.ui-widget-content {
     border: 0 none;
     background: none;
@@ -208,14 +247,16 @@ text {
     border-width: 1px;
     padding: 1%;
     background: #FFF;
-    border-color:#CCC;
-    border-bottom-left-radius:3px;
-    border-bottom-right-radius:3px;
+    border-color: #CCC;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
-.ui-tabview.ui-tabview-top>.ui-tabview-nav {
+
+.ui-tabview.ui-tabview-top > .ui-tabview-nav {
     padding: 0 0 0;
-    font-size:9pt;
+    font-size: 9pt;
 }
+
 .ui-corner-all {
     border-radius: 0;
 }
@@ -226,13 +267,14 @@ text {
     color: #1b1d1f;
     font-weight: normal;
 }
+
 .ui-widget, .ui-widget * {
     box-sizing: border-box;
 }
 
 .ui-inputtext {
     border: 1px solid #ccc;
-    font-family: Montserrat,sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 10pt;
     flex: 1;
     color: #585858;
@@ -241,25 +283,56 @@ text {
 }
 
 /** INPUT SWITCH - PRIMENG */
-/* InputSwitch */
 .ui-inputswitch .ui-inputswitch-slider {
     -webkit-transition: background-color 0.3s, box-shadow 0.2s;
     transition: background-color 0.3s, box-shadow 0.2s;
     background: #cccccc;
 }
+
 .ui-inputswitch .ui-inputswitch-slider:before {
     background-color: #ffffff;
 }
+
 .ui-inputswitch.ui-inputswitch-focus .ui-inputswitch-slider {
     box-shadow: 0 0 2px deepskyblue;
 }
+
 .ui-inputswitch:not(.ui-state-disabled):hover .ui-inputswitch-slider {
     background-color: #b7b7b7;
 }
+
 .ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
     background-color: #30728c;
 }
+
 .ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover .ui-inputswitch-slider {
     background-color: #2b6278;
 }
-/** END INPUT SWITCH */
+
+/* JSON EDITOR OVERRIDES */
+div.jsoneditor {
+    border: thin solid #595959;
+    border-radius: 3px;
+}
+
+div.jsoneditor-menu {
+    background-color: #595959;
+    border-bottom: 1px solid #595959;
+}
+
+div.jsoneditor-menu > button {
+    color: white;
+    opacity: 1;
+}
+
+div.jsoneditor-navigation-bar {
+    color: #222;
+}
+
+div.jsoneditor-tree {
+    background-color: #FFF;
+}
+
+div.jsoneditor-tree * {
+    color: #222;
+}

@@ -1,38 +1,210 @@
+/*
+File: EFFECTS.CSS
+Visual effects and small UI details.
 
-/************ SCROLLBAR STYLES */
-::-webkit-scrollbar
-{
-    width: 8px;  /* for vertical scrollbars */
+Authors: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+ */
+
+
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+    width: 8px; /* for vertical scrollbars */
     height: 8px; /* for horizontal scrollbars */
 }
-::-webkit-scrollbar-track
-{
+
+::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.3);
 }
-::-webkit-scrollbar-thumb
-{
-    border-radius:3px;
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
     border: rgba(255, 255, 255, 0.1) solid 1px;
-    background-color:rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.4)
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background-color:rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5)
 }
-/************ END SCROLLBAR STYLES */
 
-
-
-/* SHADOWS  */
-.shadow{
-    box-shadow: 0 6px 10px -6px rgba(0,0,0,0.3);
+/* SHADOWS */
+.shadow {
+    box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.3);
 }
+
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
 }
 
 /* STATUS GRADIENT */
 .stat_grad {
-    background: rgb(83,209,41);
-    background: linear-gradient(to right,  rgba(83,209,41,1) 0%,rgba(239,239,45,1) 70%,rgba(201,125,38,1) 90%,rgba(237,0,0,1) 100%);
+    background: rgb(83, 209, 41);
+    background: linear-gradient(to right, rgba(83, 209, 41, 1) 0%, rgba(239, 239, 45, 1) 70%, rgba(201, 125, 38, 1) 90%, rgba(237, 0, 0, 1) 100%);
 }
 
+/* CIRCLE CLASSES */
+.circle_12px {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_14px {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_16px {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_18px {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_20px {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_24px {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_26px {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_30px {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_50px {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* SQUARE CLASSES */
+.square_18px {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_20px {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_24px {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_28px {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}

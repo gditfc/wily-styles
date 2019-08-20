@@ -1,183 +1,214 @@
-/* FORM BUILDER STYLES */
+/*
+
+FORMS.CSS
+Styles for forms and inputs.
+
+AUTHORS: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+
+ */
 
 /* DISABLED STATES FOR INPUTS */
 input:disabled, textarea:disabled, select:disabled {
-    filter:brightness(0.95);
+    filter: brightness(0.95);
 }
 
-.row_options{
-    margin:3px;
-    width:20px;
-    display:flex;
+/* FORM EDITOR STYLES */
+.row_options {
+    margin: 3px;
+    width: 20px;
+    display: flex;
     flex-direction: column;
     user-select: none;
 }
-.row_handle{
-    font-size:12pt;
-    cursor:grab;
-    font-weight:400;
-    border-radius:3px;
+
+.row_handle {
+    font-size: 12pt;
+    cursor: grab;
+    font-weight: 400;
+    border-radius: 3px;
 }
-.row_settings{
-    transition:all 0.2s ease-in-out;
-    cursor:pointer;
-    font-size:8pt;
-    margin:2pt;
+
+.row_settings {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 8pt;
+    margin: 2pt;
 }
-.row_settings:hover{
-    transform: scale(1.2,1.2);
+
+.row_settings:hover {
+    transform: scale(1.2, 1.2);
 
 }
-.col_options{
+
+.col_options {
     user-select: none;
 }
-.col_options .col_settings{
-    transition:all 0.3s ease-in-out;
-    position:absolute;
-    display:flex;
+
+.col_options .col_settings {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    opacity:0;
-    font-size:10pt;
-    margin:5px;
+    opacity: 0;
+    font-size: 10pt;
+    margin: 5px;
     border-radius: 3px;
-    width:50px;
-    height:20px;
+    width: 50px;
+    height: 20px;
 }
-.col_options:hover .col_settings{
-    opacity:1;
+
+.col_options:hover .col_settings {
+    opacity: 1;
 }
-.field_grab{
+
+.field_grab {
     cursor: grab;
 }
-.field_error{
-    border:1px solid red;
+
+.field_error {
+    border: 1px solid red;
 }
-.form_input{
+
+/* FORM INPUT TYPES */
+.form_input {
     font-family: 'Montserrat', sans-serif;
-    width:100%;
-    border-radius:0;
+    width: 100%;
+    border-radius: 0;
     box-sizing: border-box;
-    margin:0;
-    padding:5px;
-    min-height:30px;
+    margin: 0;
+    padding: 5px;
+    min-height: 30px;
     outline: none;
-    transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
-.form_input:hover{
-    box-shadow: inset 0 -2px 0 0 rgba(225,225,225,0.7);
+
+.form_input:hover {
+    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
 }
-.form_checkbox{
-    width:30px;
+
+.form_checkbox {
+    width: 30px;
     box-sizing: border-box;
-    margin:0;
-    height:30px;
+    margin: 0;
+    height: 30px;
     outline: none;
 }
-.form_textarea{
+
+.form_textarea {
     font-family: 'Montserrat', sans-serif;
-    width:100%;
-    border-radius:0;
+    width: 100%;
+    border-radius: 0;
     box-sizing: border-box;
-    margin:0;
-    min-height:30px;
+    margin: 0;
+    min-height: 30px;
     outline: none;
-    resize:vertical;
-    transition:all 0.2s ease-in-out;
-    padding:5px;
+    resize: vertical;
+    transition: all 0.2s ease-in-out;
+    padding: 5px;
 }
-.form_group_header{
+
+.form_group_header {
     box-sizing: border-box;
-    font-size:10pt;
+    font-size: 10pt;
 }
-.label_group{
-    display:flex;
+
+.label_group {
+    display: flex;
     align-items: center;
-    margin:3px 0;
+    margin: 3px 0;
 }
-.field_required{
-    margin-left:5px;
-    display:flex;
+
+.field_required {
+    margin-left: 5px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size:4pt;
+    font-size: 4pt;
 }
-.field_valid{
-    margin-left:5px;
-    display:flex;
+
+.field_valid {
+    margin-left: 5px;
+    display: flex;
     align-items: center;
 }
-.field_valid_icon{
-    font-size:6pt;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:14px;
-    width:14px;
-    border-radius:50%;
-    border:1px solid rgba(255,255,255,0.2);
-}
-.field_help{
-    margin-left:5px;
-    display:flex;
+
+.field_valid_icon {
+    font-size: 6pt;
+    display: flex;
     align-items: center;
-    font-size:10pt;
+    justify-content: center;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
-
-
-
-
-
-/* GENERIC FORMS */
-.form_label{
-    font-size:10pt;
-    font-weight:500;
-    padding:0;
-}
-.form_label.sm{
-    font-size:9pt;
-}
-.form_label.md{
-    font-size:10pt;
-}
-.form_label.lg{
-    font-size:11pt;
-}
-.form_label.light{
-    font-weight:200;
-}
-.form_label.bold{
-    font-weight:600;
+.field_help {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 10pt;
 }
 
-.fullwidth_input{
-    box-sizing:border-box;
-    width:100%;
-    padding:5px 15px;
+/* FORM LABELS */
+.form_label {
+    font-size: 10pt;
+    font-weight: 500;
+    padding: 0;
+}
+
+.form_label.sm {
+    font-size: 9pt;
+}
+
+.form_label.md {
+    font-size: 10pt;
+}
+
+.form_label.lg {
+    font-size: 11pt;
+}
+
+.form_label.light {
+    font-weight: 200;
+}
+
+.form_label.bold {
+    font-weight: 600;
+}
+
+/* REGULAR INPUT TYPES */
+.fullwidth_input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
     font-family: Montserrat, sans-serif;
-    border-radius:3px;
-    border:1px solid rgba(50,50,50,0.2);
-    font-size:11pt;
+    border-radius: 3px;
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    font-size: 11pt;
     outline: none;
 }
-.fullwidth_input.sm{
-    padding:2px 5px;
-    font-size:10pt;
+
+.fullwidth_input.sm {
+    padding: 2px 5px;
+    font-size: 10pt;
 }
-.fullwidth_textarea{
-    box-sizing:border-box;
-    width:100%;
-    resize:none;
-    padding:5px 15px;
+
+.fullwidth_textarea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    padding: 5px 10px;
     font-family: Montserrat, sans-serif;
-    border-radius:3px;
-    border:1px solid rgba(50,50,50,0.2);
-    min-height:50px;
-    font-size:11pt;
+    border-radius: 3px;
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    min-height: 50px;
+    font-size: 11pt;
 }
-.fullwidth_textarea.sm{
-    padding:2px 5px;
-    font-size:10pt;
+
+.fullwidth_textarea.sm {
+    padding: 2px 5px;
+    font-size: 10pt;
 }

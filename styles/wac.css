@@ -1,16 +1,26 @@
+/*
+
+WAC.CSS
+Styles for components in Wily-Angular Commons.
+
+AUTHORS: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+
+ */
+
 /* NEW PAGINATOR */
 .pag_btn {
-    flex:1;
-    max-width:60px;
-    margin:0 1px;
-    height:24px;
-    font-size:10pt;
+    flex: 1;
+    max-width: 60px;
+    margin: 0 1px;
+    height: 24px;
+    font-size: 10pt;
 }
 
 .pag_btn.active {
-    height:30px;
-    margin-top:-3px;
-    margin-bottom:-3px;
+    height: 30px;
+    margin-top: -3px;
+    margin-bottom: -3px;
 }
 
 
@@ -21,35 +31,39 @@
     border-left: 5px solid rgba(255, 255, 255, 0.3);
     min-height: 35px;
 }
-.wac_dialog_header_title{
+
+.wac_dialog_header_title {
     font-size: 14pt;
-    font-weight:500;
+    font-weight: 500;
 }
+
 .wac_dialog_container {
     display: flex;
     flex-flow: column;
     height: 100%;
 }
+
 .wac_dialog_content {
     flex: 1 1 auto;
     box-sizing: border-box;
 }
+
 /* HELP */
-.wac_help_description{
-    font-size:11pt;
-    padding:3px 15px;
-    width:100%;
-    font-weight:500;
-}
-.wac_help_text{
-    font-size:11pt;
-    padding:10px 15px;
-}
-.wac_help_notavail{
-    font-size:16pt;
+.wac_help_description {
+    font-size: 11pt;
+    padding: 3px 15px;
+    width: 100%;
+    font-weight: 500;
 }
 
+.wac_help_text {
+    font-size: 11pt;
+    padding: 10px 15px;
+}
 
+.wac_help_notavail {
+    font-size: 16pt;
+}
 
 
 .wac_icon_select_icon {
@@ -101,10 +115,12 @@
     filter: alpha(opacity=80);
     pointer-events: none;
 }
+
 /* high-performance display:none; helper */
 .gu-hide {
     left: -9999px !important;
 }
+
 /* added to mirrorContainer (default = body) while dragging */
 .gu-unselectable {
     -webkit-user-select: none !important;
@@ -112,10 +128,12 @@
     -ms-user-select: none !important;
     user-select: none !important;
 }
+
 /* added to the source element while its mirror is dragged */
 .gu-transit {
     opacity: 0.2;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
     filter: alpha(opacity=20);
 }
+
 /* END DRAGULA STYLES */

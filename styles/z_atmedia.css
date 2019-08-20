@@ -1,18 +1,32 @@
-.mobile_only{
-    display:none;
+/*
+
+Z_ATMEDIA.CSS
+Media queries and responsive styles.
+
+AUTHORS: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+
+ */
+
+.mobile_only {
+    display: none;
 }
+
 @media screen and (max-width: 768px) {
-    .hide_element{
-        display:none;
+    .hide_element {
+        display: none;
     }
-    .mobile_only{
-        display:inherit;
+
+    .mobile_only {
+        display: unset;
     }
-    .header_subtitle{
-        padding:3px 5px 3px 5px;
-        font-size:9pt;
+
+    .header_subtitle {
+        padding: 3px 5px 3px 5px;
+        font-size: 9pt;
     }
-    .header .title{
-        font-size:11pt;
+
+    .header .title {
+        font-size: 11pt;
     }
 }

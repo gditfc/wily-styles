@@ -1,52 +1,67 @@
+/*
 
-.t_panel{
-    outline:none;
-    cursor:pointer;
-    user-select:none;
-    width:120px;
-    margin:5px;
-    padding:5px;
-    border-radius:3px;
-    transition:all 0.2s ease-in-out;
-    background-color:rgba(255,255,255,0.9);
+THEME.CSS
+Theme editor styles.
+
+AUTHORS: Terry Sinay & Brooks Peffer
+GDIT MMIS MODERNIZATION
+
+ */
+
+.t_panel {
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    width: 120px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.9);
 }
-.t_panel:hover{
+
+.t_panel:hover {
     transform: translateY(-3px);
 }
-.t_header{
-    font-size:9pt;
+
+.t_header {
+    font-size: 9pt;
     text-transform: uppercase;
     text-align: center;
     user-select: none;
-    padding:5px;
+    padding: 5px;
 }
 
-.t_object_name{
-    text-align:center;
-    font-size:10pt;
-    padding:5px;
+.t_object_name {
+    text-align: center;
+    font-size: 10pt;
+    padding: 5px;
 }
-.t_swatch{
-    display:flex;
+
+.t_swatch {
+    display: flex;
     align-items: center;
     justify-content: center;
-    font-size:8pt;
-    margin:3px;
+    font-size: 8pt;
+    margin: 3px;
     text-transform: uppercase;
-    font-weight:500;
+    font-weight: 500;
     user-select: none;
     text-align: center;
-    border-radius:3px;
+    border-radius: 3px;
 }
+
 .t_swatch.small {
     height: 35px;
-    width:65px;
+    width: 65px;
 }
-.t_swatch.medium{
-    height:35px;
-    width:120px;
+
+.t_swatch.medium {
+    height: 35px;
+    width: 120px;
 }
+
 .t_swatch.big {
     height: 55px;
-    width:65px;
+    width: 65px;
 }
