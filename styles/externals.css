@@ -65,15 +65,30 @@ GDIT MMIS MODERNIZATION
 }
 
 /* DATE PICKER */
-.ui-datepicker * {
+.ui-datepicker.ui-widget {
     background-color: white;
-    color: #222;
+    border-radius:3px;
+    padding:0;
 }
 
-.ui-widget-overlay {
-    background-color: #666666;
-    opacity: 0.5;
-    filter: Alpha(Opacity=50);
+.ui-datepicker-month {
+    margin-right:5px;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    border-radius: 3px;
+    border: 1px solid rgba(50,50,50,.2);
+    outline: none;
+    font-size: 1em;
+    margin: .125em 0;
+    vertical-align: middle;
+}
+
+.ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
+    background-color: #f4f4f4;
+    color: #222;
 }
 
 .ui-inputtext:focus {
