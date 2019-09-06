@@ -1,10 +1,11 @@
 /*
-File: LAYOUT.CSS
-Layout and structural styles.
-
-Authors: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
- */
+################################################
+            LAYOUT AND STRUCTURAL
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 
 a {
@@ -47,6 +48,7 @@ a {
 /* COLUMNS */
 .col {
     display: flex;
+    flex: 0 1 auto;
 }
 
 .col.column {

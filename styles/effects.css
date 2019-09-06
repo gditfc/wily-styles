@@ -1,10 +1,11 @@
 /*
-File: EFFECTS.CSS
-Visual effects and small UI details.
-
-Authors: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
- */
+################################################
+         VISUAL EFFECTS AND UI DETAILS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 
 /* SCROLLBAR STYLES */
@@ -45,7 +46,9 @@ GDIT MMIS MODERNIZATION
 /* CIRCLE CLASSES */
 .circle_12px {
     width: 12px;
+    min-width: 12px;
     height: 12px;
+    min-height: 12px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -58,7 +61,9 @@ GDIT MMIS MODERNIZATION
 
 .circle_14px {
     width: 14px;
+    min-width: 14px;
     height: 14px;
+    min-height: 14px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -71,7 +76,9 @@ GDIT MMIS MODERNIZATION
 
 .circle_16px {
     width: 16px;
+    min-width: 16px;
     height: 16px;
+    min-height: 16px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -84,7 +91,9 @@ GDIT MMIS MODERNIZATION
 
 .circle_18px {
     width: 18px;
+    min-width: 18px;
     height: 18px;
+    min-height: 18px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -97,7 +106,9 @@ GDIT MMIS MODERNIZATION
 
 .circle_20px {
     width: 20px;
+    min-width: 20px;
     height: 20px;
+    min-height: 20px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -110,7 +121,9 @@ GDIT MMIS MODERNIZATION
 
 .circle_24px {
     width: 24px;
+    min-width: 24px;
     height: 24px;
+    min-height: 24px;
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -123,39 +136,75 @@ GDIT MMIS MODERNIZATION
 
 .circle_26px {
     width: 26px;
+    min-width: 26px;
     height: 26px;
+    min-height: 26px;
     padding: 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
     user-select: none;
     box-sizing: border-box;
 }
 
 .circle_30px {
     width: 30px;
+    min-width: 30px;
     height: 30px;
+    min-height: 30px;
     padding: 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_32px {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_40px {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     user-select: none;
     box-sizing: border-box;
 }
 
 .circle_50px {
     width: 50px;
+    min-width: 50px;
     height: 50px;
+    min-height: 50px;
     padding: 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 28px;
     user-select: none;
     box-sizing: border-box;
 }
@@ -163,18 +212,22 @@ GDIT MMIS MODERNIZATION
 /* SQUARE CLASSES */
 .square_18px {
     width: 18px;
+    min-width: 18px;
     height: 18px;
+    min-height: 18px;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
     user-select: none;
     box-sizing: border-box;
 }
 
 .square_20px {
+    min-width: 20px;
     width: 20px;
+    min-height: 20px;
     height: 20px;
     padding: 0;
     display: flex;
@@ -187,7 +240,9 @@ GDIT MMIS MODERNIZATION
 
 .square_24px {
     width: 24px;
+    min-width: 24px;
     height: 24px;
+    min-height: 24px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -197,9 +252,39 @@ GDIT MMIS MODERNIZATION
     box-sizing: border-box;
 }
 
+.square_26px {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    min-height: 26px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .square_28px {
     width: 28px;
+    min-width: 28px;
     height: 28px;
+    min-height: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_36px {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
     padding: 0;
     display: flex;
     justify-content: center;

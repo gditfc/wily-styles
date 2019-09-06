@@ -1,10 +1,11 @@
 /*
-File: EXTERNALS.CSS
-Overrides for external components.
-
-Authors: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
- */
+################################################
+       OVERRIDES FOR EXTERNAL COMPONENTS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 /* DIALOGS */
 .ui-dialog.ui-widget .ui-dialog-content  {

@@ -1,12 +1,11 @@
 /*
-
-FORMS.CSS
-Styles for forms and inputs.
-
-AUTHORS: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
-
- */
+################################################
+              FORMS AND INPUTS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 /* DISABLED STATES FOR INPUTS */
 input:disabled, textarea:disabled, select:disabled {

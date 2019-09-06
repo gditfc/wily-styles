@@ -1,15 +1,20 @@
 /*
-File: BUTTONS.CSS
-Button related styles.
-
-Authors: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
- */
+################################################
+              TRANSCEND BUTTONS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 /* REMOVE BROWSER SPECIFIC STYLES */
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+button {
+    font-family: Montserrat, sans-serif;
 }
 
 button:focus {
@@ -28,6 +33,10 @@ button:focus {
     cursor: pointer;
     font-family: Montserrat, sans-serif;
     outline: none;
+}
+
+.btn.disabled {
+    cursor:default;
 }
 
 .btn.bwrap {
@@ -167,7 +176,9 @@ button.clear {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 150px;
     height: 150px;
+    min-width: 120px;
     width: 120px;
     margin: 10px;
     padding: 5px;
@@ -248,39 +259,51 @@ button.clear {
     --hover: #FFF;
     font-family: Montserrat, sans-serif;
     outline: none;
+    padding:0;
+    overflow:visible;
 }
 
 .btn_pulse.xsm {
-    margin: 1px 3px;;
+    margin: 1px 3px;
+    min-height: 20px;
     height: 20px;
+    min-width:20px;
     width: 20px;
     font-size: 8pt;
 }
 
 .btn_pulse.sm {
-    margin: 2px 5px;;
+    margin: 2px 5px;
+    min-height: 25px;
     height: 25px;
+    min-width: 25px;
     width: 25px;
     font-size: 10pt;
 }
 
 .btn_pulse.md {
-    margin: 3px 7px;;
+    margin: 3px 7px;
+    min-height: 30px;
     height: 30px;
+    min-width: 30px;
     width: 30px;
     font-size: 13pt;
 }
 
 .btn_pulse.lg {
-    margin: 5px 9px;;
+    margin: 5px 9px;
+    min-height: 55px;
     height: 55px;
+    min-width: 55px;
     width: 55px;
     font-size: 17pt;
 }
 
 .btn_pulse.xlg {
     margin: 5px;
+    min-height: 90px;
     height: 90px;
+    min-width: 90px;
     width: 90px;
     font-size: 19pt;
 }
@@ -330,6 +353,7 @@ button.clear {
 }
 
 .btn_config_icon {
+    position:relative;
     width: 75px;
     height: 75px;
     font-size: 26pt;
@@ -340,8 +364,8 @@ button.clear {
 .btn_config_subicon {
     font-size: 18px;
     position: absolute;
-    margin-left: 18px;
-    margin-top: 18px;
+    left: 38px;
+    top: 38px;
     opacity: 0;
     transition: opacity 0.2s ease;
     width: 25px;
@@ -351,6 +375,14 @@ button.clear {
 
 .btn_config:hover .btn_config_subicon {
     opacity: 1;
+}
+
+/* HIGHLIGHT BUTTON */
+.btn_highlight{
+    transition:all 0.2s ease-in-out;
+}
+.btn_highlight:hover{
+    background-color:rgba(0,0,0,0.08);
 }
 
 /* WILY MENU BUTTON */

@@ -1,12 +1,11 @@
 /*
-
-NAVIGATION.CSS
-Styles for all navigation-related elements.
-
-AUTHORS: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
-
- */
+################################################
+          NAVIGATION-RELATED ELEMENTS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 /* NAVBAR STYLES */
 nav {
@@ -183,6 +182,7 @@ nav {
 
 .menu_header {
     display: flex;
+    height:40px;
     min-height: 40px;
     border-bottom: 3px solid rgba(50, 50, 50, .4);
     width: 100%;
@@ -321,6 +321,7 @@ nav {
     display: flex;
     cursor: pointer;
     align-items: center;
+    height:30px;
     min-height: 30px;
     justify-content: space-between;
     padding-left: 15px;

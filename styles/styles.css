@@ -1,19 +1,21 @@
 /*
-
-STYLES.CSS
-Base page styles.
-
-AUTHORS: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
-
- */
+################################################
+           HIGH-LEVEL PAGE STYLES
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 html {
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
+    height:100%;
 }
 
 body {
+    overflow-x:hidden;
+    overflow-y:auto;
+    height:100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #EFEFEF;

@@ -1,12 +1,11 @@
 /*
-
-WAC.CSS
-Styles for components in Wily-Angular Commons.
-
-AUTHORS: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
-
- */
+################################################
+        WILY-ANGULAR COMMONS COMPONENTS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 /* NEW PAGINATOR */
 .pag_btn {
@@ -50,8 +49,8 @@ GDIT MMIS MODERNIZATION
 
 /* HELP */
 .wac_help_description {
-    font-size: 11pt;
-    padding: 3px 15px;
+    font-size: 10pt;
+    padding: 6px 15px;
     width: 100%;
     font-weight: 500;
 }
@@ -59,6 +58,16 @@ GDIT MMIS MODERNIZATION
 .wac_help_text {
     font-size: 11pt;
     padding: 10px 15px;
+}
+
+/* Image scaling fix */
+.wac_help_text img {
+    border:1px solid rgba(128,128,128,0.3);
+    border-radius:3px;
+    margin-bottom:10px;
+    width:100%;
+    max-width:768px;
+    padding:3px;
 }
 
 .wac_help_notavail {

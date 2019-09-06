@@ -1,10 +1,11 @@
 /*
-FOOTER.CSS
-Footer styles.
-
-AUTHORS: Terry Sinay & Brooks Peffer
-GDIT MMIS MODERNIZATION
- */
+################################################
+                FOOTER STYLES
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
 footer {
     display: flex;
@@ -12,6 +13,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    height:50px;
     min-height: 50px;
 }
 
