@@ -13,8 +13,8 @@
 
 /* TABLET BREAKPOINT */
 @media screen and (max-width: 1024px) {
-    .hide_element1024{
-        display:none;
+    .hide_element1024 {
+        display: none;
     }
 }
 
@@ -45,6 +45,10 @@
 
     .header .title {
         font-size: 11pt;
+    }
+
+    .wac_icon_select_list {
+        height: unset;
     }
 }
 

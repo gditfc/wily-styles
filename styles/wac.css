@@ -62,39 +62,30 @@
 
 /* Image scaling fix */
 .wac_help_text img {
-    border:1px solid rgba(128,128,128,0.3);
-    border-radius:3px;
-    margin-bottom:10px;
-    width:100%;
-    max-width:768px;
-    padding:3px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 768px;
+    padding: 3px;
 }
 
 .wac_help_notavail {
     font-size: 16pt;
 }
 
-
-.wac_icon_select_icon {
-    display: flex;
+.wac_icon_select_btn {
+    min-width: 60px;
+    max-width: 80px;
+    height: 55px;
+    font-size: 28px;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
-    color: rgba(0, 0, 0, 0.4);
-    transition: all .2s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
-    height: 75px;
-    width: 75px;
-    margin: 3px 4px;
-    background-color: rgba(150, 150, 150, 0.05);
     cursor: pointer;
-    background-color: #EFEFEF;
 }
 
-.wac_icon_select_icon:hover {
-    color: rgba(0, 0, 0, 0.6);
-    background-color: rgba(255, 255, 255, 0.6);
+.wac_icon_select_list {
+    height: 350px;
 }
 
 .ui-dialog.ui-widget .ui-dialog-content {
