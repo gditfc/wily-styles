@@ -17,6 +17,13 @@
     display: none;
 }
 
+/* DIALOG OVERLAY FIX */
+.ui-widget-overlay {
+    background-color: #666666;
+    opacity: 0.5;
+    filter: Alpha(Opacity=50);
+}
+
 /* MULTI SELECT PRIMENG */
 .ui-multiselect-panel,
 .ui-multiselect,
