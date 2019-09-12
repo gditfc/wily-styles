@@ -99,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 10px;
     user-select: none;
     box-sizing: border-box;
 }
@@ -174,7 +174,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     user-select: none;
     box-sizing: border-box;
 }
@@ -220,6 +220,21 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_80px {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    min-height: 80px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
     user-select: none;
     box-sizing: border-box;
 }
@@ -304,7 +319,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 22px;
     user-select: none;
     box-sizing: border-box;
 }
