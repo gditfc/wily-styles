@@ -1,31 +1,325 @@
+/*
+################################################
+         VISUAL EFFECTS AND UI DETAILS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
-/************ SCROLLBAR STYLES */
-::-webkit-scrollbar
-{
-    width: 8px;  /* for vertical scrollbars */
+
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+    width: 8px; /* for vertical scrollbars */
     height: 8px; /* for horizontal scrollbars */
 }
-::-webkit-scrollbar-track
-{
+
+::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.3);
 }
-::-webkit-scrollbar-thumb
-{
-    border-radius:3px;
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
     border: rgba(255, 255, 255, 0.1) solid 1px;
-    background-color:rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.4)
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background-color:rgba(0, 0, 0, 0.5)
+    background-color: rgba(0, 0, 0, 0.5)
 }
-/************ END SCROLLBAR STYLES */
 
-
-
-/* SHADOWS  */
-.shadow{
-    box-shadow: 0 6px 10px -6px rgba(0,0,0,0.3);
+/* SHADOWS */
+.shadow {
+    box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.3);
 }
+
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
+}
+
+/* STATUS GRADIENT */
+.stat_grad {
+    background: rgb(83, 209, 41);
+    background: linear-gradient(to right, rgba(83, 209, 41, 1) 0%, rgba(239, 239, 45, 1) 70%, rgba(201, 125, 38, 1) 90%, rgba(237, 0, 0, 1) 100%);
+}
+
+/* CIRCLE CLASSES */
+.circle_12px {
+    width: 12px;
+    min-width: 12px;
+    height: 12px;
+    min-height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_14px {
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_16px {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_18px {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    min-height: 18px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_20px {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_24px {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_26px {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    min-height: 26px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_30px {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_32px {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    min-height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_40px {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_50px {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_70px {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    min-height: 70px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_80px {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    min-height: 80px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* SQUARE CLASSES */
+.square_18px {
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    min-height: 18px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_20px {
+    min-width: 20px;
+    width: 20px;
+    min-height: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_24px {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    min-height: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_26px {
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    min-height: 26px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_28px {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    min-height: 28px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_36px {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    user-select: none;
+    box-sizing: border-box;
 }

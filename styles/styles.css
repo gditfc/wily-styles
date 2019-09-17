@@ -1,4 +1,12 @@
-/************ HTML BODY SETUP */
+/*
+################################################
+           HIGH-LEVEL PAGE STYLES
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
+
 html {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -7,8 +15,8 @@ html {
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #EFEFEF;
 }
+
 .site {
     display: flex;
     height: 100vh;
@@ -17,18 +25,20 @@ body {
 
 .site-content {
     flex: 1 0 auto;
-    margin:40px auto 5px;
-    width:100%;
+    margin: 40px auto 5px;
+    width: 100%;
 }
+
 .page_container {
-    display:flex;
-    min-height:450px;
-    min-width:280px;
+    display: flex;
+    min-height: 450px;
+    min-width: 280px;
     overflow: hidden;
 }
-.page_container.gradient{
-    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%,rgba(128,128,128,0) 50%,rgba(0,0,0,0.1) 100%);
+
+.page_container.gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%,
+    rgba(128, 128, 128, 0) 50%, rgba(0, 0, 0, 0.1) 100%);
 }
-/************ END HTML BODY SETUP */
 
 

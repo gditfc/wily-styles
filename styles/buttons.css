@@ -1,270 +1,317 @@
-/* DOCUMENT INFORMATION
+/*
 ################################################
-                TRANSCEND BUTTONS
+              TRANSCEND BUTTONS
 ################################################
     - Type: CSS Flexbox
-	- Version:  3.0.0
 	- Division: GDIT - MMIS Modernization Team
 	- Author:   Terry Sinay
 */
 
-*{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+/* REMOVE BROWSER SPECIFIC STYLES */
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
+
+button {
+    font-family: Montserrat, sans-serif;
+}
+
 button:focus {
-    outline:0; /* Removes annoying blue border on click in chrome on all <button> types*/
+    outline: 0;
     outline: none;
 }
 
-/** clear some default button styles **/
-button.clear {
-    background:none;
-    border:none;
-    padding:0;
-    color:inherit;
-}
-
-/******* BUTTON TYPES */
+/* BUTTON TYPES */
 .btn {
     user-select: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border:0;
-    transition:all 0.2s ease-in-out;
-    cursor:pointer;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
     font-family: Montserrat, sans-serif;
     outline: none;
 }
 
-.btn.grow{
+.btn.disabled {
+    cursor:default;
 }
-.btn.grow:hover{
-    transform: scale(1.02,1.02);
+
+.btn.bwrap {
+    white-space: normal;
 }
-.btn.big_grow{
+
+button.clear {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
 }
-.btn.big_grow:hover{
-    transform: scale(1.4,1.4);
+
+.btn.slide_up:hover {
+    transform: translateY(-4px);
 }
-.btn.icon{
-    width:22px;
-    height:22px;
-    margin:0 5px;
+
+.btn.sm_grow:hover {
+    transform: scale(1.08);
 }
-.btn.icon:hover{
-    transform: scale(1.1,1.1);
+
+.btn.grow:hover {
+    transform: scale(1.02, 1.02);
 }
-.btn.underline{
-    font-weight:500;
+
+.btn.mid_grow:hover {
+    transform: scale(1.2);
 }
-.btn.underline:hover{
-    box-shadow: inset 0 -5px 0 0 rgba(225,225,225,0.7);
+
+.btn.big_grow:hover {
+    transform: scale(1.4, 1.4);
 }
-.btn.underline_md{
-    font-weight:500;
+
+.btn.icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
 }
-.btn.underline_md:hover{
-    box-shadow: inset 0 -2px 0 0 rgba(225,225,225,0.7);
+
+.btn.icon:hover {
+    transform: scale(1.1, 1.1);
 }
-/****** BUTTON ATTRIBUTES */
-/* Button Sizes */
-.btn.xsm{
+
+.btn.underline:hover {
+    box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+.btn.underline_md:hover {
+    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+/* BUTTON ATTRIBUTES */
+/* SIZES */
+.btn.xsm {
     border-radius: 3px;
     padding: 1px 3px;
-    font-size:7pt;
-    margin:3px;
-    min-height:15px;
-    font-weight:400;
+    font-size: 7pt;
+    margin: 3px;
+    min-height: 15px;
+    font-weight: 400;
 }
-.btn.sm{
+
+.btn.sm {
     border-radius: 3px;
     padding: 1px 3px;
-    font-size:8pt;
-    min-width:80px;
-    margin:3px;
-    min-height:17px;
-    font-weight:400;
+    font-size: 8pt;
+    min-width: 80px;
+    margin: 3px;
+    min-height: 17px;
+    font-weight: 400;
 }
-.btn.md{
+
+.btn.md {
     border-radius: 3px;
     padding: 2px 5px;
-    font-size:9pt;
-    min-width:100px;
-    margin:3px;
-    min-height:20px;
-    font-weight:400;
+    font-size: 9pt;
+    min-width: 100px;
+    margin: 3px;
+    min-height: 20px;
+    font-weight: 400;
 }
-.btn.lg{
+
+.btn.lg {
     border-radius: 3px;
     padding: 2px 5px;
-    font-size:11pt;
-    min-width:100px;
-    margin:3px;
-    min-height:30px;
-    font-weight:500;
+    font-size: 11pt;
+    min-width: 100px;
+    margin: 3px;
+    min-height: 30px;
+    font-weight: 500;
 }
-.btn.xlg{
+
+.btn.xlg {
     border-radius: 3px;
     padding: 2px 5px;
-    font-size:13pt;
-    min-width:100px;
-    margin:3px;
-    min-height:40px;
-    font-weight:500;
+    font-size: 13pt;
+    min-width: 100px;
+    margin: 3px;
+    min-height: 40px;
+    font-weight: 500;
 }
-/* End Button Sizes */
-
-
-
 
 /* Just a FUN LINK I leave here cause Nick loves it */
-
-.fun_lnk{
-    color:#AAA;
-    font-size:8pt;
+.fun_lnk {
+    color: #AAA;
+    font-size: 8pt;
     text-align: center;
     cursor: pointer;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
     text-transform: uppercase;
 }
-.fun_lnk:hover{
-    font-size:16pt;
-    color:#05ABE0;
-    border-left:1px solid #CCC;
-    border-right:1px solid #CCC;
-    padding:5px 20px;
+
+.fun_lnk:hover {
+    font-size: 16pt;
+    color: #05ABE0;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding: 5px 20px;
 }
 
 /* for adding a simple hand grabbing pointer */
-.t_drag_btn{
+.t_drag_btn {
     cursor: grab;
 }
-.t_drag_btn:hover{
+
+.t_drag_btn:hover {
     cursor: grab;
-    background-color:rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
-.t_drag_btn:active{
+
+.t_drag_btn:active {
     cursor: grabbing;
 }
 
 /* ANIMATED APPLICATION BUTTONS */
-.app_btn{
-    display:flex;
+.app_btn {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height:150px;
-    width:120px;
-    margin:10px;
-    padding:5px;
+    min-height: 150px;
+    height: 150px;
+    min-width: 120px;
+    width: 120px;
+    margin: 10px;
+    padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     box-sizing: border-box;
-    box-shadow: 0 6px 10px -4px rgba(0,0,0,0.6);
-    outline:none;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
+    outline: none;
     overflow: hidden;
 }
-.app_btn:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 12px 10px -5px rgba(0,0,0,0.4);
+
+.app_btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 10px -5px rgba(0, 0, 0, 0.4);
 }
 
-.app_btn:hover .app_btn_icon{
-    transform: scale(0.8,0.8) translateY(-15px);
+.app_btn:hover .app_btn_icon {
+    transform: scale(0.8, 0.8) translateY(-15px);
 }
-.app_btn:hover .app_btn_middle{
+
+.app_btn:hover .app_btn_middle {
     opacity: 1;
-    visibility:visible;
-    transform: scale(1.0,1.0);
+    visibility: visible;
+    transform: scale(1.0, 1.0);
 }
+
 .app_btn_middle {
-    transform: scale(0,0);
+    transform: scale(0, 0);
     transition: 0.2s ease-in-out;
     opacity: 0;
     position: absolute;
-    visibility:hidden;
+    visibility: hidden;
 }
+
 .app_btn_middle_text {
     transform: translateY(-2px);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding:5px;
+    padding: 5px;
     box-sizing: border-box;
     text-transform: uppercase;
-    font-size:9pt;
+    font-size: 9pt;
 }
-.app_btn_icon{
-    transition:all 0.3s ease-in-out;
+
+.app_btn_icon {
+    transition: all 0.3s ease-in-out;
     text-align: center;
 }
-.app_btn_text{
+
+.app_btn_text {
     box-sizing: border-box;
-    width:100%;
-    height:100%;
-    display:flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size:9pt;
+    font-size: 9pt;
     font-weight: 500;
-    padding:2px;
-    border-radius:3px;
+    padding: 2px;
+    border-radius: 3px;
 }
 
-
-/* <button> class to make for a sweet pulse effect */
+/* PULSE BUTTONS */
 .btn_pulse {
-    border:1px solid rgba(0,0,0,0.05);
-    background-color:rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.3);
     user-select: none;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    cursor:pointer;
-    border-radius:50%;
-    color:#FFF;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #FFF;
     --hover: #FFF;
     font-family: Montserrat, sans-serif;
-    outline:none;
+    outline: none;
+    padding:0;
+    overflow:visible;
 }
-.btn_pulse.xsm{
-    margin:1px 3px;;
-    height:20px;
-    width:20px;
-    font-size:8pt;
+
+.btn_pulse.xsm {
+    margin: 1px 3px;
+    min-height: 20px;
+    height: 20px;
+    min-width:20px;
+    width: 20px;
+    font-size: 8pt;
 }
-.btn_pulse.sm{
-    margin:2px 5px;;
-    height:25px;
-    width:25px;
-    font-size:10pt;
+
+.btn_pulse.sm {
+    margin: 2px 5px;
+    min-height: 25px;
+    height: 25px;
+    min-width: 25px;
+    width: 25px;
+    font-size: 10pt;
 }
-.btn_pulse.md{
-    margin:3px 7px;;
-    height:30px;
-    width:30px;
-    font-size:13pt;
+
+.btn_pulse.md {
+    margin: 3px 7px;
+    min-height: 30px;
+    height: 30px;
+    min-width: 30px;
+    width: 30px;
+    font-size: 13pt;
 }
-.btn_pulse.lg{
-    margin:5px 9px;;
-    height:55px;
-    width:55px;
-    font-size:17pt;
+
+.btn_pulse.lg {
+    margin: 5px 9px;
+    min-height: 55px;
+    height: 55px;
+    min-width: 55px;
+    width: 55px;
+    font-size: 17pt;
 }
-.btn_pulse.xlg{
-    margin:5px;
-    height:90px;
-    width:90px;
-    font-size:19pt;
+
+.btn_pulse.xlg {
+    margin: 5px;
+    min-height: 90px;
+    height: 90px;
+    min-width: 90px;
+    width: 90px;
+    font-size: 19pt;
 }
+
 .btn_pulse:hover {
-    border:1px solid rgba(0,0,0,0.05);
-    background-color:rgba(255, 255, 255, 0.8);
-    color:rgba(0,0,0,0.7);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.7);
     -webkit-animation: pulse 1s;
     animation: pulse 1s;
     box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
@@ -276,22 +323,131 @@ button.clear {
     }
 }
 
-.info_btn{
-    display:flex;
+/* INFO BUTTONS */
+.info_btn {
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex:1;
-    border-radius:3px;
-    margin:5px;
+    flex: 1;
+    border-radius: 3px;
+    margin: 5px;
     cursor: pointer;
-    outline:none;
+    outline: none;
     user-select: none;
     text-align: center;
-    flex-basis:220px;
-}
-.info_btn_number{
-    font-size:34pt;
-    font-weight:500;
+    flex-basis: 220px;
 }
 
+.info_btn_number {
+    font-size: 34pt;
+    font-weight: 500;
+}
+
+/* CONFIG DASHBOARD BUTTONS */
+.btn_config {
+    height: 75px;
+    padding: 0;
+    white-space: normal;
+    max-width: 360px;
+    min-width: 250px;
+}
+
+.btn_config_icon {
+    position:relative;
+    width: 75px;
+    height: 75px;
+    font-size: 26pt;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn_config_subicon {
+    font-size: 18px;
+    position: absolute;
+    left: 38px;
+    top: 38px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.btn_config:hover .btn_config_subicon {
+    opacity: 1;
+}
+
+/* HIGHLIGHT BUTTON */
+.btn_highlight{
+    transition:all 0.2s ease-in-out;
+}
+.btn_highlight:hover{
+    background-color:rgba(0,0,0,0.08);
+}
+
+/* WILY MENU BUTTON */
+.wily_menu_btn {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+.wily_go_box {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wily_menu_btn .icon {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.4;
+    font-size: 8pt;
+}
+
+.wily_menu_btn:hover .icon {
+    opacity: 1;
+}
+
+.wily_menu_btn .go {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    font-size: 8pt;
+    padding-left: 1px;
+}
+
+.wily_menu_btn:hover .go {
+    opacity: 1;
+    padding-left: 8px;
+}
+
+/* PRIORITY BUTTON */
+.prior_btn {
+    width: 8px;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    padding: 0;
+}
+
+.prior_btn:hover, .prior_btn:focus {
+    width: 20px;
+}
+
+.prior_btn_icon {
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.prior_btn:hover > .prior_btn_icon,
+.prior_btn:focus > .prior_btn_icon {
+    opacity: 1;
+}
 

@@ -1,23 +1,23 @@
-/* DOCUMENT INFORMATION
+/*
 ################################################
-                TRANSCEND BUTTONS
+                FOOTER STYLES
 ################################################
     - Type: CSS Flexbox
-	- Version:  3.0.0
 	- Division: GDIT - MMIS Modernization Team
 	- Author:   Terry Sinay
 */
 
 footer {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    min-height:50px;
+    height:50px;
+    min-height: 50px;
 }
 
-.footer_year{
-    font-size:20pt;
-    color:#FFF;
+.footer_year {
+    font-size: 20pt;
+    color: #FFF;
 }

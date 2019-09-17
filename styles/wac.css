@@ -1,141 +1,28 @@
-/* PAGINATOR */
-.wac_paginator {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: rgba(255,255,255,0.7);
-    border-radius: 50px;
-    margin:10px 5px 15px;
-    box-shadow: 0 6px 10px -6px rgba(0,0,0,0.3);
-}
+/*
+################################################
+        WILY-ANGULAR COMMONS COMPONENTS
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
 
-.wac_page_link {
-    display: flex;
-    min-width: 180px;
-}
-
-.wac_page_link > button {
-    display: flex;
-    height: 25px;
-    justify-content: center;
-    align-items: center;
-    font-size: 11pt;
-    transition: all .2s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.75);
-    cursor: pointer;
-    outline: none;
-    user-select: none;
+/* NEW PAGINATOR */
+.pag_btn {
     flex: 1;
+    max-width: 60px;
     margin: 0 1px;
-    color: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(100, 100, 100, 0.2);
-    padding:0px;
-}
-
-.wac_page_link > button:hover {
-    box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15)
-}
-
-.wac_page_link > button.active {
-    font-size: 15pt;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.wac_page_text {
-    display: flex;
-    justify-content: flex-end;
-    width: 120px;
+    height: 24px;
     font-size: 10pt;
-    color: #585858;
-    margin: 0 2%;
 }
 
-.wac_first_last {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 9pt;
-    font-weight: 500;
-    width: 50px;
-    height: 20px;
-    transition: all .2s ease-in-out;
-    cursor: pointer;
-    outline: none;
-    user-select: none;
-    color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    background-color: rgba(230, 230, 230, 0.75);
-
-}
-
-.wac_first_last:hover {
-    box-shadow: inset 0 -20px 0 0 rgba(0, 0, 0, 0.30);
-    color: rgba(255, 255, 255, 1);
-}
-
-.wac_prev_next {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 9pt;
-    transition: all .2s ease-in-out;
-    background-color: rgba(255,255,255,0.85);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    margin: 0 2px;
-    outline: none;
-    user-select: none;
-    color: rgba(0,0,0,.8);
-    border-radius: 50%;
-    border:none;
-}
-.wac_prev_next:hover {
-    box-shadow: inset 0 -25px 0 0 rgba(0, 0, 0, 0.30);
-    color: rgba(255, 255, 255, 1);
-}
-
-.wac_item_count {
-    min-width: 150px;
-    justify-content: center;
-    height: 20px;
-    padding: 1px 15px;
-    display: flex;
-    align-items: center;
-    font-size: 10pt;
-    color: rgba(0,0,0,.6);
-    user-select: none;
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 20px;
+.pag_btn.active {
+    height: 30px;
+    margin-top: -3px;
+    margin-bottom: -3px;
 }
 
 
-.wac_page_size {
-    height: 25px;
-    border: 0;
-    user-select: none;
-    outline: none;
-    color: #585858;
-    font-size: 9pt;
-    padding: 3px;
-    background: none;
-}
-
-.wac_page_jump {
-    display: flex;
-    align-items: center;
-    font-size: 9pt;
-    border: 1px solid #ccc;
-    width: 50px;
-    padding: 0;
-    text-align: center;
-    height: 20px;
-    outline: none;
-    margin: 0 3px;
-    border-radius: 20px;
-}
 /* DIALOG */
 .wac_dialog_header {
     display: flex;
@@ -143,57 +30,62 @@
     border-left: 5px solid rgba(255, 255, 255, 0.3);
     min-height: 35px;
 }
-.wac_dialog_header_title{
+
+.wac_dialog_header_title {
     font-size: 14pt;
-    font-weight:500;
+    font-weight: 500;
 }
+
 .wac_dialog_container {
     display: flex;
     flex-flow: column;
     height: 100%;
 }
+
 .wac_dialog_content {
     flex: 1 1 auto;
     box-sizing: border-box;
 }
+
 /* HELP */
-.wac_help_description{
-    font-size:11pt;
-    padding:3px 15px;
-    width:100%;
-    font-weight:500;
-}
-.wac_help_text{
-    font-size:11pt;
-    padding:10px 15px;
-}
-.wac_help_notavail{
-    font-size:16pt;
+.wac_help_description {
+    font-size: 10pt;
+    padding: 6px 15px;
+    width: 100%;
+    font-weight: 500;
 }
 
+.wac_help_text {
+    font-size: 11pt;
+    padding: 10px 15px;
+}
 
+/* Image scaling fix */
+.wac_help_text img {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 768px;
+    padding: 3px;
+}
 
+.wac_help_notavail {
+    font-size: 16pt;
+}
 
-.wac_icon_select_icon {
-    display: flex;
+.wac_icon_select_btn {
+    min-width: 60px;
+    max-width: 80px;
+    height: 55px;
+    font-size: 28px;
     justify-content: center;
     align-items: center;
-    font-size: 25pt;
-    color: rgba(0, 0, 0, 0.4);
-    transition: all .2s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
-    height: 75px;
-    width: 75px;
-    margin: 3px 4px;
-    background-color: rgba(150, 150, 150, 0.05);
     cursor: pointer;
-    background-color: #EFEFEF;
 }
 
-.wac_icon_select_icon:hover {
-    color: rgba(0, 0, 0, 0.6);
-    background-color: rgba(255, 255, 255, 0.6);
+.wac_icon_select_list {
+    height: 350px;
 }
 
 .ui-dialog.ui-widget .ui-dialog-content {
@@ -223,10 +115,12 @@
     filter: alpha(opacity=80);
     pointer-events: none;
 }
+
 /* high-performance display:none; helper */
 .gu-hide {
     left: -9999px !important;
 }
+
 /* added to mirrorContainer (default = body) while dragging */
 .gu-unselectable {
     -webkit-user-select: none !important;
@@ -234,10 +128,12 @@
     -ms-user-select: none !important;
     user-select: none !important;
 }
+
 /* added to the source element while its mirror is dragged */
 .gu-transit {
     opacity: 0.2;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
     filter: alpha(opacity=20);
 }
+
 /* END DRAGULA STYLES */

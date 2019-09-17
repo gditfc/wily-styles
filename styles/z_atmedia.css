@@ -1,18 +1,107 @@
-.mobile_only{
-    display:none;
+/*
+################################################
+      MEDIA QUERIES AND DEVICE SPECIFIC
+################################################
+    - Type: CSS Flexbox
+	- Division: GDIT - MMIS Modernization Team
+	- Author:   Terry Sinay
+*/
+
+.tablet_only,
+.tablet_only_flex,
+.mobile_only,
+.mobile_only_flex {
+    display: none;
 }
+
+/* TABLET BREAKPOINT */
+@media screen and (max-width: 1024px) {
+    .hide_element1024 {
+        display: none;
+    }
+
+    .tablet_only {
+        display: block;
+    }
+
+    .tablet_only_flex {
+        display: flex;
+    }
+}
+
+/* MOBILE BREAKPOINT */
 @media screen and (max-width: 768px) {
-    .hide_element{
-        display:none;
+    .hide_element {
+        display: none;
     }
-    .mobile_only{
-        display:block;
+
+    .mobile_only {
+        display: block;
     }
-    .header_subtitle{
-        padding:3px 5px 3px 5px;
-        font-size:9pt;
+
+    .mobile_only_flex {
+        display: flex;
     }
-    .header .title{
-        font-size:11pt;
+
+    /* remove padding on mobile */
+    .pad_0_mobile {
+        padding: 0;
+    }
+
+    .center_mobile {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_subtitle {
+        padding: 3px 5px 3px 5px;
+        font-size: 9pt;
+    }
+
+    .header .title {
+        font-size: 11pt;
+    }
+
+    .wac_icon_select_list {
+        height: unset;
+    }
+}
+
+/* PRINTER STYLES */
+@media print {
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .site {
+        display: unset;
+        height: unset;
+    }
+
+    .site-content {
+        margin: 0;
+    }
+
+    .body_color {
+        background-color: white !important;
+    }
+
+    .page_container {
+        display: block;
+        overflow: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .color_bar {
+        display: none;
+    }
+
+    .print_hide {
+        display: none;
     }
 }
