@@ -161,10 +161,8 @@ nav {
 
 /* MAIN MENU ACCORDION */
 .menu_slideout {
-    background: linear-gradient(180deg, rgba(0, 0, 0, .45) 0, transparent);
     border: 0;
     min-width: 300px;
-    transition: all .3s ease;
 }
 
 @media (max-width: 768px) {
