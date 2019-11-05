@@ -22,25 +22,40 @@ button:focus {
     outline: none;
 }
 
-/* BUTTON TYPES */
+/* BUTTON BASE STYLES */
 .btn {
     user-select: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 0;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
     font-family: Montserrat, sans-serif;
     outline: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    box-sizing:border-box;
+    white-space:nowrap;
+    overflow:hidden;
+    transition:all 0.2s ease-in-out;
+}
+
+.btn .text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn .icon {
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    border:none;
 }
 
 .btn.disabled {
     cursor:default;
-}
-
-.btn.bwrap {
-    white-space: normal;
 }
 
 button.clear {
@@ -49,6 +64,8 @@ button.clear {
     padding: 0;
     color: inherit;
 }
+
+/* BUTTON ANIMATIONS */
 
 .btn.slide_up:hover {
     transform: translateY(-4px);
@@ -70,16 +87,6 @@ button.clear {
     transform: scale(1.4, 1.4);
 }
 
-.btn.icon {
-    width: 22px;
-    height: 22px;
-    margin: 0 5px;
-}
-
-.btn.icon:hover {
-    transform: scale(1.1, 1.1);
-}
-
 .btn.underline:hover {
     box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
 }
@@ -90,53 +97,150 @@ button.clear {
 
 /* BUTTON ATTRIBUTES */
 /* SIZES */
+/* .XSM - EXTRA SMALL BUTTON */
 .btn.xsm {
-    border-radius: 3px;
-    padding: 1px 3px;
-    font-size: 7pt;
-    margin: 3px;
-    min-height: 15px;
-    font-weight: 400;
+    min-height:16px;
+    font-size:9px;
+}
+.btn.xsm .text {
+    padding:0 6px;
+    height:16px;
+}
+.btn.xsm .icon {
+    width:16px;
+    height:16px;
+    font-size:8px;
 }
 
+/* .SM - SMALL BUTTON */
 .btn.sm {
-    border-radius: 3px;
-    padding: 1px 3px;
-    font-size: 8pt;
-    min-width: 80px;
-    margin: 3px;
-    min-height: 17px;
-    font-weight: 400;
+    min-height:20px;
+    font-size:12px;
+}
+.btn.sm .text {
+    padding:0 8px;
+    height:20px;
+}
+.btn.sm .icon {
+    width:20px;
+    height:20px;
+    font-size:10px;
 }
 
+/* .MD - MEDIUM BUTTON */
 .btn.md {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 9pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 20px;
-    font-weight: 400;
+    min-height:24px;
+    font-size:13px;
+}
+.btn.md .text {
+    padding:0 10px;
+    height:24px;
+}
+.btn.md .icon {
+    width:24px;
+    height:24px;
+    font-size:12px;
 }
 
+/* .LG - LARGE BUTTON */
 .btn.lg {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 11pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 30px;
-    font-weight: 500;
+    min-height:28px;
+    font-size:15px;
+}
+.btn.lg .text {
+    padding:0 12px;
+    height:28px;
+}
+.btn.lg .icon {
+    width:28px;
+    height:28px;
+    font-size:14px;
 }
 
+/* .XLG - EXTRA LARGE BUTTON */
 .btn.xlg {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 13pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 40px;
-    font-weight: 500;
+    min-height:32px;
+    font-size:17px;
+}
+.btn.xlg .text {
+    padding:0 13px;
+    height:32px;
+}
+.btn.xlg .icon {
+    width:32px;
+    height:32px;
+    font-size:15px;
+}
+
+/* ICON SEPARATORS */
+.btn .icon.left_border::after {
+    content: '';
+    height:0.75em;
+    left:0;
+    position:absolute;
+    border-width:0 0 0 1px;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.50);
+}
+.btn .icon.right_border::after {
+    content: '';
+    height:0.75em;
+    right:0;
+    position:absolute;
+    border-width:0 1px 0 0;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.50);
+}
+
+/* .GLOW - LIGHTEN ON HOVER */
+.btn.glow:hover {
+    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
+}
+.btn.glow:active {
+    box-shadow: none;
+}
+
+/* .SHRINK - SHRINK ICON ON HOVER */
+.btn:hover .icon.shrink svg {
+    transform:scale(0.85);
+}
+
+/* .GROW - GROW ICON ON HOVER */
+.btn:hover .icon.grow svg {
+    transform:scale(1.2);
+}
+
+/* .TURN - TURN ICON ON HOVER */
+.btn:hover .icon.turn svg {
+    transform:rotate(20deg);
+}
+
+/* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
+.btn:hover .icon.slide_left svg {
+    transform:translateX(-0.3em);
+}
+
+/* .SLIDE_RIGHT - SLIDE ICON RIGHT ON HOVER */
+.btn:hover .icon.slide_right svg {
+    transform:translateX(0.3em);
+}
+
+/* .SLIDE_UP - SLIDE ICON UP ON HOVER */
+.btn:hover .icon.slide_up svg {
+    transform:translateY(-0.3em);
+}
+
+/* .SLIDE_DOWN - SLIDE ICON DOWN ON HOVER */
+.btn:hover .icon.slide_down svg {
+    transform:translateY(0.3em);
+}
+
+/* TRANSITION FOR ICON ANIMATIONS */
+.btn .icon svg {
+    transition:all 0.15s ease-out;
+}
+.btn:active .icon svg {
+    transform:none !important;
 }
 
 /* Just a FUN LINK I leave here cause Nick loves it */

@@ -44,6 +44,21 @@
 }
 
 /* CIRCLE CLASSES */
+.circle_8px {
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    min-height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .circle_12px {
     width: 12px;
     min-width: 12px;
@@ -119,6 +134,21 @@
     box-sizing: border-box;
 }
 
+.circle_22px {
+    width: 22px;
+    min-width: 22px;
+    height: 22px;
+    min-height: 22px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .circle_24px {
     width: 24px;
     min-width: 24px;
@@ -175,6 +205,21 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.circle_36px {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     user-select: none;
     box-sizing: border-box;
 }

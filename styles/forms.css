@@ -190,6 +190,11 @@ input:disabled, textarea:disabled, select:disabled {
     outline: none;
 }
 
+/* FIX TO MAKE SELECT SAME SIZE AS INPUT */
+select.fullwidth_input {
+    padding:4px 10px;
+}
+
 .fullwidth_input.sm {
     padding: 2px 5px;
     font-size: 10pt;
