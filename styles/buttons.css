@@ -54,10 +54,6 @@ button:focus {
     border:none;
 }
 
-.btn.disabled {
-    cursor:default;
-}
-
 button.clear {
     background: none;
     border: none;
@@ -115,7 +111,7 @@ button.clear {
 /* .SM - SMALL BUTTON */
 .btn.sm {
     min-height:20px;
-    font-size:12px;
+    font-size:11px;
 }
 .btn.sm .text {
     padding:0 8px;
@@ -130,7 +126,7 @@ button.clear {
 /* .MD - MEDIUM BUTTON */
 .btn.md {
     min-height:24px;
-    font-size:13px;
+    font-size:12px;
 }
 .btn.md .text {
     padding:0 10px;
@@ -139,13 +135,13 @@ button.clear {
 .btn.md .icon {
     width:24px;
     height:24px;
-    font-size:12px;
+    font-size:11px;
 }
 
 /* .LG - LARGE BUTTON */
 .btn.lg {
     min-height:28px;
-    font-size:15px;
+    font-size:13px;
 }
 .btn.lg .text {
     padding:0 12px;
@@ -154,7 +150,7 @@ button.clear {
 .btn.lg .icon {
     width:28px;
     height:28px;
-    font-size:14px;
+    font-size:12px;
 }
 
 /* .XLG - EXTRA LARGE BUTTON */
@@ -191,6 +187,29 @@ button.clear {
     border-style:solid;
     border-color:rgba(255,255,255,0.50);
 }
+.btn .icon.left_border_alt::after {
+    content: '';
+    height:0.75em;
+    left:0;
+    position:absolute;
+    border-width:0 0 0 1px;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.35);
+}
+.btn .icon.right_border_alt::after {
+    content: '';
+    height:0.75em;
+    right:0;
+    position:absolute;
+    border-width:0 1px 0 0;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.35);
+}
+
+/* ICON ANIMATION TRANSITION */
+.btn .icon svg {
+    transition:all 0.15s ease-out;
+}
 
 /* .GLOW - LIGHTEN ON HOVER */
 .btn.glow:hover {
@@ -215,6 +234,14 @@ button.clear {
     transform:rotate(20deg);
 }
 
+/* .SPIN - SPIN ICON ON HOVER */
+.btn .icon.spin svg {
+    transition:all 0.3s ease-out;
+}
+.btn:hover .icon.spin svg {
+    transform:rotate(90deg);
+}
+
 /* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
 .btn:hover .icon.slide_left svg {
     transform:translateX(-0.3em);
@@ -235,11 +262,17 @@ button.clear {
     transform:translateY(0.3em);
 }
 
-/* TRANSITION FOR ICON ANIMATIONS */
-.btn .icon svg {
-    transition:all 0.15s ease-out;
-}
+/* REMOVE TRANSITION ON ACTIVE */
 .btn:active .icon svg {
+    transform:none !important;
+}
+
+/* DISABLED ICON */
+.btn.disabled {
+    cursor:default;
+}
+
+.btn.disabled:hover .icon svg {
     transform:none !important;
 }
 

@@ -313,6 +313,20 @@
     box-sizing: border-box;
 }
 
+.square_22px {
+    min-width: 22px;
+    width: 22px;
+    min-height: 22px;
+    height: 22px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .square_24px {
     width: 24px;
     min-width: 24px;
@@ -360,6 +374,20 @@
     min-width: 36px;
     height: 36px;
     min-height: 36px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_46px {
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    min-height: 46px;
     padding: 0;
     display: flex;
     justify-content: center;
