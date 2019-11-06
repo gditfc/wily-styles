@@ -30,122 +30,9 @@ button.clear {
 }
 
 /*********************************************************************/
-/* OLD BUTTONS                                                       */
-/*********************************************************************/
-.btn {
-    user-select: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-family: Montserrat, sans-serif;
-    outline: none;
-}
-
-.btn.disabled {
-    cursor:default;
-}
-
-.btn.bwrap {
-    white-space: normal;
-}
-
-.btn.slide_up:hover {
-    transform: translateY(-4px);
-}
-
-.btn.sm_grow:hover {
-    transform: scale(1.08);
-}
-
-.btn.grow:hover {
-    transform: scale(1.02, 1.02);
-}
-
-.btn.mid_grow:hover {
-    transform: scale(1.2);
-}
-
-.btn.big_grow:hover {
-    transform: scale(1.4, 1.4);
-}
-
-.btn.icon {
-    width: 22px;
-    height: 22px;
-    margin: 0 5px;
-}
-
-.btn.icon:hover {
-    transform: scale(1.1, 1.1);
-}
-
-.btn.underline:hover {
-    box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
-}
-
-.btn.underline_md:hover {
-    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
-}
-
-/* BUTTON ATTRIBUTES */
-/* SIZES */
-.btn.xsm {
-    border-radius: 3px;
-    padding: 1px 3px;
-    font-size: 7pt;
-    margin: 3px;
-    min-height: 15px;
-    font-weight: 400;
-}
-
-.btn.sm {
-    border-radius: 3px;
-    padding: 1px 3px;
-    font-size: 8pt;
-    min-width: 80px;
-    margin: 3px;
-    min-height: 17px;
-    font-weight: 400;
-}
-
-.btn.md {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 9pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 20px;
-    font-weight: 400;
-}
-
-.btn.lg {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 11pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 30px;
-    font-weight: 500;
-}
-
-.btn.xlg {
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 13pt;
-    min-width: 100px;
-    margin: 3px;
-    min-height: 40px;
-    font-weight: 500;
-}
-/******************* END OLD BUTTONS *********************************/
-
-/*********************************************************************/
 /* NEW BUTTONS                                                       */
 /*********************************************************************/
-.btn_new {
+.btn {
     user-select: none;
     border: 0;
     cursor: pointer;
@@ -161,13 +48,13 @@ button.clear {
     transition:all 0.2s ease-in-out;
 }
 
-.btn_new .text {
+.btn .text {
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.btn_new .icon {
+.btn .icon {
     box-sizing:border-box;
     display:flex;
     justify-content: center;
@@ -178,82 +65,82 @@ button.clear {
 
 /******************  SIZES **********************/
 /* .XSM - EXTRA SMALL BUTTON */
-.btn_new.xsm {
+.btn.xsm {
     min-height:16px;
     font-size:9px;
 }
-.btn_new.xsm .text {
+.btn.xsm .text {
     padding:0 6px;
     height:16px;
 }
-.btn_new.xsm .icon {
+.btn.xsm .icon {
     width:16px;
     height:16px;
     font-size:8px;
 }
 
 /* .SM - SMALL BUTTON */
-.btn_new.sm {
+.btn.sm {
     min-height:20px;
     font-size:11px;
 }
-.btn_new.sm .text {
+.btn.sm .text {
     padding:0 8px;
     height:20px;
 }
-.btn_new.sm .icon {
+.btn.sm .icon {
     width:20px;
     height:20px;
     font-size:10px;
 }
 
 /* .MD - MEDIUM BUTTON */
-.btn_new.md {
+.btn.md {
     min-height:24px;
     font-size:12px;
 }
-.btn_new.md .text {
+.btn.md .text {
     padding:0 10px;
     height:24px;
 }
-.btn_new.md .icon {
+.btn.md .icon {
     width:24px;
     height:24px;
     font-size:11px;
 }
 
 /* .LG - LARGE BUTTON */
-.btn_new.lg {
+.btn.lg {
     min-height:28px;
     font-size:13px;
 }
-.btn_new.lg .text {
+.btn.lg .text {
     padding:0 12px;
     height:28px;
 }
-.btn_new.lg .icon {
+.btn.lg .icon {
     width:28px;
     height:28px;
     font-size:12px;
 }
 
 /* .XLG - EXTRA LARGE BUTTON */
-.btn_new.xlg {
+.btn.xlg {
     min-height:32px;
     font-size:17px;
 }
-.btn_new.xlg .text {
+.btn.xlg .text {
     padding:0 13px;
     height:32px;
 }
-.btn_new.xlg .icon {
+.btn.xlg .icon {
     width:32px;
     height:32px;
     font-size:15px;
 }
 
 /* ICON SEPARATORS */
-.btn_new .icon.left_border::after {
+.btn .icon.left_border::after {
     content: '';
     height:0.75em;
     left:0;
@@ -262,7 +149,7 @@ button.clear {
     border-style:solid;
     border-color:rgba(255,255,255,0.50);
 }
-.btn_new .icon.right_border::after {
+.btn .icon.right_border::after {
     content: '';
     height:0.75em;
     right:0;
@@ -271,7 +158,7 @@ button.clear {
     border-style:solid;
     border-color:rgba(255,255,255,0.50);
 }
-.btn_new .icon.left_border_alt::after {
+.btn .icon.left_border_alt::after {
     content: '';
     height:0.75em;
     left:0;
@@ -280,7 +167,7 @@ button.clear {
     border-style:solid;
     border-color:rgba(0,0,0,0.35);
 }
-.btn_new .icon.right_border_alt::after {
+.btn .icon.right_border_alt::after {
     content: '';
     height:0.75em;
     right:0;
@@ -291,72 +178,72 @@ button.clear {
 }
 
 /* ICON ANIMATION TRANSITION */
-.btn_new .icon svg {
+.btn .icon svg {
     transition:all 0.15s ease-out;
 }
 
 /* .GLOW - LIGHTEN ON HOVER */
-.btn_new.glow:hover {
+.btn.glow:hover {
     box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
 }
-.btn_new.glow:active {
+.btn.glow:active {
     box-shadow: none;
 }
 
 /* .SHRINK - SHRINK ICON ON HOVER */
-.btn_new:hover .icon.shrink svg {
+.btn:hover .icon.shrink svg {
     transform:scale(0.85);
 }
 
 /* .GROW - GROW ICON ON HOVER */
-.btn_new:hover .icon.grow svg {
+.btn:hover .icon.grow svg {
     transform:scale(1.2);
 }
 
 /* .TURN - TURN ICON ON HOVER */
-.btn_new:hover .icon.turn svg {
+.btn:hover .icon.turn svg {
     transform:rotate(20deg);
 }
 
 /* .SPIN - SPIN ICON ON HOVER */
-.btn_new .icon.spin svg {
+.btn .icon.spin svg {
     transition:all 0.3s ease-out;
 }
-.btn_new:hover .icon.spin svg {
+.btn:hover .icon.spin svg {
     transform:rotate(90deg);
 }
 
 /* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
-.btn_new:hover .icon.slide_left svg {
+.btn:hover .icon.slide_left svg {
     transform:translateX(-0.3em);
 }
 
 /* .SLIDE_RIGHT - SLIDE ICON RIGHT ON HOVER */
-.btn_new:hover .icon.slide_right svg {
+.btn:hover .icon.slide_right svg {
     transform:translateX(0.3em);
 }
 
 /* .SLIDE_UP - SLIDE ICON UP ON HOVER */
-.btn_new:hover .icon.slide_up svg {
+.btn:hover .icon.slide_up svg {
     transform:translateY(-0.3em);
 }
 
 /* .SLIDE_DOWN - SLIDE ICON DOWN ON HOVER */
-.btn_new:hover .icon.slide_down svg {
+.btn:hover .icon.slide_down svg {
     transform:translateY(0.3em);
 }
 
 /* REMOVE TRANSITION ON ACTIVE */
-.btn_new:active .icon svg {
+.btn:active .icon svg {
     transform:none !important;
 }
 
 /* DISABLED ICON */
-.btn_new.disabled {
+.btn.disabled {
     cursor:default;
 }
 
-.btn_new.disabled:hover .icon svg {
+.btn.disabled:hover .icon svg {
     transform:none !important;
 }
 
