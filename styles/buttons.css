@@ -48,12 +48,13 @@ button.clear {
     transition:all 0.2s ease-in-out;
 }
 
+/* vertically center text */
 .btn .text {
     display:flex;
-    justify-content: center;
     align-items: center;
 }
 
+/* center icon and remove border in case of background */
 .btn .icon {
     box-sizing:border-box;
     display:flex;
@@ -126,20 +127,20 @@ button.clear {
 
 /* .XLG - EXTRA LARGE BUTTON */
 .btn.xlg {
-    min-height:30px;
+    min-height:32px;
     font-size:17px;
 }
 .btn.xlg .text {
     padding:0 13px;
-    height:30px;
+    height:32px;
 }
 .btn.xlg .icon {
-    width:30px;
-    height:30px;
+    width:32px;
+    height:32px;
     font-size:15px;
 }
 
-/* ICON SEPARATORS */
+/************** SEPARATORS *******************/
 .btn .icon.border_left::after {
     content: '';
     height:0.75em;
@@ -177,7 +178,28 @@ button.clear {
     border-color:rgba(0,0,0,0.35);
 }
 
-/* ICON ANIMATION TRANSITION */
+/******************* BUTTON ANIMATIONS ********************/
+.btn.slide_up:hover {
+    transform: translateY(-4px);
+}
+
+.btn.sm_grow:hover {
+    transform: scale(1.08);
+}
+
+.btn.grow:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.btn.mid_grow:hover {
+    transform: scale(1.2);
+}
+
+.btn.big_grow:hover {
+    transform: scale(1.4, 1.4);
+}
+
+/******************** ICON ANIMATIONS ********************/
 .btn .icon svg {
     transition:all 0.15s ease-out;
 }
@@ -460,6 +482,10 @@ button.clear {
     white-space: normal;
     max-width: 360px;
     min-width: 250px;
+}
+
+.btn_config .text {
+    justify-content:normal;
 }
 
 .btn_config_icon {
