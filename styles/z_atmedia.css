@@ -123,4 +123,8 @@
     .print_hide {
         display: none;
     }
+
+    .print_break_before {
+        page-break-before:always;
+    }
 }
