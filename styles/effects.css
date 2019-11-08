@@ -369,6 +369,20 @@
     box-sizing: border-box;
 }
 
+.square_30px {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    min-height: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .square_36px {
     width: 36px;
     min-width: 36px;
