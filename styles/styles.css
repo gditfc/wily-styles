@@ -7,25 +7,6 @@
 	- Author:   Terry Sinay
 */
 
-/** TEST IMPORTS
-@import '../../../wily-styles/styles/backgrounds.css';
-@import '../../../wily-styles/styles/buttons.css';
-@import '../../../wily-styles/styles/codesnippet.css';
-@import '../../../wily-styles/styles/colors.css';
-@import '../../../wily-styles/styles/effects.css';
-@import '../../../wily-styles/styles/externals.css';
-@import '../../../wily-styles/styles/footer.css';
-@import '../../../wily-styles/styles/forms.css';
-@import '../../../wily-styles/styles/help.css';
-@import '../../../wily-styles/styles/layout.css';
-@import '../../../wily-styles/styles/montserrat.css';
-@import '../../../wily-styles/styles/navigation.css';
-@import '../../../wily-styles/styles/styles.css';
-@import '../../../wily-styles/styles/theme.css';
-@import '../../../wily-styles/styles/wac.css';
-@import '../../../wily-styles/styles/z_atmedia.css';
- */
-
 html {
     overflow-y: scroll;
     overflow-x: hidden;
