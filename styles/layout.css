@@ -409,6 +409,10 @@ a {
     text-overflow: ellipsis;
 }
 
+.text_wrap {
+    white-space:normal;
+}
+
 /* remove margin from top/bottom of first/last paragraph */
 /*.text p:first-child {*/
 /*    margin-top:0;*/
