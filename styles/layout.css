@@ -409,6 +409,34 @@ a {
     text-overflow: ellipsis;
 }
 
+.text_wrap {
+    white-space:normal;
+}
+
+/* remove margin from top/bottom of first/last paragraph */
+/*.text p:first-child {*/
+/*    margin-top:0;*/
+/*}*/
+/*.text p:last-child {*/
+/*    margin-bottom:0;*/
+/*}*/
+p {
+    margin:0;
+}
+
+/* fix image width in paragraph elements */
+p img {
+    max-width: 100%;
+}
+
+/* LIST ITEMS WITH TOP/BOTTOM BORDERS */
+.list .list_item {
+    border-width:0 0 1px 0;
+}
+.list .list_item:last-child {
+    border-width:0;
+}
+
 /* SCROLLING */
 .scroll_y {
     overflow-y: scroll;
@@ -545,6 +573,10 @@ a {
 
 .min_w50 {
     min-width: 50px;
+}
+
+.min_w75 {
+    min-width: 75px;
 }
 
 .min_w100 {
