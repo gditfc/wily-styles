@@ -69,6 +69,12 @@
 
 /* PRINTER STYLES */
 @media print {
+    /*** MODIFY/HIDE SOME ELEMENTS ***/
+
+    body * {
+        visibility: hidden;
+    }
+
     nav {
         display: none;
     }
@@ -77,54 +83,55 @@
         display: none;
     }
 
-    .site {
-        display: unset;
-        height: unset;
-    }
-
-    .site-content {
-        margin: 0;
-    }
-
     .layout_sidebar {
         display:none;
     }
 
-    .body_color {
-        background-color: white !important;
+    .site-content {
+        margin:0;
+        display:block;
     }
 
-    body * {
-        visibility: hidden;
+    #site-content {
+        margin:0 !important;
     }
 
-    .page_container, .page_container * {
+    #site-content, #site-content * {
         visibility: visible;
     }
 
     .page_container {
-        position: absolute;
-        font-size: 16px;
-        width: 100% !important;
-        display: block;
-        overflow: hidden;
-        margin: 0 !important;
-        padding: 0 !important;
-        left: 0;
-        top: 0;
         box-shadow: none !important;
         border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
-    .color_bar {
-        display: none;
+    .page_container_color, .body_color {
+        color: #222 !important;
+        background-color: white !important;
     }
+
+    .form_cell {
+        border:none !important;
+        padding:5px;
+    }
+
+    /*** PRINT CLASSES ***/
 
     .print_hide {
         display: none;
     }
 
+    .print_break_after {
+        page-break-after:always;
+    }
+
     .print_break_before {
         page-break-before:always;
+    }
+
+    .print_break_avoid {
+        page-break-inside:avoid;
     }
 }

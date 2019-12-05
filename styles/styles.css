@@ -33,7 +33,6 @@ body {
     display: flex;
     min-height: 450px;
     min-width: 280px;
-    overflow: hidden;
 }
 
 .page_container.gradient {

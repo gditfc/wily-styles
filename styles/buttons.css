@@ -53,6 +53,7 @@ button.clear {
 .btn .text {
     display:flex;
     align-items: center;
+    box-sizing:border-box;
 }
 
 /* center icon and remove border in case of background */
