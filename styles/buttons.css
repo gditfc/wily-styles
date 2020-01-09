@@ -29,163 +29,7 @@ button.clear {
     color: inherit;
 }
 
-/*********************************************************************/
-/* NEW BUTTONS                                                       */
-/*********************************************************************/
-.btn {
-    user-select: none;
-    border: 0;
-    cursor: pointer;
-    font-family: Montserrat, sans-serif;
-    outline: none;
-    display:flex;
-    flex-shrink:0;
-    justify-content: center;
-    align-items: center;
-    padding:0;
-    box-sizing:border-box;
-    white-space:nowrap;
-    overflow:hidden;
-    transition:all 0.2s ease-in-out;
-}
-
-/* vertically center text */
-.btn .text {
-    display:flex;
-    align-items: center;
-    box-sizing:border-box;
-}
-
-/* center icon and remove border in case of background */
-.btn .icon {
-    box-sizing:border-box;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    border:none;
-}
-
-/******************  SIZES **********************/
-/* add border radius to buttons with sizes */
-.btn.xsm, .btn.sm, .btn.md, .btn.lg, .btn.xlg {
-    border-radius:3px;
-}
-
-/* .XSM - EXTRA SMALL BUTTON */
-.btn.xsm {
-    min-height:16px;
-    font-size:9px;
-}
-.btn.xsm .text {
-    padding:0 6px;
-    min-height:16px;
-}
-.btn.xsm .icon {
-    min-width:16px;
-    min-height:16px;
-    font-size:8px;
-}
-
-/* .SM - SMALL BUTTON */
-.btn.sm {
-    min-height:18px;
-    font-size:11px;
-}
-.btn.sm .text {
-    padding:0 8px;
-    min-height:18px;
-}
-.btn.sm .icon {
-    min-width:18px;
-    min-height:18px;
-    font-size:10px;
-}
-
-/* .MD - MEDIUM BUTTON */
-.btn.md {
-    min-height:22px;
-    font-size:12px;
-}
-.btn.md .text {
-    padding:0 10px;
-    min-height:22px;
-}
-.btn.md .icon {
-    min-width:22px;
-    min-height:22px;
-    font-size:11px;
-}
-
-/* .LG - LARGE BUTTON */
-.btn.lg {
-    min-height:26px;
-    font-size:13px;
-}
-.btn.lg .text {
-    padding:0 12px;
-    min-height:26px;
-}
-.btn.lg .icon {
-    min-width:26px;
-    min-height:26px;
-    font-size:12px;
-}
-
-/* .XLG - EXTRA LARGE BUTTON */
-.btn.xlg {
-    min-height:32px;
-    font-size:17px;
-}
-.btn.xlg .text {
-    padding:0 13px;
-    min-height:32px;
-}
-.btn.xlg .icon {
-    min-width:32px;
-    min-height:32px;
-    font-size:15px;
-}
-
-/************** SEPARATORS *******************/
-.btn .icon.border_left::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
-}
-.btn .icon.border_right::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
-}
-.btn .icon.border_left_alt::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(0,0,0,0.35);
-}
-.btn .icon.border_right_alt::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(0,0,0,0.35);
-}
-
-/******************* BUTTON ANIMATIONS ********************/
+/******************* ANIMATIONS ********************/
 .btn.slide_up:hover {
     transform: translateY(-4px);
 }
@@ -214,8 +58,172 @@ button.clear {
     box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
 }
 
+a.slide_right, a.slide_up {
+    transition:0.2s ease all;
+}
+
+a.slide_right:hover {
+    transform:translateX(10px);
+}
+
+/*********************************************************************/
+/* NEW BUTTONS                                                       */
+/*********************************************************************/
+.btn {
+    user-select: none;
+    border: 0;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    outline: none;
+    display:flex;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    box-sizing:border-box;
+    white-space:nowrap;
+    overflow:hidden;
+    transition:all 0.2s ease-in-out;
+}
+
+/* vertically center text */
+.btn > .text {
+    display:flex;
+    align-items: center;
+    box-sizing:border-box;
+}
+
+/* center icon and remove border in case of background */
+.btn > .icon {
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    border:none;
+}
+
+/******************  SIZES **********************/
+/* add border radius to buttons with sizes */
+.btn.xsm, .btn.sm, .btn.md, .btn.lg, .btn.xlg {
+    border-radius:3px;
+}
+
+/* .XSM - EXTRA SMALL BUTTON */
+.btn.xsm {
+    min-height:16px;
+    font-size:9px;
+}
+.btn.xsm > .text {
+    padding:0 6px;
+    min-height:16px;
+}
+.btn.xsm > .icon {
+    min-width:16px;
+    min-height:16px;
+    font-size:8px;
+}
+
+/* .SM - SMALL BUTTON */
+.btn.sm {
+    min-height:18px;
+    font-size:11px;
+}
+.btn.sm > .text {
+    padding:0 8px;
+    min-height:18px;
+}
+.btn.sm > .icon {
+    min-width:18px;
+    min-height:18px;
+    font-size:10px;
+}
+
+/* .MD - MEDIUM BUTTON */
+.btn.md {
+    min-height:22px;
+    font-size:12px;
+}
+.btn.md > .text {
+    padding:0 10px;
+    min-height:22px;
+}
+.btn.md > .icon {
+    min-width:22px;
+    min-height:22px;
+    font-size:11px;
+}
+
+/* .LG - LARGE BUTTON */
+.btn.lg {
+    min-height:26px;
+    font-size:13px;
+}
+.btn.lg > .text {
+    padding:0 12px;
+    min-height:26px;
+}
+.btn.lg > .icon {
+    min-width:26px;
+    min-height:26px;
+    font-size:12px;
+}
+
+/* .XLG - EXTRA LARGE BUTTON */
+.btn.xlg {
+    min-height:32px;
+    font-size:17px;
+}
+.btn.xlg > .text {
+    padding:0 13px;
+    min-height:32px;
+}
+.btn.xlg > .icon {
+    min-width:32px;
+    min-height:32px;
+    font-size:15px;
+}
+
+/************** SEPARATORS *******************/
+.btn > .icon.border_left::after {
+    content: '';
+    height:0.75em;
+    left:0;
+    position:absolute;
+    border-width:0 0 0 1px;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.50);
+}
+.btn > .icon.border_right::after {
+    content: '';
+    height:0.75em;
+    right:0;
+    position:absolute;
+    border-width:0 1px 0 0;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.50);
+}
+.btn > .icon.border_left_alt::after {
+    content: '';
+    height:0.75em;
+    left:0;
+    position:absolute;
+    border-width:0 0 0 1px;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.35);
+}
+.btn > .icon.border_right_alt::after {
+    content: '';
+    height:0.75em;
+    right:0;
+    position:absolute;
+    border-width:0 1px 0 0;
+    border-style:solid;
+    border-color:rgba(0,0,0,0.35);
+}
+
 /******************** ICON ANIMATIONS ********************/
-.btn .icon svg {
+.btn > .icon > svg {
     transition:all 0.15s ease-out;
 }
 
@@ -228,50 +236,50 @@ button.clear {
 }
 
 /* .SHRINK - SHRINK ICON ON HOVER */
-.btn:hover .icon.shrink svg {
+.btn:hover > .icon.shrink > svg {
     transform:scale(0.85);
 }
 
 /* .GROW - GROW ICON ON HOVER */
-.btn:hover .icon.grow svg {
+.btn:hover > .icon.grow > svg {
     transform:scale(1.2);
 }
 
 /* .TURN - TURN ICON ON HOVER */
-.btn:hover .icon.turn svg {
+.btn:hover > .icon.turn > svg {
     transform:rotate(20deg);
 }
 
 /* .SPIN - SPIN ICON ON HOVER */
-.btn .icon.spin svg {
+.btn > .icon.spin > svg {
     transition:all 0.3s ease-out;
 }
-.btn:hover .icon.spin svg {
+.btn:hover > .icon.spin > svg {
     transform:rotate(90deg);
 }
 
 /* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
-.btn:hover .icon.slide_left svg {
+.btn:hover > .icon.slide_left > svg {
     transform:translateX(-0.3em);
 }
 
 /* .SLIDE_RIGHT - SLIDE ICON RIGHT ON HOVER */
-.btn:hover .icon.slide_right svg {
+.btn:hover > .icon.slide_right > svg {
     transform:translateX(0.3em);
 }
 
 /* .SLIDE_UP - SLIDE ICON UP ON HOVER */
-.btn:hover .icon.slide_up svg {
+.btn:hover > .icon.slide_up > svg {
     transform:translateY(-0.3em);
 }
 
 /* .SLIDE_DOWN - SLIDE ICON DOWN ON HOVER */
-.btn:hover .icon.slide_down svg {
+.btn:hover > .icon.slide_down > svg {
     transform:translateY(0.3em);
 }
 
 /* REMOVE TRANSITION ON ACTIVE */
-.btn:active .icon svg {
+.btn:active > .icon > svg {
     transform:none !important;
 }
 
@@ -280,8 +288,12 @@ button.clear {
     cursor:default;
 }
 
-.btn.disabled:hover .icon svg {
+.btn.disabled:hover > .icon > svg {
     transform:none !important;
+}
+
+.btn.disabled.glow:hover {
+    box-shadow:none !important;
 }
 
 /************* END NEW BUTTONS *********************************/
