@@ -48,6 +48,10 @@
         padding: 0;
     }
 
+    .text_center_mobile {
+        text-align:center;
+    }
+
     .center_mobile {
         justify-content: center;
         align-items: center;

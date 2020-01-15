@@ -30,39 +30,39 @@ button.clear {
 }
 
 /******************* ANIMATIONS ********************/
-.btn.slide_up:hover {
+.hov_slide_up:hover {
     transform: translateY(-4px);
 }
 
-.btn.sm_grow:hover {
+.hov_sm_grow:hover {
     transform: scale(1.08);
 }
 
-.btn.grow:hover {
+.hov_grow:hover {
     transform: scale(1.02, 1.02);
 }
 
-.btn.mid_grow:hover {
+.hov_mid_grow:hover {
     transform: scale(1.2);
 }
 
-.btn.big_grow:hover {
+.hov_big_grow:hover {
     transform: scale(1.4, 1.4);
 }
 
-.btn.underline:hover {
+.hov_underline:hover {
     box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
 }
 
-.btn.underline_md:hover {
+.hov_underline_md:hover {
     box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
 }
 
-a.slide_right, a.slide_up {
+.hov_slide_right, .hov_slide_up {
     transition:0.2s ease all;
 }
 
-a.slide_right:hover {
+.hov_slide_right:hover {
     transform:translateX(10px);
 }
 
