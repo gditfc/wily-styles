@@ -96,9 +96,11 @@ input:disabled, textarea:disabled, select:disabled {
 
 .form_checkbox {
     width: 20px;
+    min-width:20px;
+    height: 20px;
+    min-height:20px;
     box-sizing: border-box;
     margin: 0;
-    height: 20px;
     outline: none;
 }
 
