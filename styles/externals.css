@@ -94,6 +94,10 @@
     vertical-align: middle;
 }
 
+.ui-datepicker td>a {
+    color: #222;
+}
+
 .ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
     background-color: #f4f4f4;
     color: #222;
