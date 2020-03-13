@@ -9,8 +9,10 @@
 
 .tablet_only,
 .tablet_only_flex,
+.tablet_only_inline,
 .mobile_only,
-.mobile_only_flex {
+.mobile_only_flex,
+.mobile_only_inline {
     display: none;
 }
 
@@ -27,6 +29,10 @@
     .tablet_only_flex {
         display: flex;
     }
+
+    .tablet_only_inline {
+        display: inline-block;
+    }
 }
 
 /* MOBILE BREAKPOINT */
@@ -41,6 +47,10 @@
 
     .mobile_only_flex {
         display: flex;
+    }
+
+    .mobile_only_inline {
+        display:inline-block;
     }
 
     /* remove padding on mobile */
