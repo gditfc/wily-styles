@@ -19,7 +19,7 @@
 /* TABLET BREAKPOINT */
 @media screen and (max-width: 1024px) {
     .hide_element1024 {
-        display: none;
+        display: none !important;
     }
 
     .tablet_only {
@@ -38,7 +38,7 @@
 /* MOBILE BREAKPOINT */
 @media screen and (max-width: 768px) {
     .hide_element {
-        display: none;
+        display: none !important;
     }
 
     .mobile_only {
