@@ -22,6 +22,12 @@ transcend-field-html .ql-editor {
 .ql-editor ol li:not(.ql-direction-rtl), .ql-editor ul li:not(.ql-direction-rtl) {
     padding-left:0;
 }
+/* placeholder text override to fix dark theme */
+.ql-editor.ql-blank::before {
+    color: inherit;
+    opacity:0.5;
+    font-style:normal;
+}
 
 /* DIALOGS */
 .ui-dialog.ui-widget .ui-dialog-content  {
@@ -31,6 +37,11 @@ transcend-field-html .ql-editor {
 
 .ui-dialog-titlebar {
     display: none;
+}
+
+/* fix so dialog doesnt go under nav bar on safari */
+.ui-dialog-maximized {
+    height: 100% !important;
 }
 
 /* DIALOG OVERLAY FIX */
@@ -109,7 +120,7 @@ transcend-field-html .ql-editor {
     margin: .125em 0;
     vertical-align: middle;
 }
-
+/* fix colors on dark theme */
 .ui-datepicker td>a {
     color: #222;
 }

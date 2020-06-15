@@ -29,10 +29,15 @@
 }
 
 /* SHADOWS */
+/* regular shadow */
 .shadow {
     box-shadow: 0 6px 10px -6px rgba(0, 0, 0, 0.3);
 }
-
+/* small subtle card shadow */
+.card_shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+/* large page shadow */
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
 }
@@ -254,6 +259,21 @@
     box-sizing: border-box;
 }
 
+.circle_60px {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .circle_70px {
     width: 70px;
     min-width: 70px;
@@ -412,11 +432,39 @@
     box-sizing: border-box;
 }
 
+.square_40px {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 .square_46px {
     width: 46px;
     min-width: 46px;
     height: 46px;
     min-height: 46px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+.square_50px {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
     padding: 0;
     display: flex;
     justify-content: center;
