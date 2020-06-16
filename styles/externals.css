@@ -395,3 +395,8 @@ div.jsoneditor-tree {
 div.jsoneditor-tree * {
     color: #222;
 }
+
+/* STAR RATING FROM PRIMENG */
+.ui-rating {
+    font-size:3em;
+}
