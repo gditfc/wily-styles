@@ -449,10 +449,16 @@ p img {
 }
 
 /* LIST ITEMS WITH ALTERNATING BACKGROUND COLORS */
+.bg_everyodd > * {
+    border-width:0 !important; /* remove border width */
+}
 .bg_everyodd > :nth-child(even) {
     background:none !important;
 }
 /* alternative if list items are components */
+.bg_everyodd_component > * > div {
+    border-width:0 !important; /* remove border width */
+}
 .bg_everyodd_component > :nth-child(even) > div {
     background:none !important;
 }

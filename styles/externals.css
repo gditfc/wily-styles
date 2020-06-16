@@ -68,6 +68,11 @@ transcend-field-html .ql-editor {
     background-color: inherit;
 }
 
+/* fix disabled state in calendar */
+.ui-state-disabled {
+    opacity:0.5;
+}
+
 .ui-multiselect .ui-multiselect-label {
     padding: 1px;
 }
