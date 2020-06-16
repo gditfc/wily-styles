@@ -658,3 +658,23 @@ button[disabled] {
     font-size:11pt;
     font-weight:500;
 }
+
+/* TAB BUTTONS */
+.tabs .btn_tab {
+    margin-top:1px;
+    margin-bottom:1px;
+    border-radius:0 !important;
+    min-height:30px;
+}
+.tabs .btn_tab:first-child {
+    margin-left:1px;
+    margin-right:1px;
+    border-radius:3px 0 0 3px !important;
+}
+.tabs .btn_tab:last-child {
+    margin-right:1px;
+    border-radius:0 3px 3px 0 !important;
+}
+.tabs .btn_tab:not(:first-child):not(:last-child) {
+    margin-right:1px;
+}
