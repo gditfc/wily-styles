@@ -33,6 +33,13 @@
     .tablet_only_inline {
         display: inline-block;
     }
+
+    /* set height to auto on tablet */
+    /* makes scrollable lists fill screen instead of independently scrolling */
+    .heightauto_tablet {
+        height:auto !important;
+        max-height:unset !important;
+    }
 }
 
 /* MOBILE BREAKPOINT */
@@ -79,11 +86,28 @@
     .wac_icon_select_list {
         height: unset;
     }
+
+    /* condense emedny logo on mobile */
+    .nav_emedny {
+        background-image: url(assets/logos/emedny_e.svg);
+        margin:2px 8px 0 5px;
+        width:15px;
+    }
+
+    /* set height to auto on mobile */
+    /* makes scrollable lists fill screen instead of independently scrolling */
+    .heightauto_mobile {
+        height:auto !important;
+        max-height:unset !important;
+    }
 }
 
 /* PRINTER STYLES */
 @media print {
-    /*** MODIFY/HIDE SOME ELEMENTS ***/
+
+    html {
+        overflow-y:auto;
+    }
 
     body * {
         visibility: hidden;
@@ -99,10 +123,15 @@
 
     .layout_sidebar {
         display:none;
+        direction:ltr !important;
+        height:calc(100% - 40px) !important;
+        position:relative;
     }
 
     .site {
         display:block;
+        height:auto;
+        overflow-y:hidden;
     }
 
     .site-content {
@@ -152,4 +181,65 @@
     .print_break_avoid {
         page-break-inside:avoid;
     }
+}
+
+/* TEMP FIXES FOR IE 10+ */
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .ie_block {
+        display: block;
+    }
+
+    /*Clear all the min-heights*/
+    .btn.xsm,
+    .btn.xsm .text,
+    .btn.xsm .icon,
+    .btn.sm,
+    .btn.sm .text,
+    .btn.sm .icon,
+    .btn.md,
+    .btn.md .text,
+    .btn.md .icon,
+    .btn.lg,
+    .btn.lg .text,
+    .btn.lg .icon,
+    .btn.xlg,
+    .btn.xlg .text,
+    .btn.xlg .icon,
+    .menubtn {
+        min-height: 0;
+    }
+
+    /*Create button height with padding*/
+    .btn.xsm {
+        padding: 3px 0;
+    }
+
+    .btn.sm {
+        padding: 2px 0;
+    }
+
+    .btn.md {
+        padding: 4px 0;
+    }
+
+    .btn.lg {
+        padding: 4px 0;
+    }
+
+    .btn.xlg {
+        padding: 5px 0;
+    }
+
+    /*Create padding for config menu*/
+    .menubtn {
+        padding-top: 11px;
+        padding-bottom: 12px;
+    }
+
+    /*reposition the borders*/
+    .btn .icon.border_left::after,
+    .btn .icon.border_right::after {
+        -ms-transform: translateY(-46%);
+    }
+
 }

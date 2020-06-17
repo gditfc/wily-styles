@@ -8,7 +8,7 @@
 */
 
 html {
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -17,15 +17,18 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* account for height of nav bar */
 .site {
     display: flex;
-    height: 100vh;
+    overflow-y:scroll;
+    height: calc(100vh - 40px);
     flex-direction: column;
+    margin-top:40px;
 }
 
 .site-content {
     flex: 1 0 auto;
-    margin: 40px auto 5px;
+    margin:0 auto;
     width: 100%;
 }
 

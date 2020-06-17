@@ -7,12 +7,12 @@
 	- Author:   Terry Sinay
 */
 
-/* REMOVE BROWSER SPECIFIC STYLES */
+/* NOT SURE */
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
-
+/* set font family */
 button {
     font-family: Montserrat, sans-serif;
 }
@@ -64,6 +64,22 @@ button.clear {
 
 .hov_slide_right:hover {
     transform:translateX(10px);
+}
+
+/* .GLOW - LIGHTEN ON HOVER */
+.hov_glow:hover {
+    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
+}
+.hov_glow:active {
+    box-shadow: none;
+}
+
+/* .DARKEN - DARKEN ON HOVER */
+.hov_darken:hover {
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.05);
+}
+.hov_darken:active {
+    box-shadow: none;
 }
 
 /*********************************************************************/
@@ -227,14 +243,6 @@ button.clear {
     transition:all 0.15s ease-out;
 }
 
-/* .GLOW - LIGHTEN ON HOVER */
-.btn.glow:hover {
-    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
-}
-.btn.glow:active {
-    box-shadow: none;
-}
-
 /* .SHRINK - SHRINK ICON ON HOVER */
 .btn:hover > .icon.shrink > svg {
     transform:scale(0.85);
@@ -283,16 +291,15 @@ button.clear {
     transform:none !important;
 }
 
-/* DISABLED ICON */
-.btn.disabled {
-    cursor:default;
+/* DISABLED BUTTON */
+button[disabled] {
+    cursor:not-allowed;
+    opacity:0.5;
 }
-
-.btn.disabled:hover > .icon > svg {
+.btn[disabled]:hover > .icon > svg {
     transform:none !important;
 }
-
-.btn.disabled.glow:hover {
+.btn[disabled].glow:hover {
     box-shadow:none !important;
 }
 
@@ -614,3 +621,60 @@ button.clear {
     opacity: 1;
 }
 
+/* FOR SLIDING MENU BUTTON
+   stay to the right when active
+ */
+.menubtn_selected {
+    transform:translateX(10px);
+}
+
+/* BREADCRUMB BUTTON STYLES */
+/* show a background on hover */
+.breadcrumb {
+    border-width:0 !important;
+    border-radius:20px;
+    min-height:22px;
+    font-size:11pt;
+    display:flex;
+    align-items:center;
+    box-sizing:border-box;
+    cursor:pointer;
+    justify-content:center;
+    padding:0 10px;
+    white-space:nowrap;
+    overflow:hidden;
+    transition: all 0.2s ease-in-out;
+}
+.breadcrumb:not(:hover){
+    background:none;
+}
+/* current page title */
+.breadcrumb_current {
+    min-height:22px;
+    display:flex;
+    align-items:center;
+    box-sizing:border-box;
+    padding:0 10px;
+    font-size:11pt;
+    font-weight:500;
+}
+
+/* TAB BUTTONS */
+.tabs .btn_tab {
+    margin-top:1px;
+    margin-bottom:1px;
+    border-radius:0 !important;
+    min-height:30px;
+}
+.tabs .btn_tab:first-child {
+    margin-left:1px;
+    margin-right:1px;
+    border-radius:3px 0 0 3px !important;
+}
+.tabs .btn_tab:last-child {
+    margin-right:1px;
+    border-radius:0 3px 3px 0 !important;
+}
+.tabs .btn_tab:not(:first-child):not(:last-child) {
+    margin-right:1px;
+}

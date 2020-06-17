@@ -39,6 +39,7 @@ a {
 .row {
     display: flex;
     flex: 1;
+    -ms-flex: 1 1 auto;
 }
 
 .row.column {
@@ -58,42 +59,52 @@ a {
 /* COLUMN SIZING BASED ON FLEX VALUES */
 .col.size_1 {
     flex: 1;
+    -ms-flex: 1 1 auto;
 }
 
 .col.size_2 {
     flex: 2;
+    -ms-flex: 2 1 auto;
 }
 
 .col.size_3 {
     flex: 3;
+    -ms-flex: 3 1 auto;
 }
 
 .col.size_4 {
     flex: 4;
+    -ms-flex: 4 1 auto;
 }
 
 .col.size_5 {
     flex: 5;
+    -ms-flex: 5 1 auto;
 }
 
 .col.size_6 {
     flex: 6;
+    -ms-flex: 6 1 auto;
 }
 
 .col.size_7 {
     flex: 7;
+    -ms-flex: 7 1 auto;
 }
 
 .col.size_8 {
     flex: 8;
+    -ms-flex: 8 1 auto;
 }
 
 .col.size_9 {
     flex: 9;
+    -ms-flex: 9 1 auto;
 }
 
 .col.size_10 {
     flex: 10;
+    -ms-flex: 10 1 auto;
 }
 
 /* BORDERS */
@@ -437,6 +448,21 @@ p img {
     border-width:0;
 }
 
+/* LIST ITEMS WITH ALTERNATING BACKGROUND COLORS */
+.bg_everyodd > * {
+    border-width:0 !important; /* remove border width */
+}
+.bg_everyodd > :nth-child(even) {
+    background:none !important;
+}
+/* alternative if list items are components */
+.bg_everyodd_component > * > div {
+    border-width:0 !important; /* remove border width */
+}
+.bg_everyodd_component > :nth-child(even) > div {
+    background:none !important;
+}
+
 /* SCROLLING */
 .scroll_y {
     overflow-y: scroll;
@@ -466,6 +492,9 @@ p img {
 .scroll_xyauto {
     overflow-x: auto;
     overflow-y: auto;
+}
+.scroll_none{
+    overflow:hidden !important;
 }
 
 
@@ -654,15 +683,21 @@ p img {
 
 /* RESPONSIVE HEADERS */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2px 20px;
     outline: none;
-    box-sizing: border-box;
     user-select: none;
     transition: all 0.3s ease-in-out;
+}
+
+.header.round {
+    display: flex;
+    box-sizing: border-box;
+    padding: 2px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.center {
+    text-align: center;
 }
 
 .header.xlg {
@@ -765,6 +800,20 @@ p img {
 
 .hr_light {
     border-width:0 0 1px 0 !important;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.2);
+    box-sizing:border-box;
+}
+
+/** VERTICAL RULES THAT ARE COMPATIBLE WITH THEMES **/
+.vr {
+    border-width:0 1px 0 0 !important;
+    border-style:solid;
+    box-sizing:border-box;
+}
+
+.vr_light {
+    border-width:0 1px 0 0 !important;
     border-style:solid;
     border-color:rgba(255,255,255,0.2);
     box-sizing:border-box;

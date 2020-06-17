@@ -62,7 +62,6 @@
 
 /* Image scaling fix */
 .wac_help_text img {
-    border: 1px solid rgba(128, 128, 128, 0.3);
     border-radius: 3px;
     margin-bottom: 10px;
     width: 100%;
