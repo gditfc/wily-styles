@@ -756,6 +756,20 @@ p img {
     }
 }
 
+/** HORIZONTAL RULES THAT ARE COMPATIBLE WITH THEMES **/
+.hr {
+    border-width:0 0 1px 0 !important;
+    border-style:solid;
+    box-sizing:border-box;
+}
+
+.hr_light {
+    border-width:0 0 1px 0 !important;
+    border-style:solid;
+    border-color:rgba(255,255,255,0.2);
+    box-sizing:border-box;
+}
+
 /*** HEADER AND FOOTER COLOR BAR */
 .color_bar {
     display: flex;

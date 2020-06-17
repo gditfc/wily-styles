@@ -284,6 +284,21 @@
     box-sizing: border-box;
 }
 
+.circle_90px {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    min-height: 90px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
 /* SQUARE CLASSES */
 .square_18px {
     width: 18px;
@@ -392,7 +407,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 18px;
     user-select: none;
     box-sizing: border-box;
 }

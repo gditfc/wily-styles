@@ -7,6 +7,22 @@
 	- Author:   Terry Sinay
 */
 
+/* FORM HTML FIELD STYLES */
+transcend-field-html .ql-editor {
+    padding:0;
+}
+.ql-editor {
+    line-height:1.5;
+    overflow-x:hidden;
+    font-size: 12px;
+}
+.ql-editor strong {font-weight:500;}
+.ql-editor h1 {font-size:18px; font-weight:500; line-height:1.5; margin-bottom:0.5em;}
+.ql-editor h2 {font-size:15px; font-weight:400; line-height:1.5; margin-bottom:0.5em;}
+.ql-editor ol li:not(.ql-direction-rtl), .ql-editor ul li:not(.ql-direction-rtl) {
+    padding-left:0;
+}
+
 /* DIALOGS */
 .ui-dialog.ui-widget .ui-dialog-content  {
     height: 100%;
@@ -92,6 +108,10 @@
     font-size: 1em;
     margin: .125em 0;
     vertical-align: middle;
+}
+
+.ui-datepicker td>a {
+    color: #222;
 }
 
 .ui-datepicker.ui-widget .ui-datepicker-calendar thead th {

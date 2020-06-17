@@ -9,15 +9,17 @@
 
 .tablet_only,
 .tablet_only_flex,
+.tablet_only_inline,
 .mobile_only,
-.mobile_only_flex {
+.mobile_only_flex,
+.mobile_only_inline {
     display: none;
 }
 
 /* TABLET BREAKPOINT */
 @media screen and (max-width: 1024px) {
     .hide_element1024 {
-        display: none;
+        display: none !important;
     }
 
     .tablet_only {
@@ -27,12 +29,16 @@
     .tablet_only_flex {
         display: flex;
     }
+
+    .tablet_only_inline {
+        display: inline-block;
+    }
 }
 
 /* MOBILE BREAKPOINT */
 @media screen and (max-width: 768px) {
     .hide_element {
-        display: none;
+        display: none !important;
     }
 
     .mobile_only {
@@ -43,9 +49,17 @@
         display: flex;
     }
 
+    .mobile_only_inline {
+        display:inline-block;
+    }
+
     /* remove padding on mobile */
     .pad_0_mobile {
         padding: 0;
+    }
+
+    .text_center_mobile {
+        text-align:center;
     }
 
     .center_mobile {
@@ -85,6 +99,10 @@
 
     .layout_sidebar {
         display:none;
+    }
+
+    .site {
+        display:block;
     }
 
     .site-content {
