@@ -89,7 +89,7 @@
 
     /* condense emedny logo on mobile */
     .nav_emedny {
-        background-image: url(assets/logos/emedny_e.svg);
+        background-image: url('https://styles.transcend.csra.io/images/logos/emedny_e.svg');
         margin:2px 8px 0 5px;
         width:15px;
     }

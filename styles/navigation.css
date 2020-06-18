@@ -61,7 +61,7 @@ nav {
 
 /* transcend logo */
 .nav_transcend {
-    background-image: url(assets/logos/transcend_tri_solid.svg);
+    background-image: url('https://styles.transcend.csra.io/images/logos/transcend_logo.svg');
     width: 35px;
     height: 35px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ nav {
 
 /* emedny logo */
 .nav_emedny {
-    background-image: url(assets/logos/emedny.svg);
+    background-image: url('https://styles.transcend.csra.io/images/logos/emedny.svg');
     width: 90px;
     height: 30px;
     background-repeat: no-repeat;
