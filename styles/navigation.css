@@ -380,6 +380,13 @@ nav {
     opacity: 1;
 }
 
+/* TODO - port to WAC */
+.layout_sidebar{
+    direction:ltr !important;
+    height:calc(100% - 40px) !important;
+    position:relative;
+}
+
 
 /* OLD SLIDEOUT PUSH MENU */
 .slideout_menu_margin {

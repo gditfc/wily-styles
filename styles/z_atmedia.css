@@ -123,9 +123,6 @@
 
     .layout_sidebar {
         display:none;
-        direction:ltr !important;
-        height:calc(100% - 40px) !important;
-        position:relative;
     }
 
     .site {
