@@ -273,7 +273,6 @@ nav {
 
 /* PUSH MENU */
 .push_menu {
-    margin-top: -30px;
     display: flex;
     flex-direction: column;
 }
@@ -378,13 +377,6 @@ nav {
 
 .overlay_menu_btn:hover .icon {
     opacity: 1;
-}
-
-/* TODO - port to WAC */
-.layout_sidebar{
-    direction:ltr !important;
-    height:calc(100% - 40px) !important;
-    position:relative;
 }
 
 
