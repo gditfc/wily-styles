@@ -44,11 +44,9 @@ transcend-field-html .ql-editor {
     height: 100% !important;
 }
 
-/* DIALOG OVERLAY FIX */
+/* Primeng dialog overlay */
 .ui-widget-overlay {
-    background-color: #666666;
-    opacity: 0.5;
-    filter: Alpha(Opacity=50);
+    background-color:rgba(0,0,0,0.4);
 }
 
 /* MULTI SELECT PRIMENG */
