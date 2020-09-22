@@ -114,7 +114,6 @@ transcend-field-html .ql-editor {
 }
 
 .ui-datepicker .ui-datepicker-title select {
-    box-sizing: border-box;
     font-family: Montserrat,sans-serif;
     border-radius: 3px;
     border: 1px solid rgba(50,50,50,.2);
@@ -244,7 +243,6 @@ transcend-field-html .ql-editor {
 
 .ui-datepicker-year {
     border-radius: 0;
-    box-sizing: border-box;
     margin: 0;
     outline: none;
     transition: all 0.2s ease-in-out;
@@ -323,10 +321,6 @@ text {
     background: #f6f7f9;
     color: #1b1d1f;
     font-weight: normal;
-}
-
-.ui-widget, .ui-widget * {
-    box-sizing: border-box;
 }
 
 .ui-inputtext {

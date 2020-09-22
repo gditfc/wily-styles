@@ -13,6 +13,7 @@ input:disabled, textarea:disabled, select:disabled {
 }
 
 /* FORM EDITOR STYLES */
+/* MOVE TO APP MANAGEMENT? */
 .row_options {
     margin: 3px;
     width: 20px;
@@ -78,7 +79,6 @@ input:disabled, textarea:disabled, select:disabled {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     border-radius: 0;
-    box-sizing: border-box;
     margin: 0;
     padding: 5px;
     min-height: 30px;
@@ -99,7 +99,6 @@ input:disabled, textarea:disabled, select:disabled {
     min-width:20px;
     height: 20px;
     min-height:20px;
-    box-sizing: border-box;
     margin: 0;
     outline: none;
 }
@@ -108,7 +107,6 @@ input:disabled, textarea:disabled, select:disabled {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     border-radius: 0;
-    box-sizing: border-box;
     margin: 0;
     min-height: 30px;
     outline: none;
@@ -118,7 +116,6 @@ input:disabled, textarea:disabled, select:disabled {
 }
 
 .form_group_header {
-    box-sizing: border-box;
     font-size: 10pt;
 }
 
@@ -182,13 +179,222 @@ input:disabled, textarea:disabled, select:disabled {
 
 /* INPUT LABEL FOR REGULAR INPUTS */
 .input_label {
-    font-size:10pt;
+    display:inline-block;
+    font-size:14px;
     margin-bottom:4px;
 }
 
+/* NEW INPUT CLASSES */
+/* REGULAR INPUTS */
+.input,
+.input_lefticon > input,
+.input_lefticon > select,
+.input_righticon > input,
+.input_righticon > select {
+    border-radius:5px;
+    width:100%;
+    font-family:Montserrat,sans-serif;
+    outline:none;
+}
+.input:focus,
+.input_lefticon > input:focus,
+.input_lefticon > select:focus,
+.input_righticon > input:focus,
+.input_righticon > select:focus {
+    border-color: grey;
+    outline: 0;
+}
+.input,
+.input.md,
+.input_lefticon > input,
+.input_lefticon > select,
+.input_lefticon.md > input,
+.input_lefticon.md > select,
+.input_righticon > input,
+.input_righticon > select,
+.input_righticon.md > input,
+.input_righticon.md > select {
+    padding:6px 15px;
+    font-size:14px;
+    min-height:34px;
+}
+.input.lg,
+.input_lefticon.lg > input,
+.input_lefticon.lg > select,
+.input_righticon.lg > input,
+.input_righticon.lg > select {
+    padding:8px 15px;
+    font-size:15px;
+    min-height:40px;
+}
+
+/* INPUT WITH ICON */
+/* should be structured with class on parent div, rather than on input element */
+.input_lefticon,
+.input_righticon {
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+/* font sizes for icons */
+.input_lefticon,
+.input_righticon,
+.input_lefticon.md,
+.input_righticon.md {
+    font-size:14px;
+}
+.input_lefticon.lg,
+.input_righticon.lg {
+    font-size:15px;
+}
+/* for input, show border on left */
+.input_lefticon > input {
+    padding-left:3.25em !important;
+    background-image:
+        /*linear-gradient(45deg, transparent 50%, transparent 50%),*/
+        /*linear-gradient(135deg, transparent 50%, transparent 50%),*/
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        /*calc(100% - 20px) calc(1em + 2px),*/
+        /*calc(100% - 15px) calc(1em + 2px),*/
+            2.5em 50%;
+    background-size:
+        /*5px 5px,*/
+        /*5px 5px,*/
+            1px 1.3em;
+    background-repeat: no-repeat;
+}
+/* for select, show border and custom arrow */
+.input_lefticon > select {
+    padding-left:3.25em !important;
+    cursor:pointer;
+    /* styling */
+    background-color: white;
+    display: inline-block;
+    /*padding: 0.5em 3.5em 0.5em 1em;*/
+
+    /* reset */
+
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image:
+            linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%),
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            2.5em 50%;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.3em;
+    background-repeat: no-repeat;
+}
+.input_lefticon > select:focus {
+    background-image:
+            linear-gradient(45deg, gray 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, gray 50%),
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            2.5em 50%;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.3em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}
+.input_righticon > input {
+    padding-right:3.25em !important;
+    background-image:
+            linear-gradient(45deg, transparent 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, transparent 50%),
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+            calc(100% - 20px) calc(45% + 2px),
+            calc(100% - 15px) calc(45% + 2px),
+            calc(100% - 2.5em) 0.5em;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.5em;
+    background-repeat: no-repeat;
+}
+.input_lefticon > svg,
+.input_lefticon.md > svg {
+    position: absolute;
+    left:0.75em;
+    opacity:0.7;
+    font-size:inherit;
+}
+.input_righticon > svg,
+.input_righticon.md > svg {
+    position: absolute;
+    right:0.75em;
+    opacity:0.7;
+    font-size:inherit;
+}
+
+/* SELECT CLASSES */
+select.input {
+    cursor:pointer;
+    /* styling */
+    background-color: white;
+    display: inline-block;
+    /*padding: 0.5em 3.5em 0.5em 1em;*/
+    padding-right:2.5em !important;
+
+    /* reset */
+
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image:
+            linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%);
+    /*linear-gradient(to right, #ccc, #ccc);*/
+    background-position:
+            calc(100% - 20px) calc(45% + 2px),
+            calc(100% - 15px) calc(45% + 2px);
+    /*calc(100% - 2.5em) 0.5em;*/
+    background-size:
+            5px 5px,
+            5px 5px;
+    /*1px 1.5em;*/
+    background-repeat: no-repeat;
+}
+
+select.input:focus {
+    background-image:
+            linear-gradient(45deg, gray 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, gray 50%);
+    /*linear-gradient(to right, #ccc, #ccc);*/
+    background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em;
+    /*calc(100% - 2.5em) 0.5em;*/
+    background-size:
+            5px 5px,
+            5px 5px;
+    /*1px 1.5em;*/
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+}
+textarea.input {
+    min-height:50px;
+    resize:none;
+}
+
+/************************************ DEPRECATED ***************************************/
 /* REGULAR INPUT TYPES */
 .fullwidth_input {
-    box-sizing: border-box;
     width: 100%;
     padding: 5px 10px;
     font-family: Montserrat, sans-serif;
@@ -209,7 +415,6 @@ select.fullwidth_input {
 }
 
 .fullwidth_textarea {
-    box-sizing: border-box;
     width: 100%;
     resize: none;
     padding: 5px 10px;
@@ -224,3 +429,4 @@ select.fullwidth_input {
     padding: 2px 5px;
     font-size: 10pt;
 }
+/************************************ END DEPRECATED ***************************************/

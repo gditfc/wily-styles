@@ -154,14 +154,6 @@ nav {
     box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.35);
 }
 
-/* page header class for breadcrumbs/title bars */
-.page_header {
-    min-height:45px;
-    padding:0 15px;
-    display:flex;
-}
-
-
 /* MAIN MENU*/
 .main_logo_bg {
     height: 100%;
@@ -294,7 +286,6 @@ nav {
     padding-right: 10px;
     outline: none;
     margin-bottom: 1px;
-    box-sizing: border-box;
 }
 
 .push_menu_btn .icon {
@@ -343,7 +334,6 @@ nav {
     padding-right: 10px;
     outline: none;
     margin-bottom: 1px;
-    box-sizing: border-box;
 }
 
 .overlay_menu_btn .icon {
