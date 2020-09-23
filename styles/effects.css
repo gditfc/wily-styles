@@ -46,11 +46,6 @@
     box-shadow: 0 2px 5px 1px rgba(0,0,0,0.07);
 }
 
-/* SHOW A BACKGROUND ON HOVER */
-.bg_hover:not(:hover){
-    background:none;
-}
-
 /* SHOW BORDERS ON ONLY ONE SIDE */
 .border_top {
     border-width: 1px 0 0 0 !important;

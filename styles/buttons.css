@@ -495,6 +495,7 @@ button[disabled] {
 }
 
 /* INFO BUTTONS */
+/* TODO: check usages */
 .info_btn {
     display: flex;
     align-items: center;
@@ -515,7 +516,7 @@ button[disabled] {
 }
 
 /* CONFIG DASHBOARD BUTTONS */
-/* TODO: remove? */
+/* TODO: remove? (check usages, probably deprecated) */
 .btn_config {
     height: 75px;
     padding: 0;
@@ -554,6 +555,7 @@ button[disabled] {
 }
 
 /* HIGHLIGHT BUTTON */
+/* TODO: remove, unused */
 .btn_highlight{
     transition:all 0.2s ease-in-out;
 }
@@ -562,6 +564,7 @@ button[disabled] {
 }
 
 /* WILY MENU BUTTON */
+/* TODO: eventually remove, deprecated */
 .wily_menu_btn {
     display: flex;
     flex: 1;
@@ -624,13 +627,6 @@ button[disabled] {
 .prior_btn:hover > .prior_btn_icon,
 .prior_btn:focus > .prior_btn_icon {
     opacity: 1;
-}
-
-/* FOR SLIDING MENU BUTTON
-   stay to the right when active
- */
-.menubtn_selected {
-    transform:translateX(10px);
 }
 
 /* BREADCRUMB BUTTON STYLES */
