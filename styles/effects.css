@@ -41,10 +41,31 @@
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
 }
+/* medium content block shadow */
+.box_shadow {
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.07);
+}
 
 /* SHOW A BACKGROUND ON HOVER */
 .bg_hover:not(:hover){
     background:none;
+}
+
+/* SHOW BORDERS ON ONLY ONE SIDE */
+.border_top {
+    border-width: 1px 0 0 0 !important;
+}
+.border_bottom {
+    border-width: 0 0 1px 0 !important;
+}
+.border_left {
+    border-width: 0 0 0 1px !important;
+}
+.border_right {
+    border-width:0 1px 0 0 !important;
+}
+.border_none {
+    border-width:0 !important;
 }
 
 /* STATUS GRADIENT */

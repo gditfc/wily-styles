@@ -107,7 +107,7 @@ a {
     -ms-flex: 10 1 auto;
 }
 
-/* BORDERS */
+/* BORDER RADIUSES */
 .brad_3 {
     border-radius: 3px;
 }
@@ -192,6 +192,11 @@ a {
 .mar_y15 {
     margin-top:15px;
     margin-bottom:15px;
+}
+
+.mar_y25 {
+    margin-top:25px;
+    margin-bottom:25px;
 }
 
 /* MARGIN BOTTOM */
@@ -449,6 +454,7 @@ a {
 
 /* COMPLEX TEXT ELEMENTS */
 .text {
+    font-weight:400;
 }
 
 .text.paragraph {
@@ -488,23 +494,23 @@ a {
 }
 
 .text.xsm {
-    font-size: 8pt;
+    font-size: 10px;
 }
 
 .text.sm {
-    font-size: 9pt;
+    font-size: 12px;
 }
 
 .text.md {
-    font-size: 11pt;
+    font-size: 14px;
 }
 
 .text.lg {
-    font-size: 13pt;
+    font-size: 16px;
 }
 
 .text.xlg {
-    font-size: 14pt;
+    font-size: 18px;
 }
 
 .text.caps {
@@ -748,6 +754,14 @@ p img {
 /* MIN HEIGHT VALUES */
 .min_h25 {
     min-height: 25px;
+}
+
+.min_h40 {
+    min-height:40px;
+}
+
+.min_h45 {
+    min-height:45px;
 }
 
 .min_h50 {

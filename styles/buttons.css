@@ -67,6 +67,9 @@ button.clear {
 }
 
 /* .HOV_BG - show background only on hover */
+.hov_bg {
+    transition:0.2s background-color ease;
+}
 .hov_bg:not(:hover){
     background:none;
 }
@@ -204,6 +207,7 @@ button.clear {
 }
 
 /************** SEPARATORS *******************/
+/* TODO: make separators implicit, if button has icon, remove classes */
 .btn > .icon.border_left::after {
     content: '';
     height:0.75em;
@@ -630,6 +634,7 @@ button[disabled] {
 }
 
 /* BREADCRUMB BUTTON STYLES */
+/* TODO: remove these, potentially reuse for another button type */
 /* show a background on hover */
 .breadcrumb {
     border-width:0 !important;
@@ -654,11 +659,12 @@ button[disabled] {
     display:flex;
     align-items:center;
     padding:0 10px;
-    font-size:11pt;
+    font-size:13px;
     font-weight:500;
 }
 
 /* TAB BUTTONS */
+/* TODO: create version that floats, and full width version */
 .tabs .btn_tab {
     margin-top:1px;
     margin-bottom:1px;

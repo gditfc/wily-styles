@@ -144,12 +144,13 @@
         visibility: visible;
     }
 
-    .page_container {
-        box-shadow: none !important;
-        border: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+    /* TODO: remove or tweak */
+    /*.page_container {*/
+    /*    box-shadow: none !important;*/
+    /*    border: none !important;*/
+    /*    margin: 0 !important;*/
+    /*    padding: 0 !important;*/
+    /*}*/
 
     .page_container_color, .body_color {
         color: #222 !important;
