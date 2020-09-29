@@ -81,6 +81,68 @@
     text-align:center;
 }
 
+/******************* ANIMATIONS ********************/
+.hov_slide_up:hover {
+    transform: translateY(-4px);
+}
+
+.hov_sm_grow:hover {
+    transform: scale(1.08);
+}
+
+.hov_grow:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.hov_mid_grow:hover {
+    transform: scale(1.2);
+}
+
+.hov_big_grow:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.hov_underline:hover {
+    box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+.hov_underline_md:hover {
+    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+.hov_slide_right, .hov_slide_up {
+    transition:0.2s ease all;
+}
+
+.hov_slide_right:hover {
+    transform:translateX(10px);
+}
+
+/* .HOV_BG - show background only on hover */
+.hov_bg {
+    transition:0.2s background-color ease;
+}
+.hov_bg:not(:hover){
+    background:none;
+}
+
+/* .GLOW - LIGHTEN ON HOVER */
+.hov_glow:hover {
+    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
+}
+.hov_glow:active {
+    box-shadow: none;
+}
+
+/* .DARKEN - DARKEN ON HOVER */
+.hov_darken:hover {
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.05);
+}
+.hov_darken:active {
+    box-shadow: none;
+}
+/******************* END ANIMATIONS ***********************/
+
 /* CIRCLE CLASSES */
 .circle_8px,
 .circle_12px,

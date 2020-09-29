@@ -7,13 +7,19 @@
 	- Author:   Terry Sinay
 */
 
-/* everything should be border box */
+/* styles that apply to everything */
 *,
 *:before,
 *:after {
+    /* everything should be border box */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+/* set font to montserrat */
+html * {
+    font-family: Montserrat, sans-serif;
 }
 
 html {
@@ -23,7 +29,6 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* main div holding all structural elements */
