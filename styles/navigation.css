@@ -263,6 +263,114 @@ nav {
     transition: all .3s ease
 }
 
+/* SIDEBAR MENU CLASSES */
+
+/* sidebar header with optional close button */
+.sidebar_header {
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    min-height:45px;
+    padding:10px 15px;
+}
+
+/* subheader for groupings in sidebar */
+.sidebar_subheader {
+    font-size:12px;
+    font-weight:600;
+    opacity:0.9;
+    padding:15px 15px 10px 15px;
+    margin-top:5px;
+}
+
+/* style sidebar buttons */
+.sidebar_btn,
+.sidebar_btn_noclick {
+    appearance: none;
+    user-select:none;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    display:flex;
+    transition:all 0.2s ease-in-out;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:left;
+    font-size:13px;
+    margin:0;
+    width:100%;
+    position:relative;
+    background:none;
+    color:inherit;
+}
+
+/* remove cursor from un-clickable buttons */
+.sidebar_btn_noclick {
+    cursor:default;
+}
+
+/* size sidebar buttons */
+.sidebar_btn, .sidebar_btn_noclick {
+    min-height:40px;
+    padding:10px 15px;
+}
+
+/* size smaller buttons */
+.sidebar_btn.sm,
+.sidebar_btn_noclick.sm {
+    min-height:35px;
+    padding:8px 15px;
+}
+
+/* darken background on hover or if selected */
+.sidebar_btn:hover,
+.sidebar_btn.selected {
+    background-color:rgba(0,0,0,0.07);
+}
+
+/* make font bolder if selected */
+.sidebar_btn.selected > .content > .text {
+    font-weight:500;
+}
+
+/* accent hidden by default */
+.sidebar_btn > .accent,
+.sidebar_btn_noclick > .accent {
+    position:absolute;
+    height:100%;
+    bottom:0;
+    left:0;
+    width:0;
+    transition:width 0.15s linear;
+}
+
+/* show accent on hover or selected */
+.sidebar_btn:hover > .accent,
+.sidebar_btn.selected > .accent {
+    width:4px;
+}
+
+/* style text/icon content */
+.sidebar_btn .content,
+.sidebar_btn_noclick .content {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:left;
+    opacity:0.8;
+    transition:opacity 0.2s ease-in-out;
+}
+
+/* unfade text/icon on hover or selected */
+.sidebar_btn:hover .content,
+.sidebar_btn.selected .content,
+.sidebar_btn_noclick.selected .content {
+    opacity:1;
+}
+
+
+/************************* DEPRECATED ******************************/
+
 /* PUSH MENU */
 .push_menu {
     display: flex;
@@ -455,3 +563,5 @@ nav {
     border: 1px solid #CCC;
     border-radius: 3px;
 }
+
+/************************* END DEPRECATED ******************************/

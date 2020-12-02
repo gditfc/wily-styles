@@ -33,12 +33,18 @@ body {
 
 /* main div holding all structural elements */
 .site {
+    position:fixed; /* so 100% height works correctly */
+    height: calc(100vh - 40px); /* account for height of nav bar */
     display: flex;
     overflow-x:hidden;
     overflow-y:scroll;
-    height: calc(100vh - 40px); /* account for height of nav bar */
     flex-direction: column;
     margin-top:40px;
+    /* stretch to fill screen */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 /* div holding main content between nav and footer */
