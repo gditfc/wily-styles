@@ -288,9 +288,10 @@ transcend-field-html .ql-editor {
 }
 
 /* CHARTS TEXT FIX */
-text {
-    fill: inherit;
-}
+/* TODO: remove this */
+/*text {*/
+/*    fill: inherit;*/
+/*}*/
 
 /* DUNNO */
 .ui-tabview.ui-widget-content {
