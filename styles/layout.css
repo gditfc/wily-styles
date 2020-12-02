@@ -616,7 +616,12 @@ p img {
     overflow-x: auto;
     overflow-y: auto;
 }
-.scroll_none{
+.no_scroll, .no_overflow {
+    overflow:hidden !important;
+}
+
+/* TODO: to remove, old */
+.scroll_none {
     overflow:hidden !important;
 }
 

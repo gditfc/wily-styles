@@ -124,6 +124,7 @@
 }
 .hov_bg:not(:hover){
     background:none;
+    color:inherit;
 }
 
 /* .GLOW - LIGHTEN ON HOVER */
