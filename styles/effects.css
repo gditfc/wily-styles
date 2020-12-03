@@ -59,6 +59,12 @@
 .border_right {
     border-width:0 1px 0 0 !important;
 }
+.border_x {
+    border-width:0 1px !important;
+}
+.border_y {
+    border-width:1px 0 !important;
+}
 .border_none {
     border-width:0 !important;
 }
@@ -144,6 +150,18 @@
 }
 /******************* END ANIMATIONS ***********************/
 
+/* OPACITY CLASSES */
+.opacity_10 { opacity:0.1; }
+.opacity_20 { opacity:0.2; }
+.opacity_30 { opacity:0.3; }
+.opacity_40 { opacity:0.4; }
+.opacity_50 { opacity:0.5; }
+.opacity_60 { opacity:0.6; }
+.opacity_70 { opacity:0.7; }
+.opacity_80 { opacity:0.8; }
+.opacity_90 { opacity:0.9; }
+.opacity_100 { opacity:1.0; }
+
 /* CIRCLE CLASSES */
 .circle_8px,
 .circle_12px,
@@ -163,7 +181,8 @@
 .circle_60px,
 .circle_70px,
 .circle_80px,
-.circle_90px {
+.circle_90px,
+.circle_100px {
     padding: 0;
     border-radius: 50%;
     display: flex;
@@ -322,6 +341,14 @@
     height: 90px;
     min-height: 90px;
     font-size: 44px;
+}
+
+.circle_100px {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    font-size: 50px;
 }
 
 /* SQUARE CLASSES */

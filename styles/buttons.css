@@ -164,7 +164,7 @@ button.clear {
     position:absolute;
     border-width:0 0 0 1px;
     border-style:solid;
-    border-color:rgba(0,0,0,0.35);
+    border-color:rgba(128,128,128,0.5);
 }
 .btn > .icon.border_right_alt::after {
     content: '';
@@ -173,7 +173,7 @@ button.clear {
     position:absolute;
     border-width:0 1px 0 0;
     border-style:solid;
-    border-color:rgba(0,0,0,0.35);
+    border-color:rgba(128,128,128,0.5);
 }
 
 /******************** ICON ANIMATIONS ********************/
