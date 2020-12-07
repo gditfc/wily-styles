@@ -187,15 +187,19 @@ input:disabled, textarea:disabled, select:disabled {
 /**************** INPUTS AND ICONS *****************/
 
 /* style input fields */
+input,select {
+    border:1px solid rgba(128,128,128,0.3);
+    background-color:inherit;
+    color:inherit;
+}
+
+/* style input classes */
 .input, .select,
 .input_lefticon > input,
 .input_righticon > input {
     border-radius:3px;
     width:100%;
     outline:none;
-    border:1px solid rgba(128,128,128,0.3);
-    background-color:inherit;
-    color:inherit;
 }
 
 /* style selects */
