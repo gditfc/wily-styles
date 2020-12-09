@@ -291,13 +291,11 @@ input,select {
     font-size:16px;
 }
 
-/* to center the icon in the container */
+/* to position the icon in the container */
 .input_lefticon,
 .input_righticon,
 .select_icon {
     position:relative;
-    display:flex;
-    align-items:center;
 }
 
 /* left icon; position */
@@ -305,6 +303,8 @@ input,select {
 .select_icon > svg {
     position: absolute;
     left:0.6em;
+    top:50%;
+    margin-top:-0.5em;
     opacity:0.8;
     font-size:inherit;
     z-index:2;
