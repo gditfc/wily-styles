@@ -18,7 +18,7 @@
 
 /* TABLET BREAKPOINT */
 @media screen and (max-width: 1024px) {
-    .hide_element1024 {
+    .tablet_hide {
         display: none !important;
     }
 
@@ -36,7 +36,7 @@
 
     /* set height to auto on tablet */
     /* makes scrollable lists fill screen instead of independently scrolling */
-    .heightauto_tablet {
+    .tablet_fullheight {
         height:auto !important;
         max-height:unset !important;
     }
@@ -44,6 +44,11 @@
 
 /* MOBILE BREAKPOINT */
 @media screen and (max-width: 768px) {
+    .mobile_hide {
+        display:none !important;
+    }
+
+    /* TODO: deprecate */
     .hide_element {
         display: none !important;
     }
@@ -61,32 +66,33 @@
     }
 
     /* remove padding on mobile */
-    .pad_0_mobile {
+    .mobile_pad_0 {
         padding: 0;
     }
 
-    .text_left_mobile {
+    .mobile_text_left {
         text-align:left;
     }
 
-    .text_center_mobile {
+    .mobile_text_center {
         text-align:center;
     }
 
-    .center_mobile {
+    .mobile_center {
         justify-content: center;
         align-items: center;
     }
 
-    .header_subtitle {
-        padding: 3px 5px 3px 5px;
-        font-size: 9pt;
-    }
+    /*.header_subtitle {*/
+    /*    padding: 3px 5px 3px 5px;*/
+    /*    font-size: 9pt;*/
+    /*}*/
 
-    .header .title {
-        font-size: 11pt;
-    }
+    /*.header .title {*/
+    /*    font-size: 11pt;*/
+    /*}*/
 
+    /* TODO: move to WAC */
     .wac_icon_select_list {
         height: unset;
     }
@@ -100,7 +106,7 @@
 
     /* set height to auto on mobile */
     /* makes scrollable lists fill screen instead of independently scrolling */
-    .heightauto_mobile {
+    .mobile_fullheight {
         height:auto !important;
         max-height:unset !important;
     }
