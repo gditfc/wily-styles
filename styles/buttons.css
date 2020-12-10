@@ -611,6 +611,51 @@ button[disabled] {
     margin-right:1px;
 }
 
+/* BTN_GROUP */
+/* group of buttons, such as for toggles */
+.btn_group {
+    display:flex;
+    flex:1;
+}
+.btn_group .btn {
+    display:flex;
+    flex:1;
+    border-radius: 0;
+    align-items:center;
+    font-size:14px;
+    margin:0;
+    border-width: 1px 0;
+}
+/* small tab */
+.btn_group.sm .btn {
+    padding:6px 5px;
+    font-size:12px;
+}
+/* medium tab */
+.btn_group.md .btn {
+    padding:6px 5px;
+    font-size:14px;
+}
+/* large tab */
+.btn_group.lg .btn {
+    padding:10px 5px;
+    font-size:16px;
+}
+.btn_group .btn:first-child {
+    border-left-width:1px;
+    border-right-width:1px;
+    border-top-left-radius:3px !important;
+    border-bottom-left-radius:3px !important;
+}
+.btn_group .btn:last-child {
+    border-right-width:1px;
+    border-top-right-radius:3px !important;
+    border-bottom-right-radius:3px !important;
+}
+.btn_group .btn:not(:first-child):not(:last-child) {
+    border-right-width:1px;
+}
+
 /* like button class, but for list items */
 .list_btn{
     appearance: none;

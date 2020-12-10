@@ -75,6 +75,11 @@ transcend-field-html .ql-editor {
     padding: 1px;
 }
 
+/* PRIMENG OVERLAY PANEL */
+.ui-overlaypanel-content {
+    padding:0;
+}
+
 /* TOOLTIP */
 .ui-tooltip .ui-tooltip-text {
     background-color: #EFEFEF;
