@@ -13,7 +13,7 @@
 .mobile_only,
 .mobile_only_flex,
 .mobile_only_inline {
-    display: none;
+    display: none !important;
 }
 
 /* TABLET BREAKPOINT */
