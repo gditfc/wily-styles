@@ -23,15 +23,15 @@
     }
 
     .tablet_only {
-        display: block;
+        display: block !important;
     }
 
     .tablet_only_flex {
-        display: flex;
+        display: flex !important;
     }
 
     .tablet_only_inline {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     /* set height to auto on tablet */
@@ -54,15 +54,15 @@
     }
 
     .mobile_only {
-        display: block;
+        display: block !important;
     }
 
     .mobile_only_flex {
-        display: flex;
+        display: flex !important;
     }
 
     .mobile_only_inline {
-        display:inline-block;
+        display:inline-block !important;
     }
 
     /* remove padding on mobile */
