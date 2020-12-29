@@ -64,10 +64,10 @@ button.clear {
 
 /* class added if there is an icon; sets padding */
 .btn.icon_left {
-    padding-left:2.65em;
+    padding-left:2.5em;
 }
 .btn.icon_right {
-    padding-right:2.65em;
+    padding-right:2.5em;
 }
 
 /* style the icon in the button */
@@ -81,7 +81,7 @@ button.clear {
     justify-content:center;
 }
 /* style border to left or right of icon */
-.btn > .icon:not(.no_border)::after {
+.btn > .icon:not(.no_line)::after {
     content: '';
     height:0.75em;
     position:absolute;
@@ -94,7 +94,7 @@ button.clear {
 .btn.icon_left > .icon {
     left:0;
 }
-.btn.icon_left > .icon:not(.no_border)::after {
+.btn.icon_left > .icon:not(.no_line)::after {
     right:0;
     border-width:0 1px 0 0;
 }
@@ -103,7 +103,7 @@ button.clear {
 .btn.icon_right > .icon {
     right:0;
 }
-.btn.icon_right > .icon:not(.no_border)::after {
+.btn.icon_right > .icon:not(.no_line)::after {
     left:0;
     border-width:0 0 0 1px;
 }
