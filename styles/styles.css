@@ -45,6 +45,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    scroll-behavior: smooth;
 }
 
 /* div holding main content between nav and footer */

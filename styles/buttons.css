@@ -25,223 +25,156 @@ button.clear {
     color: inherit;
 }
 
-/*********************************************************************/
-/* NEW BUTTONS                                                       */
-/*********************************************************************/
-/* TODO: tweak button sizes/font sizes/paddings/heights to be more consistent */
+/********************** TRADITIONAL BUTTON CLASSES ************************/
+/* button class */
 .btn {
     user-select: none;
     border: 0;
     cursor: pointer;
-    font-family: Montserrat, sans-serif;
     outline: none;
-    display:flex;
-    flex-shrink:0;
-    justify-content: center;
-    align-items: center;
     padding:0;
     white-space:nowrap;
     overflow:hidden;
     transition:all 0.2s ease-in-out;
     border-radius:3px;
-}
-
-/* vertically center text */
-.btn > .text {
-    display:flex;
-    align-items: center;
-}
-
-/* center icon and remove border in case of background */
-.btn > .icon {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     position:relative;
-    border:none;
 }
 
-/******************  SIZES **********************/
-/* .XSM - EXTRA SMALL BUTTON */
+/* button sizes */
 .btn.xsm {
-    min-height:16px;
-    font-size:9px;
-}
-.btn.xsm > .text {
-    padding:0 6px;
-    min-height:16px;
-}
-.btn.xsm > .icon {
-    min-width:16px;
-    min-height:16px;
-    font-size:8px;
-}
-
-/* .SM - SMALL BUTTON */
-.btn.sm {
-    min-height:18px;
-    font-size:11px;
-}
-.btn.sm > .text {
-    padding:0 8px;
-    min-height:18px;
-}
-.btn.sm > .icon {
-    min-width:18px;
-    min-height:18px;
     font-size:10px;
+    padding:2px 6px;
 }
-
-/* .MD - MEDIUM BUTTON */
-.btn.md {
-    min-height:22px;
+.btn.sm {
     font-size:12px;
+    padding:3px 8px;
 }
-.btn.md > .text {
-    padding:0 10px;
-    min-height:22px;
+.btn, .btn.md {
+    font-size:14px;
+    padding:4px 10px;
 }
-.btn.md > .icon {
-    min-width:22px;
-    min-height:22px;
-    font-size:11px;
-}
-
-/* .LG - LARGE BUTTON */
 .btn.lg {
-    min-height:26px;
-    font-size:13px;
+    font-size:16px;
+    padding:5px 12px;
 }
-.btn.lg > .text {
-    padding:0 12px;
-    min-height:26px;
-}
-.btn.lg > .icon {
-    min-width:26px;
-    min-height:26px;
-    font-size:12px;
-}
-
-/* .XLG - EXTRA LARGE BUTTON */
 .btn.xlg {
-    min-height:32px;
-    font-size:17px;
-}
-.btn.xlg > .text {
-    padding:0 13px;
-    min-height:32px;
-}
-.btn.xlg > .icon {
-    min-width:32px;
-    min-height:32px;
-    font-size:15px;
+    font-size:18px;
+    padding:6px 14px;
 }
 
-/************** SEPARATORS *******************/
-/* TODO: make separators implicit, if button has icon, remove classes */
-.btn > .icon.border_left::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
+/* class added if there is an icon; sets padding */
+.btn.icon_left {
+    padding-left:2.65em;
 }
-.btn > .icon.border_right::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
-}
-.btn > .icon.border_left_alt::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(128,128,128,0.5);
-}
-.btn > .icon.border_right_alt::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(128,128,128,0.5);
+.btn.icon_right {
+    padding-right:2.65em;
 }
 
-/******************** ICON ANIMATIONS ********************/
-.btn > .icon > svg {
+/* style the icon in the button */
+.btn > .icon {
+    position:absolute;
+    top:0;
+    width:2em;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* style border to left or right of icon */
+.btn > .icon:not(.no_border)::after {
+    content: '';
+    height:0.75em;
+    position:absolute;
+    border-style:solid;
+    border-color:currentColor;
+    opacity:0.5;
+}
+
+/* specific styling for left icons */
+.btn.icon_left > .icon {
+    left:0;
+}
+.btn.icon_left > .icon:not(.no_border)::after {
+    right:0;
+    border-width:0 1px 0 0;
+}
+
+/* specific styling for right icons */
+.btn.icon_right > .icon {
+    right:0;
+}
+.btn.icon_right > .icon:not(.no_border)::after {
+    left:0;
+    border-width:0 0 0 1px;
+}
+
+
+/* icon hover animations */
+.btn > .icon > * {
     transition:all 0.15s ease-out;
 }
 
-/* .SHRINK - SHRINK ICON ON HOVER */
-.btn:hover > .icon.shrink > svg {
+/* shrink */
+.btn:hover > .icon.shrink > * {
     transform:scale(0.85);
 }
 
-/* .GROW - GROW ICON ON HOVER */
-.btn:hover > .icon.grow > svg {
+/* grow */
+.btn:hover > .icon.grow > * {
     transform:scale(1.2);
 }
 
-/* .TURN - TURN ICON ON HOVER */
-.btn:hover > .icon.turn > svg {
+/* turn slightly */
+.btn:hover > .icon.turn > * {
     transform:rotate(20deg);
 }
 
-/* .SPIN - SPIN ICON ON HOVER */
-.btn > .icon.spin > svg {
+/* spin 90 degrees */
+.btn > .icon.spin > * {
     transition:all 0.3s ease-out;
 }
-.btn:hover > .icon.spin > svg {
+.btn:hover > .icon.spin > * {
     transform:rotate(90deg);
 }
 
-/* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
-.btn:hover > .icon.slide_left > svg {
+/* slide left */
+.btn:hover > .icon.slide_left > * {
     transform:translateX(-0.3em);
 }
 
-/* .SLIDE_RIGHT - SLIDE ICON RIGHT ON HOVER */
-.btn:hover > .icon.slide_right > svg {
+/* slide right */
+.btn:hover > .icon.slide_right > * {
     transform:translateX(0.3em);
 }
 
-/* .SLIDE_UP - SLIDE ICON UP ON HOVER */
-.btn:hover > .icon.slide_up > svg {
+/* slide up */
+.btn:hover > .icon.slide_up > * {
     transform:translateY(-0.3em);
 }
 
-/* .SLIDE_DOWN - SLIDE ICON DOWN ON HOVER */
-.btn:hover > .icon.slide_down > svg {
+/* slide down */
+.btn:hover > .icon.slide_down > * {
     transform:translateY(0.3em);
 }
 
-/* REMOVE TRANSITION ON ACTIVE */
-.btn:active > .icon > svg {
+/* reverse animation effect when user clicks button */
+.btn:active > .icon > * {
     transform:none !important;
 }
 
-/* DISABLED BUTTON */
+/* when button is disabled */
 button[disabled] {
     cursor:not-allowed;
     opacity:0.5;
 }
-.btn[disabled]:hover > .icon > svg {
+.btn[disabled]:hover > .icon > * {
     transform:none !important;
 }
 .btn[disabled].glow:hover {
     box-shadow:none !important;
 }
 
-/************* END NEW BUTTONS *********************************/
+/************************* END TRADITIONAL BUTTON CLASSES *********************************/
 
 /* Just a FUN LINK I leave here cause Nick loves it */
 .fun_lnk {
