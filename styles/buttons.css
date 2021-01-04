@@ -71,7 +71,8 @@ button.clear {
 }
 
 /* style the icon in the button */
-.btn > .icon {
+.btn.icon_left > .icon,
+.btn.icon_right > .icon {
     position:absolute;
     top:0;
     width:2em;
@@ -81,7 +82,8 @@ button.clear {
     justify-content:center;
 }
 /* style border to left or right of icon */
-.btn > .icon:not(.no_line)::after {
+.btn.icon_left > .icon:not(.no_line)::after,
+.btn.icon_right > .icon:not(.no_line)::after {
     content: '';
     height:0.75em;
     position:absolute;
