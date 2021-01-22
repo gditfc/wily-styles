@@ -263,6 +263,37 @@ nav {
     transition: all .3s ease
 }
 
+/* TOGGLE BUTTON STYLE FOR PUSH CONTAINER */
+.push_toggle_btn {
+    appearance: none;
+    user-select:none;
+    cursor:pointer;
+    outline:none;
+    padding:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.2s ease;
+    text-align:center;
+    font-size:16px;
+    margin:0;
+    width:40px;
+    min-width:40px;
+    /*height:45px;*/
+    min-height:40px;
+    height:100%;
+}
+.push_toggle_btn, .push_toggle_btn.left {
+    border-width:0 1px 0 0 !important;
+}
+.push_toggle_btn.right {
+    border-width:0 0 0 1px !important;
+}
+.push_toggle_btn:not(:hover){
+    background:none;
+    color:inherit;
+}
+
 /* SIDEBAR MENU CLASSES */
 
 /* sidebar header with optional close button */
@@ -270,7 +301,7 @@ nav {
     display:flex;
     align-items:center;
     font-size:14px;
-    min-height:45px;
+    min-height:40px;
     padding:10px 15px;
 }
 
@@ -281,6 +312,12 @@ nav {
     opacity:0.9;
     padding:15px 15px 10px 15px;
     margin-top:5px;
+}
+
+/* div around group of sidebar buttons */
+/* apply darker color to div to add lines between buttons */
+.sidebar_group {
+    padding:1px 0;
 }
 
 /* style sidebar buttons */
@@ -313,6 +350,10 @@ nav {
 .sidebar_btn, .sidebar_btn_noclick {
     min-height:40px;
     padding:10px 15px;
+    margin-bottom:1px;
+}
+.sidebar_btn:last-child, .sidebar_btn_noclick:last-child {
+    margin-bottom:0;
 }
 
 /* size smaller buttons */
@@ -325,7 +366,7 @@ nav {
 /* darken background on hover or if selected */
 .sidebar_btn:hover,
 .sidebar_btn.selected {
-    background-color:rgba(0,0,0,0.07);
+    background-color:rgba(255,255,255,0.02);
 }
 
 /* make font bolder if selected */
@@ -340,14 +381,14 @@ nav {
     height:100%;
     bottom:0;
     left:0;
-    width:0;
+    width:2px;
     transition:width 0.15s linear;
 }
 
 /* show accent on hover or selected */
 .sidebar_btn:hover > .accent,
 .sidebar_btn.selected > .accent {
-    width:4px;
+    width:6px;
 }
 
 /* style text/icon content */

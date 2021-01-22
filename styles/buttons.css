@@ -90,6 +90,8 @@ button.clear {
     border-style:solid;
     border-color:currentColor;
     opacity:0.5;
+    margin-top:-0.37em; /* IE11 fix */
+    top:50%;
 }
 
 /* specific styling for left icons */

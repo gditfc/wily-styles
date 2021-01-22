@@ -587,14 +587,14 @@ p img {
 
 /* LIST ITEMS WITH ALTERNATING BACKGROUND COLORS - ODD */
 .bg_everyodd > * {
-    border-width:0 !important; /* remove border width */
+    background-color:rgba(128,128,128,0.05);
 }
 .bg_everyodd > :nth-child(even) {
     background:none !important;
 }
 /* alternative if list items are components */
 .bg_everyodd_component > * > div {
-    border-width:0 !important; /* remove border width */
+    background-color:rgba(128,128,128,0.05);
 }
 .bg_everyodd_component > :nth-child(even) > div {
     background:none !important;
@@ -602,14 +602,14 @@ p img {
 
 /* LIST ITEMS WITH ALTERNATING BACKGROUND COLORS - EVEN */
 .bg_everyeven > * {
-    border-width:0 !important; /* remove border width */
+    background-color:rgba(128,128,128,0.05);
 }
 .bg_everyeven > :nth-child(odd) {
     background:none !important;
 }
 /* alternative if list items are components */
 .bg_everyeven_component > * > div {
-    border-width:0 !important; /* remove border width */
+    background-color:rgba(128,128,128,0.05);
 }
 .bg_everyeven_component > :nth-child(odd) > div {
     background:none !important;

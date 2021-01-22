@@ -313,7 +313,7 @@ input,select {
 /* left icon; add border and padding to input */
 .input_lefticon > input {
     padding-left:3em !important;
-    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-image: linear-gradient(to right, #999999, #999999);
     background-position: 2.25em 50%;
     background-size: 1px 1em;
     background-repeat: no-repeat;
@@ -322,7 +322,7 @@ input,select {
 /* select icon; add border and padding to container */
 .select_icon {
     padding-left:2.5em !important;
-    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-image: linear-gradient(to right, #999999, #999999);
     background-position: 2.25em 50%;
     background-size: 1px 1em;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ input,select {
 /* right icon; add border and padding to input */
 .input_righticon > input {
     padding-right:3em !important;
-    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-image: linear-gradient(to right, #999999, #999999);
     background-position: calc(100% - 2.25em) 50%;
     background-size: 1px 1em;
     background-repeat: no-repeat;
