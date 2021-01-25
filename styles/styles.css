@@ -33,26 +33,26 @@ body {
 
 /* main div holding all structural elements */
 .site {
-    position:fixed; /* so 100% height works correctly */
-    height: calc(100% - 40px); /* account for height of nav bar */
+    position:fixed; /* so 100% height works correctly in ios safari */
+    height:100%;
     display: flex;
-    overflow-x:hidden;
-    overflow-y:scroll;
+    flex:1;
     flex-direction: column;
-    margin-top:40px;
     /* stretch to fill screen */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    scroll-behavior: smooth;
 }
 
-/* div holding main content between nav and footer */
+/* div holding main content under nav */
 .site-content {
-    flex: 1 0 auto;
-    margin:0 auto;
-    width: 100%;
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    z-index:1;
 }
 
 .page_container {

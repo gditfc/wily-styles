@@ -527,8 +527,7 @@ button[disabled] {
     font-weight:500;
 }
 
-/* TAB BUTTONS */
-/* TODO: create version that floats, and full width version */
+/***************** FLOATING TABS *********************/
 .tabs .btn_tab {
     margin-top:1px;
     margin-bottom:1px;
@@ -547,6 +546,77 @@ button[disabled] {
 .tabs .btn_tab:not(:first-child):not(:last-child) {
     margin-right:1px;
 }
+/***************** END FLOATING TABS *********************/
+
+/***************** FULLWIDTH TABS *********************/
+.tabs_fullwidth .btn_tab {
+    display:flex;
+    /*margin-top:1px;*/
+    margin-bottom:1px;
+    border-radius:0;
+    user-select:none;
+    outline:none;
+    border:0;
+    cursor:pointer;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+    transition:all 0.2s ease-in-out;
+    position:relative;
+    text-align:center;
+}
+/* remove bottom margin when selected so tab blends with page */
+.tabs_fullwidth .btn_tab.selected {
+    margin-bottom:0;
+}
+/* color bar above tabs when hover/selected */
+.tabs_fullwidth > .btn_tab > .tab_color {
+    position:absolute;
+    height:3px;
+    top:0;
+    left:0;
+    width:0;
+    transition:width 0.3s ease-in-out;
+}
+.tabs_fullwidth > .btn_tab.selected > .tab_color {
+    width:100%;
+}
+/* brighten tab slightly on hover */
+.tabs_fullwidth .btn_tab:hover {
+    filter: brightness(1.05);
+}
+/* extend color bar on hover */
+.tabs_fullwidth .btn_tab:hover .tab_color {
+    width:100%;
+}
+/* small tab */
+.tabs_fullwidth.sm > .btn_tab {
+    padding:8px 5px;
+    font-size:10px;
+}
+/* medium tab */
+.tabs_fullwidth.md > .btn_tab {
+    padding:10px 5px;
+    font-size:12px;
+}
+/* large tab */
+.tabs_fullwidth.lg > .btn_tab {
+    padding:12px 5px;
+    font-size:14px;
+}
+/* give all tabs except last a right margin */
+.tabs_fullwidth .btn_tab:not(:last-child) {
+    margin-right:1px;
+}
+/* spacer */
+.tabs_fullwidth .tab_spacer {
+    display:flex;
+    /*margin-top:1px;*/
+    margin-bottom:1px;
+    border-radius:0;
+    border:0;
+}
+/***************** END FULLWIDTH TABS *********************/
 
 /* BTN_GROUP */
 /* group of buttons, such as for toggles */

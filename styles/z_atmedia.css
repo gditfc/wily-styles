@@ -110,6 +110,13 @@
         height:auto !important;
         max-height:unset !important;
     }
+
+    /* shrink tabs font on mobile */
+    .tabs_fullwidth.sm > .btn_tab,
+    .tabs_fullwidth.md > .btn_tab,
+    .tabs_fullwidth.lg > .btn_tab {
+        font-size:10px;
+    }
 }
 
 /* PRINTER STYLES */
