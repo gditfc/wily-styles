@@ -38,6 +38,7 @@ button.clear {
     transition:all 0.2s ease-in-out;
     border-radius:3px;
     position:relative;
+    flex-shrink:0;
 }
 
 /* button sizes */
@@ -636,6 +637,8 @@ button[disabled] {
     font-size:14px;
     margin:0;
     border-width: 1px 0;
+    justify-content:center;
+    text-align:center;
 }
 /* small tab */
 .btn_group.sm .btn {
