@@ -92,11 +92,6 @@
     /*    font-size: 11pt;*/
     /*}*/
 
-    /* TODO: move to WAC */
-    .wac_icon_select_list {
-        height: unset;
-    }
-
     /* set height to auto on mobile */
     /* makes scrollable lists fill screen instead of independently scrolling */
     .mobile_fullheight {
