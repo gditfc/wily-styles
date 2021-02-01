@@ -378,14 +378,14 @@ nav {
     height:100%;
     bottom:0;
     left:0;
-    width:2px;
+    width:3px;
     transition:width 0.15s linear;
 }
 
 /* show accent on hover or selected */
 .sidebar_btn:hover > .accent,
 .sidebar_btn.selected > .accent {
-    width:6px;
+    width:8px;
 }
 
 /* style text/icon content */

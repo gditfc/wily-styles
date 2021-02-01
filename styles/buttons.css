@@ -689,3 +689,13 @@ button[disabled] {
     font-size:14px;
     margin:0;
 }
+.list_btn > .go_icon {
+    opacity:0;
+    transform:scaleX(0);
+    transform-origin:left center;
+    transition:all 0.2s ease-in-out;
+}
+.list_btn:hover > .go_icon {
+    opacity:1;
+    transform:scaleX(1);
+}

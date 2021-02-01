@@ -79,7 +79,7 @@
 /* pill class for rounded pills */
 /* TODO: make scaleable with em's */
 .pill {
-    padding:2px 10px;
+    padding:0.2em 0.6em;
     /*border-radius:50px;*/
     display:flex;
     align-items:center;
