@@ -56,28 +56,6 @@ nav {
     user-select: none;
 }
 
-/* transcend logo */
-.nav_transcend {
-    background-image: url('https://styles.transcend.csra.io/images/logos/transcend_logo.svg');
-    width: 35px;
-    height: 35px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center center;
-    margin: 0;
-}
-
-/* emedny logo */
-.nav_emedny {
-    background-image: url('https://styles.transcend.csra.io/images/logos/emedny.svg');
-    width: 90px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50%;
-    margin: 0 10px 0 5px;
-}
-
 .nav_title_box {
     margin-top: -2px;
     margin-left: 5px;
@@ -152,21 +130,7 @@ nav {
 }
 
 /* MAIN MENU*/
-.main_logo_bg {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-image: url("assets/logos/transcend_tri.svg");
-    background-size: 60%;
-}
 
-.gdit_bg {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 10% 98%;
-    background-image: url("assets/logos/gdit_logo_scale.svg");
-    background-size: 66%;
-}
 
 /* MAIN MENU ACCORDION */
 .menu_slideout {
