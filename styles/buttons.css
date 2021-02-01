@@ -213,78 +213,6 @@ button[disabled] {
     cursor: grabbing;
 }
 
-/* ANIMATED APPLICATION BUTTONS */
-/* TODO: move to app management? */
-.app_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    height: 150px;
-    min-width: 120px;
-    width: 120px;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
-    outline: none;
-    overflow: hidden;
-}
-
-.app_btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 10px -5px rgba(0, 0, 0, 0.4);
-}
-
-.app_btn:hover .app_btn_icon {
-    transform: scale(0.8, 0.8) translateY(-15px);
-}
-
-.app_btn:hover .app_btn_middle {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0, 1.0);
-}
-
-.app_btn_middle {
-    transform: scale(0, 0);
-    transition: 0.2s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    visibility: hidden;
-}
-
-.app_btn_middle_text {
-    transform: translateY(-2px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 9pt;
-}
-
-.app_btn_icon {
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-
-.app_btn_text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 9pt;
-    font-weight: 500;
-    padding: 2px;
-    border-radius: 3px;
-}
-
 /* PULSE BUTTONS */
 .btn_pulse {
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -384,45 +312,6 @@ button[disabled] {
     font-weight: 500;
 }
 
-/* CONFIG DASHBOARD BUTTONS */
-/* TODO: remove? (check usages, probably deprecated) */
-.btn_config {
-    height: 75px;
-    padding: 0;
-    white-space: normal;
-    max-width: 360px;
-    min-width: 250px;
-}
-
-.btn_config .text {
-    justify-content:normal;
-}
-
-.btn_config_icon {
-    position:relative;
-    width: 75px;
-    height: 75px;
-    font-size: 26pt;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.btn_config_subicon {
-    font-size: 18px;
-    position: absolute;
-    left: 38px;
-    top: 38px;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-}
-
-.btn_config:hover .btn_config_subicon {
-    opacity: 1;
-}
-
 /* HIGHLIGHT BUTTON */
 /* TODO: remove, unused */
 .btn_highlight{
@@ -477,6 +366,7 @@ button[disabled] {
 }
 
 /* PRIORITY BUTTON */
+/* TODO: check usages and remove if unused */
 .prior_btn {
     width: 8px;
     border-radius: 3px;
@@ -496,36 +386,6 @@ button[disabled] {
 .prior_btn:hover > .prior_btn_icon,
 .prior_btn:focus > .prior_btn_icon {
     opacity: 1;
-}
-
-/* BREADCRUMB BUTTON STYLES */
-/* TODO: remove these, potentially reuse for another button type */
-/* show a background on hover */
-.breadcrumb {
-    border-width:0 !important;
-    border-radius:20px;
-    min-height:22px;
-    font-size:11pt;
-    display:flex;
-    align-items:center;
-    cursor:pointer;
-    justify-content:center;
-    padding:0 10px;
-    white-space:nowrap;
-    overflow:hidden;
-    transition: all 0.2s ease-in-out;
-}
-.breadcrumb:not(:hover){
-    background:none;
-}
-/* current page title */
-.breadcrumb_current {
-    min-height:22px;
-    display:flex;
-    align-items:center;
-    padding:0 10px;
-    font-size:13px;
-    font-weight:500;
 }
 
 /***************** FLOATING TABS *********************/

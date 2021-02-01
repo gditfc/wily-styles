@@ -69,13 +69,6 @@
     border-width:0 !important;
 }
 
-/* STATUS GRADIENT */
-/* TODO: POTENTIALLY REMOVE OR MOVE TO TRACKING */
-.stat_grad {
-    background: rgb(83, 209, 41);
-    background: linear-gradient(to right, rgba(83, 209, 41, 1) 0%, rgba(239, 239, 45, 1) 70%, rgba(201, 125, 38, 1) 90%, rgba(237, 0, 0, 1) 100%);
-}
-
 /* pill class for rounded pills */
 /* TODO: make scaleable with em's */
 .pill {

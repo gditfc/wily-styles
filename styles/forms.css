@@ -12,63 +12,7 @@ input:disabled, textarea:disabled, select:disabled {
     filter: brightness(0.95);
 }
 
-/* FORM EDITOR STYLES */
-/* MOVE TO APP MANAGEMENT? */
-.row_options {
-    margin: 3px;
-    width: 20px;
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-}
-
-.row_handle {
-    font-size: 12pt;
-    cursor: grab;
-    font-weight: 400;
-    border-radius: 3px;
-}
-
-.row_settings {
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    font-size: 8pt;
-    margin: 2pt;
-}
-
-.row_settings:hover {
-    transform: scale(1.2, 1.2);
-
-}
-
-.col_options {
-    user-select: none;
-    position:relative;
-}
-
-.col_options .col_settings {
-    transition: all 0.3s ease-in-out;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    opacity: 0;
-    font-size: 10pt;
-    margin: 0;
-    top:5px;
-    left:5px;
-    border-radius: 3px;
-    width: 50px;
-    height: 20px;
-}
-
-.col_options:hover .col_settings {
-    opacity: 1;
-}
-
-.field_grab {
-    cursor: grab;
-}
+/* TODO: review all of these and figured out what should move to TAC */
 
 .field_error {
     border: 1px solid red;
