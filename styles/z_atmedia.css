@@ -13,30 +13,30 @@
 .mobile_only,
 .mobile_only_flex,
 .mobile_only_inline {
-    display: none;
+    display: none !important;
 }
 
 /* TABLET BREAKPOINT */
 @media screen and (max-width: 1024px) {
-    .hide_element1024 {
+    .tablet_hide {
         display: none !important;
     }
 
     .tablet_only {
-        display: block;
+        display: block !important;
     }
 
     .tablet_only_flex {
-        display: flex;
+        display: flex !important;
     }
 
     .tablet_only_inline {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     /* set height to auto on tablet */
     /* makes scrollable lists fill screen instead of independently scrolling */
-    .heightauto_tablet {
+    .tablet_fullheight {
         height:auto !important;
         max-height:unset !important;
     }
@@ -44,61 +44,66 @@
 
 /* MOBILE BREAKPOINT */
 @media screen and (max-width: 768px) {
+    .mobile_hide {
+        display:none !important;
+    }
+
+    /* TODO: deprecate */
     .hide_element {
         display: none !important;
     }
 
     .mobile_only {
-        display: block;
+        display: block !important;
     }
 
     .mobile_only_flex {
-        display: flex;
+        display: flex !important;
     }
 
     .mobile_only_inline {
-        display:inline-block;
+        display:inline-block !important;
     }
 
     /* remove padding on mobile */
-    .pad_0_mobile {
+    .mobile_pad_0 {
         padding: 0;
     }
 
-    .text_center_mobile {
+    .mobile_text_left {
+        text-align:left;
+    }
+
+    .mobile_text_center {
         text-align:center;
     }
 
-    .center_mobile {
+    .mobile_center {
         justify-content: center;
         align-items: center;
     }
 
-    .header_subtitle {
-        padding: 3px 5px 3px 5px;
-        font-size: 9pt;
-    }
+    /*.header_subtitle {*/
+    /*    padding: 3px 5px 3px 5px;*/
+    /*    font-size: 9pt;*/
+    /*}*/
 
-    .header .title {
-        font-size: 11pt;
-    }
-
-    .wac_icon_select_list {
-        height: unset;
-    }
-
-    /* condense emedny logo on mobile */
-    .nav_emedny {
-        background-image: url(assets/logos/emedny_e.svg);
-        margin:2px 8px 0 5px;
-        width:15px;
-    }
+    /*.header .title {*/
+    /*    font-size: 11pt;*/
+    /*}*/
 
     /* set height to auto on mobile */
     /* makes scrollable lists fill screen instead of independently scrolling */
-    .heightauto_mobile {
+    .mobile_fullheight {
         height:auto !important;
         max-height:unset !important;
+    }
+
+    /* shrink tabs font on mobile */
+    .tabs_fullwidth.sm > .btn_tab,
+    .tabs_fullwidth.md > .btn_tab,
+    .tabs_fullwidth.lg > .btn_tab {
+        font-size:10px;
     }
 }
 
@@ -123,13 +128,11 @@
 
     .layout_sidebar {
         display:none;
-        direction:ltr !important;
-        height:calc(100% - 40px) !important;
-        position:relative;
     }
 
     .site {
         display:block;
+        position:static;
         height:auto;
         overflow-y:hidden;
     }
@@ -147,12 +150,13 @@
         visibility: visible;
     }
 
-    .page_container {
-        box-shadow: none !important;
-        border: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+    /* TODO: remove or tweak */
+    /*.page_container {*/
+    /*    box-shadow: none !important;*/
+    /*    border: none !important;*/
+    /*    margin: 0 !important;*/
+    /*    padding: 0 !important;*/
+    /*}*/
 
     .page_container_color, .body_color {
         color: #222 !important;
@@ -188,58 +192,4 @@
     .ie_block {
         display: block;
     }
-
-    /*Clear all the min-heights*/
-    .btn.xsm,
-    .btn.xsm .text,
-    .btn.xsm .icon,
-    .btn.sm,
-    .btn.sm .text,
-    .btn.sm .icon,
-    .btn.md,
-    .btn.md .text,
-    .btn.md .icon,
-    .btn.lg,
-    .btn.lg .text,
-    .btn.lg .icon,
-    .btn.xlg,
-    .btn.xlg .text,
-    .btn.xlg .icon,
-    .menubtn {
-        min-height: 0;
-    }
-
-    /*Create button height with padding*/
-    .btn.xsm {
-        padding: 3px 0;
-    }
-
-    .btn.sm {
-        padding: 2px 0;
-    }
-
-    .btn.md {
-        padding: 4px 0;
-    }
-
-    .btn.lg {
-        padding: 4px 0;
-    }
-
-    .btn.xlg {
-        padding: 5px 0;
-    }
-
-    /*Create padding for config menu*/
-    .menubtn {
-        padding-top: 11px;
-        padding-bottom: 12px;
-    }
-
-    /*reposition the borders*/
-    .btn .icon.border_left::after,
-    .btn .icon.border_right::after {
-        -ms-transform: translateY(-46%);
-    }
-
 }

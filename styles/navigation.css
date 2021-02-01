@@ -13,11 +13,8 @@ nav {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    position: relative;
     margin: 0;
-    top: 0;
-    left:0;
     z-index: 999;
     height: 40px;
     transition: all .2s ease-in-out;
@@ -57,28 +54,6 @@ nav {
     cursor: pointer;
     outline: none;
     user-select: none;
-}
-
-/* transcend logo */
-.nav_transcend {
-    background-image: url(assets/logos/transcend_tri_solid.svg);
-    width: 35px;
-    height: 35px; /* CHANGE THIS TO CONTROL HEIGHT OF NAVBAR */
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center center;
-    margin: 0;
-}
-
-/* emedny logo */
-.nav_emedny {
-    background-image: url(assets/logos/emedny.svg);
-    width: 90px;
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50%;
-    margin: 0 10px 0 5px;
 }
 
 .nav_title_box {
@@ -154,30 +129,8 @@ nav {
     box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.35);
 }
 
-/* page header class for breadcrumbs/title bars */
-.page_header {
-    min-height:45px;
-    padding:0 15px;
-    display:flex;
-}
-
-
 /* MAIN MENU*/
-.main_logo_bg {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-image: url("assets/logos/transcend_tri.svg");
-    background-size: 60%;
-}
 
-.gdit_bg {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: 10% 98%;
-    background-image: url("assets/logos/gdit_logo_scale.svg");
-    background-size: 66%;
-}
 
 /* MAIN MENU ACCORDION */
 .menu_slideout {
@@ -271,9 +224,157 @@ nav {
     transition: all .3s ease
 }
 
+/* TOGGLE BUTTON STYLE FOR PUSH CONTAINER */
+.push_toggle_btn {
+    appearance: none;
+    user-select:none;
+    cursor:pointer;
+    outline:none;
+    padding:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.2s ease;
+    text-align:center;
+    font-size:18px;
+    margin:0;
+    width:40px;
+    min-width:40px;
+    /*height:45px;*/
+    min-height:40px;
+    height:100%;
+}
+.push_toggle_btn, .push_toggle_btn.left {
+    border-width:0 1px 0 0 !important;
+}
+.push_toggle_btn.right {
+    border-width:0 0 0 1px !important;
+}
+.push_toggle_btn:not(:hover){
+    background:none;
+    color:inherit;
+}
+
+/* SIDEBAR MENU CLASSES */
+
+/* sidebar header with optional close button */
+.sidebar_header {
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    min-height:40px;
+    padding:10px 15px;
+}
+
+/* subheader for groupings in sidebar */
+.sidebar_subheader {
+    font-size:12px;
+    font-weight:600;
+    opacity:0.9;
+    padding:15px 15px 10px 15px;
+    margin-top:5px;
+}
+
+/* div around group of sidebar buttons */
+/* apply darker color to div to add lines between buttons */
+.sidebar_group {
+    padding:1px 0;
+}
+
+/* style sidebar buttons */
+.sidebar_btn,
+.sidebar_btn_noclick {
+    appearance: none;
+    user-select:none;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    display:flex;
+    transition:all 0.2s ease-in-out;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:left;
+    font-size:13px;
+    margin:0;
+    width:100%;
+    position:relative;
+    background:none;
+    color:inherit;
+}
+
+/* remove cursor from un-clickable buttons */
+.sidebar_btn_noclick {
+    cursor:default;
+}
+
+/* size sidebar buttons */
+.sidebar_btn, .sidebar_btn_noclick {
+    min-height:40px;
+    padding:10px 15px;
+    margin-bottom:1px;
+}
+.sidebar_btn:last-child, .sidebar_btn_noclick:last-child {
+    margin-bottom:0;
+}
+
+/* size smaller buttons */
+.sidebar_btn.sm,
+.sidebar_btn_noclick.sm {
+    min-height:35px;
+    padding:8px 15px;
+}
+
+/* darken background on hover or if selected */
+.sidebar_btn:hover,
+.sidebar_btn.selected {
+    background-color:rgba(255,255,255,0.02);
+}
+
+/* make font bolder if selected */
+.sidebar_btn.selected > .content > .text {
+    font-weight:500;
+}
+
+/* accent hidden by default */
+.sidebar_btn > .accent,
+.sidebar_btn_noclick > .accent {
+    position:absolute;
+    height:100%;
+    bottom:0;
+    left:0;
+    width:3px;
+    transition:width 0.15s linear;
+}
+
+/* show accent on hover or selected */
+.sidebar_btn:hover > .accent,
+.sidebar_btn.selected > .accent {
+    width:8px;
+}
+
+/* style text/icon content */
+.sidebar_btn .content,
+.sidebar_btn_noclick .content {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:left;
+    opacity:0.8;
+    transition:opacity 0.2s ease-in-out;
+}
+
+/* unfade text/icon on hover or selected */
+.sidebar_btn:hover .content,
+.sidebar_btn.selected .content,
+.sidebar_btn_noclick.selected .content {
+    opacity:1;
+}
+
+
+/************************* DEPRECATED ******************************/
+
 /* PUSH MENU */
 .push_menu {
-    margin-top: -30px;
     display: flex;
     flex-direction: column;
 }
@@ -295,7 +396,6 @@ nav {
     padding-right: 10px;
     outline: none;
     margin-bottom: 1px;
-    box-sizing: border-box;
 }
 
 .push_menu_btn .icon {
@@ -344,7 +444,6 @@ nav {
     padding-right: 10px;
     outline: none;
     margin-bottom: 1px;
-    box-sizing: border-box;
 }
 
 .overlay_menu_btn .icon {
@@ -466,3 +565,5 @@ nav {
     border: 1px solid #CCC;
     border-radius: 3px;
 }
+
+/************************* END DEPRECATED ******************************/

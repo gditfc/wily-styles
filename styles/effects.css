@@ -41,38 +41,159 @@
 .page_shadow {
     box-shadow: 0 10px 22px -11px rgba(0, 0, 0, 0.6);
 }
+/* medium content block shadow */
+.box_shadow {
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.07);
+}
 
-/* STATUS GRADIENT */
-.stat_grad {
-    background: rgb(83, 209, 41);
-    background: linear-gradient(to right, rgba(83, 209, 41, 1) 0%, rgba(239, 239, 45, 1) 70%, rgba(201, 125, 38, 1) 90%, rgba(237, 0, 0, 1) 100%);
+/* SHOW BORDERS ON ONLY ONE SIDE */
+.border_top {
+    border-width: 1px 0 0 0 !important;
+}
+.border_bottom {
+    border-width: 0 0 1px 0 !important;
+}
+.border_left {
+    border-width: 0 0 0 1px !important;
+}
+.border_right {
+    border-width:0 1px 0 0 !important;
+}
+.border_x {
+    border-width:0 1px !important;
+}
+.border_y {
+    border-width:1px 0 !important;
+}
+.border_none {
+    border-width:0 !important;
 }
 
 /* pill class for rounded pills */
+/* TODO: make scaleable with em's */
 .pill {
-    box-sizing:border-box;
-    padding:2px 10px;
-    border-radius:50px;
+    padding:0.2em 0.6em;
+    /*border-radius:50px;*/
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
+    -ms-flex: 0 0 auto;
+}
+.pill.round {
+    border-radius:50px;
 }
 
+/******************* ANIMATIONS ********************/
+.hov_slide_up:hover {
+    transform: translateY(-4px);
+}
+
+.hov_sm_grow:hover {
+    transform: scale(1.08);
+}
+
+.hov_grow:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.hov_mid_grow:hover {
+    transform: scale(1.2);
+}
+
+.hov_big_grow:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.hov_underline:hover {
+    box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+.hov_underline_md:hover {
+    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
+}
+
+.hov_slide_right, .hov_slide_up {
+    transition:0.2s ease all;
+}
+
+.hov_slide_right:hover {
+    transform:translateX(10px);
+}
+
+/* .HOV_BG - show background only on hover */
+.hov_bg {
+    transition:0.2s background-color ease;
+}
+.hov_bg:not(:hover){
+    background:none;
+    color:inherit;
+}
+
+/* .GLOW - LIGHTEN ON HOVER */
+.hov_glow:hover {
+    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
+}
+.hov_glow:active {
+    box-shadow: none;
+}
+
+/* .DARKEN - DARKEN ON HOVER */
+.hov_darken:hover {
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.05);
+}
+.hov_darken:active {
+    box-shadow: none;
+}
+/******************* END ANIMATIONS ***********************/
+
+/* OPACITY CLASSES */
+.opacity_10 { opacity:0.1; }
+.opacity_20 { opacity:0.2; }
+.opacity_30 { opacity:0.3; }
+.opacity_40 { opacity:0.4; }
+.opacity_50 { opacity:0.5; }
+.opacity_60 { opacity:0.6; }
+.opacity_70 { opacity:0.7; }
+.opacity_80 { opacity:0.8; }
+.opacity_90 { opacity:0.9; }
+.opacity_100 { opacity:1.0; }
+
 /* CIRCLE CLASSES */
-.circle_8px {
-    width: 8px;
-    min-width: 8px;
-    height: 8px;
-    min-height: 8px;
+.circle_8px,
+.circle_12px,
+.circle_14px,
+.circle_16px,
+.circle_18px,
+.circle_20px,
+.circle_22px,
+.circle_24px,
+.circle_26px,
+.circle_30px,
+.circle_32px,
+.circle_36px,
+.circle_40px,
+.circle_46px,
+.circle_50px,
+.circle_60px,
+.circle_70px,
+.circle_80px,
+.circle_90px,
+.circle_100px {
     padding: 0;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4px;
     user-select: none;
-    box-sizing: border-box;
+}
+
+.circle_8px {
+    width: 8px;
+    min-width: 8px;
+    height: 8px;
+    min-height: 8px;
+    font-size: 4px;
 }
 
 .circle_12px {
@@ -80,14 +201,7 @@
     min-width: 12px;
     height: 12px;
     min-height: 12px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 8px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_14px {
@@ -95,14 +209,7 @@
     min-width: 14px;
     height: 14px;
     min-height: 14px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 8px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_16px {
@@ -110,14 +217,7 @@
     min-width: 16px;
     height: 16px;
     min-height: 16px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 10px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_18px {
@@ -125,14 +225,7 @@
     min-width: 18px;
     height: 18px;
     min-height: 18px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_20px {
@@ -140,14 +233,7 @@
     min-width: 20px;
     height: 20px;
     min-height: 20px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_22px {
@@ -155,14 +241,7 @@
     min-width: 22px;
     height: 22px;
     min-height: 22px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_24px {
@@ -170,14 +249,7 @@
     min-width: 24px;
     height: 24px;
     min-height: 24px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_26px {
@@ -185,14 +257,7 @@
     min-width: 26px;
     height: 26px;
     min-height: 26px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_30px {
@@ -200,14 +265,7 @@
     min-width: 30px;
     height: 30px;
     min-height: 30px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_32px {
@@ -215,14 +273,7 @@
     min-width: 32px;
     height: 32px;
     min-height: 32px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_36px {
@@ -230,14 +281,7 @@
     min-width: 36px;
     height: 36px;
     min-height: 36px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_40px {
@@ -245,14 +289,15 @@
     min-width: 40px;
     height: 40px;
     min-height: 40px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
-    user-select: none;
-    box-sizing: border-box;
+}
+
+.circle_46px {
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    min-height: 46px;
+    font-size: 24px;
 }
 
 .circle_50px {
@@ -260,14 +305,7 @@
     min-width: 50px;
     height: 50px;
     min-height: 50px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 28px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_60px {
@@ -275,14 +313,7 @@
     min-width: 60px;
     height: 60px;
     min-height: 60px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 30px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_70px {
@@ -290,14 +321,7 @@
     min-width: 70px;
     height: 70px;
     min-height: 70px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 40px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_80px {
@@ -305,14 +329,7 @@
     min-width: 80px;
     height: 80px;
     min-height: 80px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 44px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .circle_90px {
@@ -320,29 +337,45 @@
     min-width: 90px;
     height: 90px;
     min-height: 90px;
-    padding: 0;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 44px;
-    user-select: none;
-    box-sizing: border-box;
+}
+
+.circle_100px {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    min-height: 100px;
+    font-size: 50px;
 }
 
 /* SQUARE CLASSES */
+.square_16px,
+.square_18px,
+.square_20px,
+.square_22px,
+.square_24px,
+.square_26px,
+.square_28px,
+.square_30px,
+.square_36px,
+.square_40px,
+.square_42px,
+.square_46px,
+.square_50px,
+.square_60px {
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    user-select:none;
+}
+
 .square_16px {
     width: 16px;
     min-width: 16px;
     height: 16px;
     min-height: 16px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 8px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_18px {
@@ -350,13 +383,7 @@
     min-width: 18px;
     height: 18px;
     min-height: 18px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 10px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_20px {
@@ -364,13 +391,7 @@
     width: 20px;
     min-height: 20px;
     height: 20px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 12px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_22px {
@@ -378,13 +399,7 @@
     width: 22px;
     min-height: 22px;
     height: 22px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 13px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_24px {
@@ -392,13 +407,7 @@
     min-width: 24px;
     height: 24px;
     min-height: 24px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_26px {
@@ -406,13 +415,7 @@
     min-width: 26px;
     height: 26px;
     min-height: 26px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_28px {
@@ -420,13 +423,7 @@
     min-width: 28px;
     height: 28px;
     min-height: 28px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_30px {
@@ -434,13 +431,7 @@
     min-width: 30px;
     height: 30px;
     min-height: 30px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_36px {
@@ -448,13 +439,7 @@
     min-width: 36px;
     height: 36px;
     min-height: 36px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 18px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_40px {
@@ -462,13 +447,7 @@
     min-width: 40px;
     height: 40px;
     min-height: 40px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 22px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_42px {
@@ -476,13 +455,7 @@
     min-width: 42px;
     height: 42px;
     min-height: 42px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 22px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_46px {
@@ -490,13 +463,7 @@
     min-width: 46px;
     height: 46px;
     min-height: 46px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 22px;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 .square_50px {
@@ -504,11 +471,13 @@
     min-width: 50px;
     height: 50px;
     min-height: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 24px;
-    user-select: none;
-    box-sizing: border-box;
+}
+
+.square_60px {
+    width: 60px;
+    min-width: 60px;
+    height:60px;
+    min-height: 60px;
+    font-size: 30px;
 }

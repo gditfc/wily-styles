@@ -7,14 +7,10 @@
 	- Author:   Terry Sinay
 */
 
-/* NOT SURE */
+/* remove tap color on mobile */
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
-}
-/* set font family */
-button {
-    font-family: Montserrat, sans-serif;
 }
 
 button:focus {
@@ -29,281 +25,161 @@ button.clear {
     color: inherit;
 }
 
-/******************* ANIMATIONS ********************/
-.hov_slide_up:hover {
-    transform: translateY(-4px);
-}
-
-.hov_sm_grow:hover {
-    transform: scale(1.08);
-}
-
-.hov_grow:hover {
-    transform: scale(1.02, 1.02);
-}
-
-.hov_mid_grow:hover {
-    transform: scale(1.2);
-}
-
-.hov_big_grow:hover {
-    transform: scale(1.4, 1.4);
-}
-
-.hov_underline:hover {
-    box-shadow: inset 0 -5px 0 0 rgba(225, 225, 225, 0.7);
-}
-
-.hov_underline_md:hover {
-    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
-}
-
-.hov_slide_right, .hov_slide_up {
-    transition:0.2s ease all;
-}
-
-.hov_slide_right:hover {
-    transform:translateX(10px);
-}
-
-/* .GLOW - LIGHTEN ON HOVER */
-.hov_glow:hover {
-    box-shadow: inset 0 0 0 100px rgba(255,255,255,0.15);
-}
-.hov_glow:active {
-    box-shadow: none;
-}
-
-/* .DARKEN - DARKEN ON HOVER */
-.hov_darken:hover {
-    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.05);
-}
-.hov_darken:active {
-    box-shadow: none;
-}
-
-/*********************************************************************/
-/* NEW BUTTONS                                                       */
-/*********************************************************************/
+/********************** TRADITIONAL BUTTON CLASSES ************************/
+/* button class */
 .btn {
     user-select: none;
     border: 0;
     cursor: pointer;
-    font-family: Montserrat, sans-serif;
     outline: none;
-    display:flex;
-    flex-shrink:0;
-    justify-content: center;
-    align-items: center;
     padding:0;
-    box-sizing:border-box;
     white-space:nowrap;
     overflow:hidden;
     transition:all 0.2s ease-in-out;
-}
-
-/* vertically center text */
-.btn > .text {
-    display:flex;
-    align-items: center;
-    box-sizing:border-box;
-}
-
-/* center icon and remove border in case of background */
-.btn > .icon {
-    box-sizing:border-box;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    border:none;
-}
-
-/******************  SIZES **********************/
-/* add border radius to buttons with sizes */
-.btn.xsm, .btn.sm, .btn.md, .btn.lg, .btn.xlg {
     border-radius:3px;
+    position:relative;
+    flex-shrink:0;
 }
 
-/* .XSM - EXTRA SMALL BUTTON */
+/* button sizes */
 .btn.xsm {
-    min-height:16px;
-    font-size:9px;
-}
-.btn.xsm > .text {
-    padding:0 6px;
-    min-height:16px;
-}
-.btn.xsm > .icon {
-    min-width:16px;
-    min-height:16px;
-    font-size:8px;
-}
-
-/* .SM - SMALL BUTTON */
-.btn.sm {
-    min-height:18px;
-    font-size:11px;
-}
-.btn.sm > .text {
-    padding:0 8px;
-    min-height:18px;
-}
-.btn.sm > .icon {
-    min-width:18px;
-    min-height:18px;
     font-size:10px;
+    padding:2px 6px;
 }
-
-/* .MD - MEDIUM BUTTON */
+.btn.sm {
+    font-size:12px;
+    padding:3px 8px;
+}
 .btn.md {
-    min-height:22px;
-    font-size:12px;
+    font-size:14px;
+    padding:4px 10px;
 }
-.btn.md > .text {
-    padding:0 10px;
-    min-height:22px;
-}
-.btn.md > .icon {
-    min-width:22px;
-    min-height:22px;
-    font-size:11px;
-}
-
-/* .LG - LARGE BUTTON */
 .btn.lg {
-    min-height:26px;
-    font-size:13px;
+    font-size:16px;
+    padding:5px 12px;
 }
-.btn.lg > .text {
-    padding:0 12px;
-    min-height:26px;
-}
-.btn.lg > .icon {
-    min-width:26px;
-    min-height:26px;
-    font-size:12px;
-}
-
-/* .XLG - EXTRA LARGE BUTTON */
 .btn.xlg {
-    min-height:32px;
-    font-size:17px;
-}
-.btn.xlg > .text {
-    padding:0 13px;
-    min-height:32px;
-}
-.btn.xlg > .icon {
-    min-width:32px;
-    min-height:32px;
-    font-size:15px;
+    font-size:18px;
+    padding:6px 14px;
 }
 
-/************** SEPARATORS *******************/
-.btn > .icon.border_left::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
+/* class added if there is an icon; sets padding */
+.btn.icon_left {
+    padding-left:2.5em;
 }
-.btn > .icon.border_right::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(255,255,255,0.50);
-}
-.btn > .icon.border_left_alt::after {
-    content: '';
-    height:0.75em;
-    left:0;
-    position:absolute;
-    border-width:0 0 0 1px;
-    border-style:solid;
-    border-color:rgba(0,0,0,0.35);
-}
-.btn > .icon.border_right_alt::after {
-    content: '';
-    height:0.75em;
-    right:0;
-    position:absolute;
-    border-width:0 1px 0 0;
-    border-style:solid;
-    border-color:rgba(0,0,0,0.35);
+.btn.icon_right {
+    padding-right:2.5em;
 }
 
-/******************** ICON ANIMATIONS ********************/
-.btn > .icon > svg {
+/* style the icon in the button */
+.btn.icon_left > .icon,
+.btn.icon_right > .icon {
+    position:absolute;
+    top:0;
+    width:2em;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* style border to left or right of icon */
+.btn.icon_left > .icon:not(.no_line)::after,
+.btn.icon_right > .icon:not(.no_line)::after {
+    content: '';
+    height:0.75em;
+    position:absolute;
+    border-style:solid;
+    border-color:currentColor;
+    opacity:0.5;
+    margin-top:-0.37em; /* IE11 fix */
+    top:50%;
+}
+
+/* specific styling for left icons */
+.btn.icon_left > .icon {
+    left:0;
+}
+.btn.icon_left > .icon:not(.no_line)::after {
+    right:0;
+    border-width:0 1px 0 0;
+}
+
+/* specific styling for right icons */
+.btn.icon_right > .icon {
+    right:0;
+}
+.btn.icon_right > .icon:not(.no_line)::after {
+    left:0;
+    border-width:0 0 0 1px;
+}
+
+
+/* icon hover animations */
+.btn > .icon > * {
     transition:all 0.15s ease-out;
 }
 
-/* .SHRINK - SHRINK ICON ON HOVER */
-.btn:hover > .icon.shrink > svg {
+/* shrink */
+.btn:hover > .icon.shrink > * {
     transform:scale(0.85);
 }
 
-/* .GROW - GROW ICON ON HOVER */
-.btn:hover > .icon.grow > svg {
+/* grow */
+.btn:hover > .icon.grow > * {
     transform:scale(1.2);
 }
 
-/* .TURN - TURN ICON ON HOVER */
-.btn:hover > .icon.turn > svg {
+/* turn slightly */
+.btn:hover > .icon.turn > * {
     transform:rotate(20deg);
 }
 
-/* .SPIN - SPIN ICON ON HOVER */
-.btn > .icon.spin > svg {
+/* spin 90 degrees */
+.btn > .icon.spin > * {
     transition:all 0.3s ease-out;
 }
-.btn:hover > .icon.spin > svg {
+.btn:hover > .icon.spin > * {
     transform:rotate(90deg);
 }
 
-/* .SLIDE_LEFT - SLIDE ICON LEFT ON HOVER */
-.btn:hover > .icon.slide_left > svg {
+/* slide left */
+.btn:hover > .icon.slide_left > * {
     transform:translateX(-0.3em);
 }
 
-/* .SLIDE_RIGHT - SLIDE ICON RIGHT ON HOVER */
-.btn:hover > .icon.slide_right > svg {
+/* slide right */
+.btn:hover > .icon.slide_right > * {
     transform:translateX(0.3em);
 }
 
-/* .SLIDE_UP - SLIDE ICON UP ON HOVER */
-.btn:hover > .icon.slide_up > svg {
+/* slide up */
+.btn:hover > .icon.slide_up > * {
     transform:translateY(-0.3em);
 }
 
-/* .SLIDE_DOWN - SLIDE ICON DOWN ON HOVER */
-.btn:hover > .icon.slide_down > svg {
+/* slide down */
+.btn:hover > .icon.slide_down > * {
     transform:translateY(0.3em);
 }
 
-/* REMOVE TRANSITION ON ACTIVE */
-.btn:active > .icon > svg {
+/* reverse animation effect when user clicks button */
+.btn:active > .icon > * {
     transform:none !important;
 }
 
-/* DISABLED BUTTON */
+/* when button is disabled */
 button[disabled] {
     cursor:not-allowed;
     opacity:0.5;
 }
-.btn[disabled]:hover > .icon > svg {
+.btn[disabled]:hover > .icon > * {
     transform:none !important;
 }
 .btn[disabled].glow:hover {
     box-shadow:none !important;
 }
 
-/************* END NEW BUTTONS *********************************/
+/************************* END TRADITIONAL BUTTON CLASSES *********************************/
 
 /* Just a FUN LINK I leave here cause Nick loves it */
 .fun_lnk {
@@ -335,80 +211,6 @@ button[disabled] {
 
 .t_drag_btn:active {
     cursor: grabbing;
-}
-
-/* ANIMATED APPLICATION BUTTONS */
-.app_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    height: 150px;
-    min-width: 120px;
-    width: 120px;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-sizing: border-box;
-    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
-    outline: none;
-    overflow: hidden;
-}
-
-.app_btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 10px -5px rgba(0, 0, 0, 0.4);
-}
-
-.app_btn:hover .app_btn_icon {
-    transform: scale(0.8, 0.8) translateY(-15px);
-}
-
-.app_btn:hover .app_btn_middle {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0, 1.0);
-}
-
-.app_btn_middle {
-    transform: scale(0, 0);
-    transition: 0.2s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    visibility: hidden;
-}
-
-.app_btn_middle_text {
-    transform: translateY(-2px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    font-size: 9pt;
-}
-
-.app_btn_icon {
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-}
-
-.app_btn_text {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 9pt;
-    font-weight: 500;
-    padding: 2px;
-    border-radius: 3px;
 }
 
 /* PULSE BUTTONS */
@@ -490,6 +292,7 @@ button[disabled] {
 }
 
 /* INFO BUTTONS */
+/* TODO: check usages */
 .info_btn {
     display: flex;
     align-items: center;
@@ -509,45 +312,8 @@ button[disabled] {
     font-weight: 500;
 }
 
-/* CONFIG DASHBOARD BUTTONS */
-.btn_config {
-    height: 75px;
-    padding: 0;
-    white-space: normal;
-    max-width: 360px;
-    min-width: 250px;
-}
-
-.btn_config .text {
-    justify-content:normal;
-}
-
-.btn_config_icon {
-    position:relative;
-    width: 75px;
-    height: 75px;
-    font-size: 26pt;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-
-.btn_config_subicon {
-    font-size: 18px;
-    position: absolute;
-    left: 38px;
-    top: 38px;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-}
-
-.btn_config:hover .btn_config_subicon {
-    opacity: 1;
-}
-
 /* HIGHLIGHT BUTTON */
+/* TODO: remove, unused */
 .btn_highlight{
     transition:all 0.2s ease-in-out;
 }
@@ -556,6 +322,7 @@ button[disabled] {
 }
 
 /* WILY MENU BUTTON */
+/* TODO: eventually remove, deprecated */
 .wily_menu_btn {
     display: flex;
     flex: 1;
@@ -564,7 +331,6 @@ button[disabled] {
     cursor: pointer;
     text-align: left;
     font-family: Montserrat, sans-serif;
-    box-sizing: border-box;
 }
 
 .wily_go_box {
@@ -600,6 +366,7 @@ button[disabled] {
 }
 
 /* PRIORITY BUTTON */
+/* TODO: check usages and remove if unused */
 .prior_btn {
     width: 8px;
     border-radius: 3px;
@@ -621,45 +388,7 @@ button[disabled] {
     opacity: 1;
 }
 
-/* FOR SLIDING MENU BUTTON
-   stay to the right when active
- */
-.menubtn_selected {
-    transform:translateX(10px);
-}
-
-/* BREADCRUMB BUTTON STYLES */
-/* show a background on hover */
-.breadcrumb {
-    border-width:0 !important;
-    border-radius:20px;
-    min-height:22px;
-    font-size:11pt;
-    display:flex;
-    align-items:center;
-    box-sizing:border-box;
-    cursor:pointer;
-    justify-content:center;
-    padding:0 10px;
-    white-space:nowrap;
-    overflow:hidden;
-    transition: all 0.2s ease-in-out;
-}
-.breadcrumb:not(:hover){
-    background:none;
-}
-/* current page title */
-.breadcrumb_current {
-    min-height:22px;
-    display:flex;
-    align-items:center;
-    box-sizing:border-box;
-    padding:0 10px;
-    font-size:11pt;
-    font-weight:500;
-}
-
-/* TAB BUTTONS */
+/***************** FLOATING TABS *********************/
 .tabs .btn_tab {
     margin-top:1px;
     margin-bottom:1px;
@@ -677,4 +406,156 @@ button[disabled] {
 }
 .tabs .btn_tab:not(:first-child):not(:last-child) {
     margin-right:1px;
+}
+/***************** END FLOATING TABS *********************/
+
+/***************** FULLWIDTH TABS *********************/
+.tabs_fullwidth .btn_tab {
+    display:flex;
+    /*margin-top:1px;*/
+    margin-bottom:1px;
+    border-radius:0;
+    user-select:none;
+    outline:none;
+    border:0;
+    cursor:pointer;
+    justify-content:center;
+    align-items:center;
+    padding:0;
+    transition:all 0.2s ease-in-out;
+    position:relative;
+    text-align:center;
+}
+/* remove bottom margin when selected so tab blends with page */
+.tabs_fullwidth .btn_tab.selected {
+    margin-bottom:0;
+}
+/* color bar above tabs when hover/selected */
+.tabs_fullwidth > .btn_tab > .tab_color {
+    position:absolute;
+    height:3px;
+    top:0;
+    left:0;
+    width:0;
+    transition:width 0.3s ease-in-out;
+}
+.tabs_fullwidth > .btn_tab.selected > .tab_color {
+    width:100%;
+}
+/* brighten tab slightly on hover */
+.tabs_fullwidth .btn_tab:hover {
+    filter: brightness(1.05);
+}
+/* extend color bar on hover */
+.tabs_fullwidth .btn_tab:hover .tab_color {
+    width:100%;
+}
+/* small tab */
+.tabs_fullwidth.sm > .btn_tab {
+    padding:8px 5px;
+    font-size:10px;
+}
+/* medium tab */
+.tabs_fullwidth.md > .btn_tab {
+    padding:10px 5px;
+    font-size:12px;
+}
+/* large tab */
+.tabs_fullwidth.lg > .btn_tab {
+    padding:12px 5px;
+    font-size:14px;
+}
+/* give all tabs except last a right margin */
+.tabs_fullwidth .btn_tab:not(:last-child) {
+    margin-right:1px;
+}
+/* spacer */
+.tabs_fullwidth .tab_spacer {
+    display:flex;
+    /*margin-top:1px;*/
+    margin-bottom:1px;
+    border-radius:0;
+    border:0;
+}
+/***************** END FULLWIDTH TABS *********************/
+
+/* BTN_GROUP */
+/* group of buttons, such as for toggles */
+.btn_group {
+    display:flex;
+    flex:1;
+    transition:all 0.2s ease-in-out;
+}
+.btn_group.rounded {
+    border-radius:50px;
+}
+.btn_group .btn {
+    display:flex;
+    flex:1;
+    border-radius: 0;
+    align-items:center;
+    font-size:14px;
+    margin:0;
+    border-width: 1px 0;
+    justify-content:center;
+    text-align:center;
+}
+/* small tab */
+.btn_group.sm .btn {
+    padding:6px 5px;
+    font-size:12px;
+}
+/* medium tab */
+.btn_group.md .btn {
+    padding:6px 5px;
+    font-size:14px;
+}
+/* large tab */
+.btn_group.lg .btn {
+    padding:10px 5px;
+    font-size:16px;
+}
+.btn_group .btn:first-child {
+    border-left-width:1px;
+    border-right-width:1px;
+    border-top-left-radius:3px !important;
+    border-bottom-left-radius:3px !important;
+}
+.btn_group .btn:last-child {
+    border-right-width:1px;
+    border-top-right-radius:3px !important;
+    border-bottom-right-radius:3px !important;
+}
+.btn_group .btn:not(:first-child):not(:last-child) {
+    border-right-width:1px;
+}
+.btn_group.rounded .btn {
+    border-radius:50px !important;
+}
+
+/* like button class, but for list items */
+.list_btn{
+    appearance: none;
+    user-select:none;
+    cursor:pointer;
+    border:none;
+    outline:none;
+    padding:0;
+    display:flex;
+    flex:1;
+    transition:all 0.2s ease-in-out;
+    align-items:stretch;
+    text-align:left;
+    font-size:14px;
+    margin:0;
+}
+.list_btn > .go_icon {
+    opacity:0;
+    transform:scaleX(0);
+    transform-origin:left center;
+    transition:all 0.2s ease-in-out;
+}
+.list_btn:hover > .go_icon {
+    opacity:1;
+    transform:scaleX(1);
 }

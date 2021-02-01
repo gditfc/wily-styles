@@ -7,14 +7,11 @@
 	- Author:   Terry Sinay
 */
 
-/* FORM HTML FIELD STYLES */
-transcend-field-html .ql-editor {
-    padding:0;
-}
+/* TODO: test before moving out */
 .ql-editor {
     line-height:1.5;
     overflow-x:hidden;
-    font-size: 12px;
+    font-size: 14px;
 }
 .ql-editor strong {font-weight:500;}
 .ql-editor h1 {font-size:18px; font-weight:500; line-height:1.5; margin-bottom:0.5em;}
@@ -27,28 +24,6 @@ transcend-field-html .ql-editor {
     color: inherit;
     opacity:0.5;
     font-style:normal;
-}
-
-/* DIALOGS */
-.ui-dialog.ui-widget .ui-dialog-content  {
-    height: 100%;
-    padding: 0;
-}
-
-.ui-dialog-titlebar {
-    display: none;
-}
-
-/* fix so dialog doesnt go under nav bar on safari */
-.ui-dialog-maximized {
-    height: 100% !important;
-}
-
-/* DIALOG OVERLAY FIX */
-.ui-widget-overlay {
-    background-color: #666666;
-    opacity: 0.5;
-    filter: Alpha(Opacity=50);
 }
 
 /* MULTI SELECT PRIMENG */
@@ -75,6 +50,11 @@ transcend-field-html .ql-editor {
 
 .ui-multiselect .ui-multiselect-label {
     padding: 1px;
+}
+
+/* PRIMENG OVERLAY PANEL */
+.ui-overlaypanel-content {
+    padding:0;
 }
 
 /* TOOLTIP */
@@ -116,7 +96,6 @@ transcend-field-html .ql-editor {
 }
 
 .ui-datepicker .ui-datepicker-title select {
-    box-sizing: border-box;
     font-family: Montserrat,sans-serif;
     border-radius: 3px;
     border: 1px solid rgba(50,50,50,.2);
@@ -246,7 +225,6 @@ transcend-field-html .ql-editor {
 
 .ui-datepicker-year {
     border-radius: 0;
-    box-sizing: border-box;
     margin: 0;
     outline: none;
     transition: all 0.2s ease-in-out;
@@ -287,14 +265,16 @@ transcend-field-html .ql-editor {
 }
 
 /**** PIE CHART RESPONSIVE FIX FOR DATA DISPLAY */
+/* TODO: needed anymore? */
 .amcharts-legend-div {
     background-color: rgba(255, 255, 255, .3);
 }
 
 /* CHARTS TEXT FIX */
-text {
-    fill: inherit;
-}
+/* TODO: remove this */
+/*text {*/
+/*    fill: inherit;*/
+/*}*/
 
 /* DUNNO */
 .ui-tabview.ui-widget-content {
@@ -325,10 +305,6 @@ text {
     background: #f6f7f9;
     color: #1b1d1f;
     font-weight: normal;
-}
-
-.ui-widget, .ui-widget * {
-    box-sizing: border-box;
 }
 
 .ui-inputtext {
@@ -366,34 +342,6 @@ text {
 
 .ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover .ui-inputswitch-slider {
     background-color: #2b6278;
-}
-
-/* JSON EDITOR OVERRIDES */
-div.jsoneditor {
-    border: thin solid #595959;
-    border-radius: 3px;
-}
-
-div.jsoneditor-menu {
-    background-color: #595959;
-    border-bottom: 1px solid #595959;
-}
-
-div.jsoneditor-menu > button {
-    color: white;
-    opacity: 1;
-}
-
-div.jsoneditor-navigation-bar {
-    color: #222;
-}
-
-div.jsoneditor-tree {
-    background-color: #FFF;
-}
-
-div.jsoneditor-tree * {
-    color: #222;
 }
 
 /* STAR RATING FROM PRIMENG */
