@@ -1,14 +1,13 @@
 {
-  "name": "transcend-css",
-  "version": "2.0.2",
+  "name": "wily-styles",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "cleandir": "cleandir ./dist",
-    "concat": "concat-glob-cli -f ./styles/*.css -o ./dist/transcend.css",
-    "minify": "postcss ./dist/transcend.css --replace",
-    "copy-assets": "copyfiles assets/** dist",
+    "concat": "concat-glob-cli -f ./styles/*.css -o ./dist/wily-styles.css",
+    "minify": "postcss ./dist/wily-styles.css --replace",
     "copy-index": "copyfiles -f index.html ./dist",
-    "build": "npm run cleandir && npm run concat && npm run minify && npm run copy-assets && npm run copy-index"
+    "build": "npm run cleandir && npm run concat && npm run minify && npm run copy-index"
   },
   "engines": {
     "node": ">=4"
@@ -16,7 +15,7 @@
   "devDependencies": {
     "clean-dir": "^1.0.3",
     "concat-glob-cli": "^0.1.0",
-    "copyfiles": "^2.1.1",
+    "copyfiles": "^2.4.1",
     "cssnano": "^4.1.10",
     "postcss-cli": "^6.1.3"
   },
