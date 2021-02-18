@@ -39,6 +39,11 @@ input:disabled, textarea:disabled, select:disabled {
     box-shadow: none;
 }
 
+.form_input:focus {
+    outline: 1px solid rgba(128,128,128,0.6);
+}
+  
+
 .form_checkbox {
     width: 20px;
     min-width:20px;
@@ -47,6 +52,9 @@ input:disabled, textarea:disabled, select:disabled {
     margin: 0;
     outline: none;
 }
+.form_checkbox:focus {
+    outline: 1px solid rgba(128,128,128,0.6);
+  }
 
 .form_textarea {
     font-family: 'Montserrat', sans-serif;
@@ -97,25 +105,25 @@ input:disabled, textarea:disabled, select:disabled {
 
 /* FORM LABELS FOR FORM INPUTS */
 .form_label {
-    font-size: 10pt;
+    font-size: 12px;
     font-weight: 500;
     padding: 0;
 }
 
 .form_label.sm {
-    font-size: 9pt;
+    font-size: 10px;
 }
 
 .form_label.md {
-    font-size: 10pt;
+    font-size: 12px;
 }
 
 .form_label.lg {
-    font-size: 11pt;
+    font-size: 14px;
 }
 
 .form_label.light {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .form_label.bold {
