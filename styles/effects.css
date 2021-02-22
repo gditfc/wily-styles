@@ -82,6 +82,22 @@
 .pill.round {
     border-radius:50px;
 }
+/* pill sizes */
+.pill.xsm {
+    font-size:10px;
+}
+.pill.sm {
+    font-size:12px;
+}
+.pill.md {
+    font-size:14px;
+}
+.pill.lg {
+    font-size:16px;
+}
+.pill.xlg {
+    font-size:18px;
+}
 
 /******************* ANIMATIONS ********************/
 .hov_slide_up:hover {
