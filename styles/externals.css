@@ -7,344 +7,82 @@
 	- Author:   Terry Sinay
 */
 
-/* TODO: test before moving out */
-.ql-editor {
-    line-height:1.5;
-    overflow-x:hidden;
-    font-size: 14px;
-}
-.ql-editor strong {font-weight:500;}
-.ql-editor h1 {font-size:18px; font-weight:500; line-height:1.5; margin-bottom:0.5em;}
-.ql-editor h2 {font-size:15px; font-weight:400; line-height:1.5; margin-bottom:0.5em;}
-.ql-editor ol li:not(.ql-direction-rtl), .ql-editor ul li:not(.ql-direction-rtl) {
-    padding-left:0;
-}
-/* placeholder text override to fix dark theme */
-.ql-editor.ql-blank::before {
-    color: inherit;
-    opacity:0.5;
-    font-style:normal;
-}
-
-/* MULTI SELECT PRIMENG */
-.ui-multiselect-panel,
-.ui-multiselect,
-.ui-widget-header {
-    background-color: white;
-    color: #222;
-}
-
-.ui-multiselect-item:hover {
-    background-color: dodgerblue;
-    color: white;
-}
-
-.ui-multiselect:not(.ui-state-disabled):hover {
-    background-color: inherit;
-}
-
-/* fix disabled state in calendar */
-.ui-state-disabled {
-    opacity:0.5;
-}
-
-.ui-multiselect .ui-multiselect-label {
-    padding: 1px;
-}
-
-/* PRIMENG OVERLAY PANEL */
-.ui-overlaypanel-content {
-    padding:0;
-}
-
-/* TOOLTIP */
-.ui-tooltip .ui-tooltip-text {
-    background-color: #EFEFEF;
-    color: #222;
-    text-align: center;
-    border-radius: 3px;
-    font-size: 10pt;
-    padding: 5px;
-    overflow: hidden;
-}
-
-.ui-tooltip-top .ui-tooltip-arrow {
-    border-top-color: #EFEFEF;
-}
-
-.ui-tooltip-bottom .ui-tooltip-arrow {
-    border-bottom-color: #EFEFEF;
-}
-
-.ui-tooltip-right .ui-tooltip-arrow {
-    border-right-color: #EFEFEF;
-}
-
-.ui-tooltip-left .ui-tooltip-arrow {
-    border-left-color: #EFEFEF;
-}
-
-/* DATE PICKER */
-.ui-datepicker.ui-widget {
-    background-color: white;
-    border-radius:3px;
-    padding:0;
-}
-
-.ui-datepicker-month {
-    margin-right:5px;
-}
-
-.ui-datepicker .ui-datepicker-title select {
-    font-family: Montserrat,sans-serif;
-    border-radius: 3px;
-    border: 1px solid rgba(50,50,50,.2);
-    outline: none;
-    font-size: 1em;
-    margin: .125em 0;
-    vertical-align: middle;
-}
-/* fix colors on dark theme */
-.ui-datepicker td>a {
-    color: #222;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
-    background-color: #f4f4f4;
-    color: #222;
-}
-
-.ui-inputtext:focus {
-    outline: none;
-    box-shadow: unset;
-}
-
-.ui-datepicker.ui-widget {
-    padding: 0;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-header {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    border-top: 0 none;
-    border-left: 0 none;
-    border-right: 0 none;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-header a:hover {
-    border-width: 1px;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar {
-    margin: 0;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar thead th {
-    background-color: #f6f8fa;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar td {
-    border-bottom: 1px solid rgba(213, 213, 213, 0.5);
-    cursor: pointer;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-highlight {
-    background-color: #d6d6d6;
-    color: #212121;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar td a.ui-state-active {
-    background-color: #186ba0;
-    color: #ffffff;
-}
-
-.ui-datepicker.ui-widget .ui-datepicker-calendar tr:last-child td {
-    border-bottom: 0 none;
-}
-
-.ui-datepicker.ui-widget .ui-monthpicker a.ui-state-active {
-    background-color: #186ba0;
-    color: #ffffff;
-}
-
-.ui-datepicker.ui-widget .ui-timepicker {
-    border-bottom: 0 none;
-    border-left: 0 none;
-    border-right: 0 none;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-}
-
-.ui-datepicker.ui-widget.ui-datepicker-timeonly .ui-timepicker {
-    border-top: 0 none;
-}
-
-.ui-datepicker .ui-datepicker-header a {
-    color: #1b1d1f;
-}
-
-.ui-datepicker .ui-datepicker-header a:hover {
-    border-color: #c0c0c0;
-    background-color: #eeeeee;
-    color: #212121;
-}
-
-.ui-datepicker .ui-datepicker-header a:hover a {
-    color: #212121;
-}
-
-.ui-datepicker .ui-datepicker-calendar td:not(.ui-state-disabled) a:hover {
-    border-color: #c0c0c0;
-    background-color: #eeeeee;
-    color: #212121;
-}
-
-.ui-datepicker .ui-datepicker-calendar td:not(.ui-state-disabled) a:hover a {
-    color: #212121;
-}
-
-.ui-datepicker .ui-monthpicker .ui-monthpicker-month:hover {
-    border-color: #c0c0c0;
-    background-color: #eeeeee;
-    color: #212121;
-}
-
-.ui-datepicker .ui-monthpicker .ui-monthpicker-month:hover a {
-    color: #212121;
-}
-
-.ui-datepicker .ui-datepicker-group {
-    background-color: #FFF;
-}
-
-.ui-datepicker-other-month {
-    opacity: .5;
-}
-
-.ui-datepicker-year {
-    border-radius: 0;
-    margin: 0;
-    outline: none;
-    transition: all 0.2s ease-in-out;
-}
-
-.ui-datepicker-month {
-    margin-right: 5px;
-}
-
-.ui-button {
-    user-select: none;
-    border: 0;
-    border-radius: 3px;
-    transition: all .2s ease-in-out;
-    color: #FFF;
-    background-color: #004ca5;
-    cursor: pointer;
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    outline: none;
-}
-
-/* SLIDEOUTS */
-.ui-widget {
-    font-family: Montserrat, sans-serif;
-}
-
-.ui-sidebar-close {
-    display: none;
-}
-
-.ui-sidebar {
-    padding: 0;
-}
-
-.ui-widget-content {
-    border: 0;
-}
-
 /**** PIE CHART RESPONSIVE FIX FOR DATA DISPLAY */
 /* TODO: needed anymore? */
 .amcharts-legend-div {
     background-color: rgba(255, 255, 255, .3);
 }
 
-/* CHARTS TEXT FIX */
-/* TODO: remove this */
-/*text {*/
-/*    fill: inherit;*/
-/*}*/
-
-/* DUNNO */
-.ui-tabview.ui-widget-content {
-    border: 0 none;
-    background: none;
+/* TOOLTIP STYLES FOR 'wily_toolip' COMPONENT */
+.wily_tooltip {
+    min-width: 75px;
+    max-width: 200px;
+    background-color: #2f2f2f;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size:12px;
+    line-height:1.5;
+    position: absolute;
+    z-index: 4;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    animation-name: fadeInTooltip;
+    animation-duration: 0.4s;
 }
-
-.ui-tabview .ui-tabview-panel {
-    border-width: 1px;
-    padding: 1%;
-    background: #FFF;
-    border-color: #CCC;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+@keyframes fadeInTooltip {
+    0%   {opacity:0;}
+    100% {opacity:1;}
 }
-
-.ui-tabview.ui-tabview-top > .ui-tabview-nav {
-    padding: 0 0 0;
-    font-size: 9pt;
+.wily_tooltip.top {
+    transform-origin:bottom center;
 }
-
-.ui-corner-all {
-    border-radius: 0;
+.wily_tooltip.top::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2f2f2f transparent transparent transparent;
 }
-
-.ui-widget-header {
-    border: 0 solid #d9d9d9;
-    background: #f6f7f9;
-    color: #1b1d1f;
-    font-weight: normal;
+.wily_tooltip.bottom {
+    transform-origin:top center;
 }
-
-.ui-inputtext {
-    border: 1px solid #ccc;
-    font-family: Montserrat, sans-serif;
-    font-size: 10pt;
-    flex: 1;
-    color: #585858;
-    margin: 0;
-    padding: 2px 5px;
+.wily_tooltip.bottom::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #2f2f2f transparent;
 }
-
-/** INPUT SWITCH - PRIMENG */
-.ui-inputswitch .ui-inputswitch-slider {
-    -webkit-transition: background-color 0.3s, box-shadow 0.2s;
-    transition: background-color 0.3s, box-shadow 0.2s;
-    background: #cccccc;
+.wily_tooltip.left {
+    transform-origin:right center;
 }
-
-.ui-inputswitch .ui-inputswitch-slider:before {
-    background-color: #ffffff;
+.wily_tooltip.left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2f2f2f;
 }
-
-.ui-inputswitch.ui-inputswitch-focus .ui-inputswitch-slider {
-    box-shadow: 0 0 2px deepskyblue;
+.wily_tooltip.right {
+    transform-origin:left center;
 }
-
-.ui-inputswitch:not(.ui-state-disabled):hover .ui-inputswitch-slider {
-    background-color: #b7b7b7;
-}
-
-.ui-inputswitch.ui-inputswitch-checked .ui-inputswitch-slider {
-    background-color: #30728c;
-}
-
-.ui-inputswitch.ui-inputswitch-checked:not(.ui-state-disabled):hover .ui-inputswitch-slider {
-    background-color: #2b6278;
-}
-
-/* STAR RATING FROM PRIMENG */
-.ui-rating {
-    font-size:3em;
+.wily_tooltip.right::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #2f2f2f transparent transparent;
 }

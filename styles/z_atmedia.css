@@ -193,3 +193,8 @@
         display: block;
     }
 }
+
+/* hide always */
+.all_hide {
+    display:none !important;
+}

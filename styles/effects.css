@@ -140,7 +140,7 @@
 .hov_bg {
     transition:0.2s background-color ease;
 }
-.hov_bg:not(:hover){
+.hov_bg:not(:hover), .hov_bg:disabled:hover {
     background:none;
     color:inherit;
 }

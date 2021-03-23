@@ -108,6 +108,10 @@ a {
 }
 
 /* BORDER RADIUSES */
+.brad_0 {
+    border-radius: 0;
+}
+
 .brad_3 {
     border-radius: 3px;
 }

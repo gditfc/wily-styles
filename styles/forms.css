@@ -10,6 +10,7 @@
 /* DISABLED STATES FOR INPUTS */
 input:disabled, textarea:disabled, select:disabled {
     filter: brightness(0.95);
+    cursor:not-allowed;
 }
 
 /* TODO: review all of these and figured out what should move to TAC */
@@ -29,10 +30,11 @@ input:disabled, textarea:disabled, select:disabled {
     outline: none;
     transition: all 0.2s ease-in-out;
     border:1px solid rgba(128,128,128,0.4);
+    font-size:13px;
 }
 
 .form_input:hover {
-    box-shadow: inset 0 -2px 0 0 rgba(225, 225, 225, 0.7);
+    box-shadow: inset 0 -2px 0 0 rgba(120,120,120,0.2);
 }
 
 .form_input:hover:disabled {
@@ -144,6 +146,11 @@ input,select {
     border:1px solid rgba(128,128,128,0.3);
     background-color:inherit;
     color:inherit;
+}
+
+/* show pointer on selects */
+select:not(:disabled) {
+    cursor:pointer;
 }
 
 /* style input classes */
