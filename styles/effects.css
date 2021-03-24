@@ -184,6 +184,7 @@
 .circle_22px,
 .circle_24px,
 .circle_26px,
+.circle_28px,
 .circle_30px,
 .circle_32px,
 .circle_36px,
@@ -272,6 +273,14 @@
     min-width: 26px;
     height: 26px;
     min-height: 26px;
+    font-size: 14px;
+}
+
+.circle_28px {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    min-height: 28px;
     font-size: 14px;
 }
 

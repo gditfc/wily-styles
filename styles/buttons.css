@@ -113,6 +113,10 @@ button.clear {
     border-width:0 0 0 1px;
 }
 
+/* round corners on button */
+.btn.round {
+    border-radius:50px;
+}
 
 /* icon hover animations */
 .btn > .icon > * {

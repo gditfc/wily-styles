@@ -257,13 +257,55 @@ nav {
 
 /* SIDEBAR MENU CLASSES */
 
-/* sidebar header with optional close button */
+/* large header for sidebar */
 .sidebar_header {
     display:flex;
-    align-items:center;
-    font-size:14px;
-    min-height:40px;
-    padding:10px 15px;
+    align-items:flex-end;
+    justify-content:flex-start;
+    padding:15px;
+    position:relative;
+    overflow:hidden;
+    min-height:115px;
+    height:115px;
+    width:100%;
+    border:0;
+    border-bottom:2px solid rgba(0,0,0,0.1);
+    outline:none;
+    transition:all 0.2s ease-in-out;
+    text-align:left;
+}
+.sidebar_header .text {
+    opacity:0.9;
+    font-weight:500;
+    line-height:1.5;
+    font-size:16px;
+    z-index:1;
+    transition:all 0.2s ease-in-out;
+}
+.sidebar_header .icon_left {
+    position:absolute;
+    bottom:-3px;
+    left:10px;
+    z-index:0;
+    opacity:0.6;
+    font-size:65px;
+}
+.sidebar_header .icon_right {
+    position:absolute;
+    bottom:-3px;
+    right:10px;
+    z-index:0;
+    opacity:0.6;
+    font-size:65px;
+}
+.sidebar_header .icon_center {
+    position:absolute;
+    bottom:-5px;
+    left:50%;
+    margin-left:-55px;
+    z-index:0;
+    opacity:0.1;
+    font-size:110px;
 }
 
 /* subheader for groupings in sidebar */
@@ -335,7 +377,7 @@ nav {
     font-weight:500;
 }
 
-/* accent hidden by default */
+/* accent shrunken by default */
 .sidebar_btn > .accent,
 .sidebar_btn_noclick > .accent {
     position:absolute;
@@ -346,7 +388,7 @@ nav {
     transition:width 0.15s linear;
 }
 
-/* show accent on hover or selected */
+/* expand accent on hover or selected */
 .sidebar_btn:hover > .accent,
 .sidebar_btn.selected > .accent {
     width:8px;
