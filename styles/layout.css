@@ -108,6 +108,10 @@ a {
 }
 
 /* BORDER RADIUSES */
+.brad_0 {
+    border-radius: 0;
+}
+
 .brad_3 {
     border-radius: 3px;
 }
@@ -517,6 +521,14 @@ a {
     text-align: justify;
 }
 
+.text.underline {
+    text-decoration:underline;
+}
+
+.text.italic {
+    font-style:italic;
+}
+
 .text.xsm {
     font-size: 10px;
 }
@@ -836,7 +848,7 @@ p img {
 .header {
     outline: none;
     font-weight:500;
-    opacity:0.85;
+    opacity:0.9;
     transition: all 0.3s ease-in-out;
 }
 
