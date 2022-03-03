@@ -25,6 +25,10 @@
     text-align: justify;
 }
 
+.wrt-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* TOOLTIP STYLES FOR 'wily_toolip' COMPONENT */
 .wily_tooltip {
